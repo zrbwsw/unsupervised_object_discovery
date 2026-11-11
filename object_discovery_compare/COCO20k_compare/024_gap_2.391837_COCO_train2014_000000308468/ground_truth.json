@@ -1,0 +1,86 @@
+{
+  "objects": [
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        143,
+        171,
+        279,
+        272
+      ]
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        317,
+        152,
+        492,
+        253
+      ]
+    },
+    {
+      "category": "motorcycle",
+      "bbox_xyxy": [
+        156,
+        200,
+        287,
+        261
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        586,
+        156,
+        609,
+        245
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        632,
+        167,
+        640,
+        241
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        14,
+        191,
+        52,
+        250
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        42,
+        164,
+        72,
+        216
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        0,
+        188,
+        8,
+        203
+      ]
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        316,
+        182,
+        460,
+        271
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

@@ -1,0 +1,16 @@
+{
+  "objects": [
+    {
+      "category": "bicycle",
+      "bbox_xyxy": [
+        95,
+        173,
+        203,
+        345
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

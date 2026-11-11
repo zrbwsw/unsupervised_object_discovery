@@ -1,0 +1,6 @@
+6	VOC07	dinov3	0.20	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dinov3/tau_0.20
+7	VOC07	dinov3	0.30	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dinov3/tau_0.30
+6	VOC12	dinov3	0.20	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/dinov3/tau_0.20
+7	VOC12	dinov3	0.30	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/dinov3/tau_0.30
+6	COCO20k	dinov3	0.20	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/dinov3/tau_0.20
+7	COCO20k	dinov3	0.30	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/dinov3/tau_0.30

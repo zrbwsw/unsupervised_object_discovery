@@ -1,0 +1,694 @@
+{
+  "image": {
+    "license": 4,
+    "file_name": "COCO_train2014_000000000450.jpg",
+    "coco_url": "http://images.cocodataset.org/train2014/COCO_train2014_000000000450.jpg",
+    "height": 480,
+    "width": 640,
+    "date_captured": "2013-11-20 23:57:18",
+    "flickr_url": "http://farm6.staticflickr.com/5098/5569738713_e926850eb0_z.jpg",
+    "id": 450
+  },
+  "annotations": [
+    {
+      "segmentation": [
+        [
+          507.98,
+          5.38,
+          506.91,
+          10.76,
+          461.7,
+          18.3,
+          467.09,
+          51.66,
+          478.92,
+          62.42,
+          490.76,
+          71.03,
+          518.74,
+          73.18,
+          533.81,
+          68.88,
+          540.27,
+          63.5,
+          549.96,
+          59.19,
+          553.18,
+          53.81,
+          558.57,
+          44.13,
+          559.64,
+          40.9,
+          559.64,
+          33.36,
+          555.34,
+          21.52,
+          547.8,
+          15.07,
+          542.42,
+          8.61,
+          535.96,
+          6.46,
+          533.81,
+          3.23
+        ]
+      ],
+      "area": 5099.196500000001,
+      "iscrowd": 0,
+      "image_id": 450,
+      "bbox": [
+        461.7,
+        3.23,
+        97.94,
+        69.95
+      ],
+      "category_id": 46,
+      "id": 665446
+    },
+    {
+      "segmentation": [
+        [
+          618.76,
+          0.0,
+          562.02,
+          129.1,
+          572.18,
+          155.02,
+          590.27,
+          174.59,
+          608.65,
+          184.32,
+          633.51,
+          192.97,
+          640.0,
+          191.89,
+          640.0,
+          0.0
+        ]
+      ],
+      "area": 9999.053350000004,
+      "iscrowd": 0,
+      "image_id": 450,
+      "bbox": [
+        562.02,
+        0.0,
+        77.98,
+        192.97
+      ],
+      "category_id": 47,
+      "id": 672618
+    },
+    {
+      "segmentation": [
+        [
+          148.35,
+          89.19,
+          169.91,
+          59.94,
+          211.48,
+          32.99,
+          248.44,
+          25.29,
+          312.34,
+          13.74,
+          394.72,
+          23.75,
+          461.7,
+          39.92,
+          471.71,
+          48.39,
+          513.29,
+          75.33,
+          519.45,
+          94.58,
+          551.01,
+          145.4,
+          563.33,
+          173.88,
+          566.41,
+          262.42,
+          555.63,
+          321.71,
+          532.53,
+          348.65,
+          440.15,
+          415.63,
+          355.46,
+          458.75,
+          285.39,
+          471.84,
+          229.96,
+          464.14,
+          162.98,
+          457.98,
+          88.3,
+          433.34,
+          42.87,
+          409.48,
+          8.23,
+          355.58,
+          0.0,
+          300.92,
+          4.38,
+          211.61,
+          22.09,
+          197.75,
+          25.93,
+          183.12,
+          60.58,
+          132.31,
+          91.38,
+          110.75,
+          122.94,
+          93.04,
+          132.18,
+          89.19
+        ]
+      ],
+      "area": 201334.24609999993,
+      "iscrowd": 0,
+      "image_id": 450,
+      "bbox": [
+        0.0,
+        13.74,
+        566.41,
+        458.1
+      ],
+      "category_id": 59,
+      "id": 1074350
+    },
+    {
+      "segmentation": [
+        [
+          582.47,
+          168.27,
+          615.91,
+          189.84,
+          637.48,
+          189.84,
+          638.56,
+          381.84,
+          640.0,
+          473.53,
+          638.56,
+          480.0,
+          449.8,
+          480.0,
+          518.83,
+          427.15,
+          569.53,
+          365.66,
+          596.49,
+          257.8,
+          583.55,
+          180.13
+        ],
+        [
+          445.48,
+          37.75,
+          341.93,
+          12.94,
+          230.83,
+          17.26,
+          159.64,
+          49.62,
+          103.55,
+          86.29,
+          86.29,
+          110.02,
+          74.43,
+          117.57,
+          63.64,
+          122.97,
+          60.4,
+          130.52,
+          61.48,
+          134.83,
+          51.78,
+          141.3,
+          34.52,
+          157.48,
+          24.81,
+          175.82,
+          24.81,
+          185.53,
+          14.02,
+          196.31,
+          1.08,
+          215.73,
+          0.0,
+          5.39,
+          0.0,
+          4.31,
+          33.44,
+          1.08,
+          64.72,
+          3.24,
+          69.03,
+          45.3,
+          76.58,
+          56.09,
+          99.24,
+          56.09,
+          142.38,
+          48.54,
+          185.53,
+          20.49,
+          213.57,
+          6.47,
+          264.27,
+          6.47,
+          407.73,
+          4.31
+        ],
+        [
+          4.31,
+          365.66,
+          130.52,
+          455.19,
+          241.62,
+          471.37,
+          229.75,
+          473.53,
+          1.08,
+          471.37,
+          0.0,
+          345.17
+        ]
+      ],
+      "area": 50324.62804999999,
+      "iscrowd": 0,
+      "image_id": 450,
+      "bbox": [
+        0.0,
+        1.08,
+        640.0,
+        478.92
+      ],
+      "category_id": 67,
+      "id": 1614564
+    }
+  ],
+  "categories": [
+    {
+      "supercategory": "person",
+      "id": 1,
+      "name": "person"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 2,
+      "name": "bicycle"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 3,
+      "name": "car"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 4,
+      "name": "motorcycle"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 5,
+      "name": "airplane"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 6,
+      "name": "bus"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 7,
+      "name": "train"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 8,
+      "name": "truck"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 9,
+      "name": "boat"
+    },
+    {
+      "supercategory": "outdoor",
+      "id": 10,
+      "name": "traffic light"
+    },
+    {
+      "supercategory": "outdoor",
+      "id": 11,
+      "name": "fire hydrant"
+    },
+    {
+      "supercategory": "outdoor",
+      "id": 13,
+      "name": "stop sign"
+    },
+    {
+      "supercategory": "outdoor",
+      "id": 14,
+      "name": "parking meter"
+    },
+    {
+      "supercategory": "outdoor",
+      "id": 15,
+      "name": "bench"
+    },
+    {
+      "supercategory": "animal",
+      "id": 16,
+      "name": "bird"
+    },
+    {
+      "supercategory": "animal",
+      "id": 17,
+      "name": "cat"
+    },
+    {
+      "supercategory": "animal",
+      "id": 18,
+      "name": "dog"
+    },
+    {
+      "supercategory": "animal",
+      "id": 19,
+      "name": "horse"
+    },
+    {
+      "supercategory": "animal",
+      "id": 20,
+      "name": "sheep"
+    },
+    {
+      "supercategory": "animal",
+      "id": 21,
+      "name": "cow"
+    },
+    {
+      "supercategory": "animal",
+      "id": 22,
+      "name": "elephant"
+    },
+    {
+      "supercategory": "animal",
+      "id": 23,
+      "name": "bear"
+    },
+    {
+      "supercategory": "animal",
+      "id": 24,
+      "name": "zebra"
+    },
+    {
+      "supercategory": "animal",
+      "id": 25,
+      "name": "giraffe"
+    },
+    {
+      "supercategory": "accessory",
+      "id": 27,
+      "name": "backpack"
+    },
+    {
+      "supercategory": "accessory",
+      "id": 28,
+      "name": "umbrella"
+    },
+    {
+      "supercategory": "accessory",
+      "id": 31,
+      "name": "handbag"
+    },
+    {
+      "supercategory": "accessory",
+      "id": 32,
+      "name": "tie"
+    },
+    {
+      "supercategory": "accessory",
+      "id": 33,
+      "name": "suitcase"
+    },
+    {
+      "supercategory": "sports",
+      "id": 34,
+      "name": "frisbee"
+    },
+    {
+      "supercategory": "sports",
+      "id": 35,
+      "name": "skis"
+    },
+    {
+      "supercategory": "sports",
+      "id": 36,
+      "name": "snowboard"
+    },
+    {
+      "supercategory": "sports",
+      "id": 37,
+      "name": "sports ball"
+    },
+    {
+      "supercategory": "sports",
+      "id": 38,
+      "name": "kite"
+    },
+    {
+      "supercategory": "sports",
+      "id": 39,
+      "name": "baseball bat"
+    },
+    {
+      "supercategory": "sports",
+      "id": 40,
+      "name": "baseball glove"
+    },
+    {
+      "supercategory": "sports",
+      "id": 41,
+      "name": "skateboard"
+    },
+    {
+      "supercategory": "sports",
+      "id": 42,
+      "name": "surfboard"
+    },
+    {
+      "supercategory": "sports",
+      "id": 43,
+      "name": "tennis racket"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 44,
+      "name": "bottle"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 46,
+      "name": "wine glass"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 47,
+      "name": "cup"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 48,
+      "name": "fork"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 49,
+      "name": "knife"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 50,
+      "name": "spoon"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 51,
+      "name": "bowl"
+    },
+    {
+      "supercategory": "food",
+      "id": 52,
+      "name": "banana"
+    },
+    {
+      "supercategory": "food",
+      "id": 53,
+      "name": "apple"
+    },
+    {
+      "supercategory": "food",
+      "id": 54,
+      "name": "sandwich"
+    },
+    {
+      "supercategory": "food",
+      "id": 55,
+      "name": "orange"
+    },
+    {
+      "supercategory": "food",
+      "id": 56,
+      "name": "broccoli"
+    },
+    {
+      "supercategory": "food",
+      "id": 57,
+      "name": "carrot"
+    },
+    {
+      "supercategory": "food",
+      "id": 58,
+      "name": "hot dog"
+    },
+    {
+      "supercategory": "food",
+      "id": 59,
+      "name": "pizza"
+    },
+    {
+      "supercategory": "food",
+      "id": 60,
+      "name": "donut"
+    },
+    {
+      "supercategory": "food",
+      "id": 61,
+      "name": "cake"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 62,
+      "name": "chair"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 63,
+      "name": "couch"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 64,
+      "name": "potted plant"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 65,
+      "name": "bed"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 67,
+      "name": "dining table"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 70,
+      "name": "toilet"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 72,
+      "name": "tv"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 73,
+      "name": "laptop"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 74,
+      "name": "mouse"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 75,
+      "name": "remote"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 76,
+      "name": "keyboard"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 77,
+      "name": "cell phone"
+    },
+    {
+      "supercategory": "appliance",
+      "id": 78,
+      "name": "microwave"
+    },
+    {
+      "supercategory": "appliance",
+      "id": 79,
+      "name": "oven"
+    },
+    {
+      "supercategory": "appliance",
+      "id": 80,
+      "name": "toaster"
+    },
+    {
+      "supercategory": "appliance",
+      "id": 81,
+      "name": "sink"
+    },
+    {
+      "supercategory": "appliance",
+      "id": 82,
+      "name": "refrigerator"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 84,
+      "name": "book"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 85,
+      "name": "clock"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 86,
+      "name": "vase"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 87,
+      "name": "scissors"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 88,
+      "name": "teddy bear"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 89,
+      "name": "hair drier"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 90,
+      "name": "toothbrush"
+    }
+  ]
+}

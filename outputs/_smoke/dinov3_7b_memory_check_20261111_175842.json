@@ -1,0 +1,105 @@
+{
+  "device": "NVIDIA RTX 6000 Ada Generation",
+  "total_memory_bytes": 50875793408,
+  "model_allocated_bytes": 26864140800,
+  "batch_size": 1,
+  "dtype": "float32",
+  "samples": [
+    {
+      "dataset": "VOC07",
+      "image": "/data0/datasets/dino_downstream/voc2007/VOCdevkit/VOC2007/JPEGImages/009955.jpg",
+      "original_chw": [
+        3,
+        500,
+        500
+      ],
+      "padded_chw": [
+        3,
+        512,
+        512
+      ],
+      "patch_grid_hw": [
+        32,
+        32
+      ],
+      "feature_shape": [
+        1,
+        1025,
+        4096
+      ],
+      "bbox_xyxy": [
+        64,
+        144,
+        496,
+        432
+      ],
+      "peak_allocated_bytes": 27029561856,
+      "peak_reserved_bytes": 27197964288,
+      "nvidia_smi_used_mib": 26452
+    },
+    {
+      "dataset": "VOC12",
+      "image": "/data0/datasets/dino_object_discovery/voc2012/VOCdevkit/VOC2012/JPEGImages/2011_003271.jpg",
+      "original_chw": [
+        3,
+        500,
+        500
+      ],
+      "padded_chw": [
+        3,
+        512,
+        512
+      ],
+      "patch_grid_hw": [
+        32,
+        32
+      ],
+      "feature_shape": [
+        1,
+        1025,
+        4096
+      ],
+      "bbox_xyxy": [
+        96,
+        0,
+        500,
+        416
+      ],
+      "peak_allocated_bytes": 27028595200,
+      "peak_reserved_bytes": 27197964288,
+      "nvidia_smi_used_mib": 26452
+    },
+    {
+      "dataset": "COCO20k",
+      "image": "/data0/datasets/dino_object_discovery/coco2014/images/train2014/COCO_train2014_000000581189.jpg",
+      "original_chw": [
+        3,
+        640,
+        640
+      ],
+      "padded_chw": [
+        3,
+        640,
+        640
+      ],
+      "patch_grid_hw": [
+        40,
+        40
+      ],
+      "feature_shape": [
+        1,
+        1601,
+        4096
+      ],
+      "bbox_xyxy": [
+        176,
+        0,
+        640,
+        640
+      ],
+      "peak_allocated_bytes": 27121701888,
+      "peak_reserved_bytes": 27525120000,
+      "nvidia_smi_used_mib": 26764
+    }
+  ]
+}

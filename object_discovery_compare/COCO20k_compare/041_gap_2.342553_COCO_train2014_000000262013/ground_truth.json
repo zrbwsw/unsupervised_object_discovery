@@ -1,0 +1,68 @@
+{
+  "objects": [
+    {
+      "category": "giraffe",
+      "bbox_xyxy": [
+        57,
+        188,
+        80,
+        226
+      ]
+    },
+    {
+      "category": "giraffe",
+      "bbox_xyxy": [
+        95,
+        178,
+        138,
+        259
+      ]
+    },
+    {
+      "category": "giraffe",
+      "bbox_xyxy": [
+        223,
+        194,
+        250,
+        223
+      ]
+    },
+    {
+      "category": "umbrella",
+      "bbox_xyxy": [
+        395,
+        175,
+        440,
+        218
+      ]
+    },
+    {
+      "category": "umbrella",
+      "bbox_xyxy": [
+        268,
+        180,
+        314,
+        222
+      ]
+    },
+    {
+      "category": "umbrella",
+      "bbox_xyxy": [
+        209,
+        169,
+        250,
+        221
+      ]
+    },
+    {
+      "category": "giraffe",
+      "bbox_xyxy": [
+        470,
+        225,
+        539,
+        279
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

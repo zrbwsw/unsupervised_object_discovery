@@ -1,0 +1,149 @@
+{
+  "objects": [
+    {
+      "category": "sports ball",
+      "bbox_xyxy": [
+        329,
+        396,
+        340,
+        406
+      ]
+    },
+    {
+      "category": "tennis racket",
+      "bbox_xyxy": [
+        176,
+        276,
+        228,
+        367
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        178,
+        232,
+        345,
+        504
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        11,
+        112,
+        53,
+        176
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        285,
+        96,
+        313,
+        175
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        384,
+        105,
+        403,
+        169
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        1,
+        46,
+        19,
+        69
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        400,
+        47,
+        422,
+        69
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        25,
+        45,
+        45,
+        68
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        42,
+        32,
+        66,
+        64
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        67,
+        48,
+        87,
+        68
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        156,
+        49,
+        176,
+        69
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        174,
+        45,
+        200,
+        69
+      ]
+    },
+    {
+      "category": "tennis racket",
+      "bbox_xyxy": [
+        262,
+        142,
+        276,
+        157
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        288,
+        20,
+        306,
+        48
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        240,
+        94,
+        282,
+        193
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

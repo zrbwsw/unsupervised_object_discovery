@@ -1,0 +1,41 @@
+{
+  "objects": [
+    {
+      "category": "zebra",
+      "bbox_xyxy": [
+        86,
+        251,
+        229,
+        339
+      ]
+    },
+    {
+      "category": "zebra",
+      "bbox_xyxy": [
+        247,
+        277,
+        316,
+        352
+      ]
+    },
+    {
+      "category": "zebra",
+      "bbox_xyxy": [
+        335,
+        283,
+        424,
+        372
+      ]
+    },
+    {
+      "category": "zebra",
+      "bbox_xyxy": [
+        465,
+        276,
+        606,
+        391
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

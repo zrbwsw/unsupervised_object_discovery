@@ -1,0 +1,126 @@
+{
+  "objects": [
+    {
+      "category": "diningtable",
+      "bbox_xyxy": [
+        94,
+        208,
+        421,
+        375
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        398,
+        218,
+        486,
+        371
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        340,
+        160,
+        432,
+        298
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        383,
+        134,
+        437,
+        203
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        238,
+        130,
+        337,
+        211
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        147,
+        143,
+        211,
+        255
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        80,
+        159,
+        197,
+        327
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        1,
+        187,
+        107,
+        375
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "bottle",
+      "bbox_xyxy": [
+        353,
+        300,
+        382,
+        370
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "bottle",
+      "bbox_xyxy": [
+        38,
+        123,
+        54,
+        161
+      ],
+      "difficult": "1",
+      "truncated": "0"
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        460,
+        188,
+        500,
+        282
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

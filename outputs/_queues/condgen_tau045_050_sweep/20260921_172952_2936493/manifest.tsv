@@ -1,0 +1,6 @@
+4	VOC07	condgen	0.45	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.45
+5	VOC07	condgen	0.50	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.50
+4	VOC12	condgen	0.45	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/condgen/tau_0.45
+5	VOC12	condgen	0.50	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/condgen/tau_0.50
+4	COCO20k	condgen	0.45	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/condgen/tau_0.45
+5	COCO20k	condgen	0.50	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/condgen/tau_0.50

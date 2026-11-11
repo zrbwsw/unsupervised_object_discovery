@@ -1,0 +1,11 @@
+method	tau	started_at	finished_at	exit_code	output_dir
+dino	0.15	2026-09-21T00:05:14+08:00	2026-09-21T00:11:05+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.15
+dino	0.25	2026-09-21T00:11:05+08:00	2026-09-21T00:17:04+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.25
+ibot	0.10	2026-09-21T00:17:04+08:00	2026-09-21T00:22:52+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/ibot/tau_0.10
+ibot	0.20	2026-09-21T00:22:52+08:00	2026-09-21T00:28:39+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/ibot/tau_0.20
+ibot	0.30	2026-09-21T00:28:39+08:00	2026-09-21T00:34:28+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/ibot/tau_0.30
+mae	0.15	2026-09-21T00:34:28+08:00	2026-09-21T00:40:22+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/mae/tau_0.15
+mae	0.25	2026-09-21T00:40:22+08:00	2026-09-21T00:46:25+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/mae/tau_0.25
+condgen	0.10	2026-09-21T00:46:25+08:00	2026-09-21T00:52:18+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.10
+condgen	0.20	2026-09-21T00:52:18+08:00	2026-09-21T00:58:14+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.20
+condgen	0.30	2026-09-21T00:58:14+08:00	2026-09-21T01:04:21+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.30

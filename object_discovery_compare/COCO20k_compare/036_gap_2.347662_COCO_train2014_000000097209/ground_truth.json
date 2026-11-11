@@ -1,0 +1,50 @@
+{
+  "objects": [
+    {
+      "category": "clock",
+      "bbox_xyxy": [
+        221,
+        120,
+        272,
+        174
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        466,
+        344,
+        478,
+        374
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        450,
+        341,
+        457,
+        348
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        408,
+        343,
+        414,
+        352
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        396,
+        342,
+        401,
+        351
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

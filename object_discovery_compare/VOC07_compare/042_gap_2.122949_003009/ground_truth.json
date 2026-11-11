@@ -1,0 +1,16 @@
+{
+  "objects": [
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        134,
+        293,
+        386,
+        363
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

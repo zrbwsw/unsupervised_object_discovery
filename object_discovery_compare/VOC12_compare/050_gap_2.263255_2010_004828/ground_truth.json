@@ -1,0 +1,38 @@
+{
+  "objects": [
+    {
+      "category": "bottle",
+      "bbox_xyxy": [
+        326,
+        0,
+        383,
+        210
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "bottle",
+      "bbox_xyxy": [
+        146,
+        0,
+        210,
+        217
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        404,
+        0,
+        500,
+        211
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

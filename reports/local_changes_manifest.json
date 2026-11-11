@@ -1,0 +1,23 @@
+{
+  "created_at_utc": "2026-09-20T15:29:39.262282+00:00",
+  "upstream_commit": "fed52cd5b60891baefd8ec7110dafa73be816ee1",
+  "modified_files": [
+    "datasets.py",
+    "main_tokencut.py",
+    "networks.py",
+    "object_discovery.py"
+  ],
+  "sha256": {
+    "main_tokencut.py": "eb4403f6c15199fcbefa8c08af21d029bfe648a74036902627598b0dd7099fed",
+    "networks.py": "af00e83521fa0bbad52c5739a6cace1895871dd85651c6cefc13746d81fb16e6",
+    "datasets.py": "e7bf22f9cf47b2ee473a0e78df2366695a29734ea8d5b50e90a75a850c3ca561",
+    "object_discovery.py": "0543b620da447ebfb91f230dd71765f8d6e2e6a7226ac66fd4b6e2634f294555",
+    "dino/vision_transformer.py": "9c78a8f7e9f2de13a6fc38963d8d5d3032ced32f24cb5b5e44b28b35e87120dc"
+  },
+  "shell_template": "scripts/eval_object_discovery_dino_b16.sh",
+  "shell_sha256": "3180a3a6ac9a0e93e17f3dad66419a34a3939f17239c8a1be3fe8024a2347e20",
+  "validation_reports": [
+    "setup_check_adapted.json",
+    "adaptation_smoke_check.json"
+  ]
+}

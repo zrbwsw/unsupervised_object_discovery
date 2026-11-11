@@ -1,0 +1,122 @@
+{
+  "objects": [
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        111,
+        146,
+        173,
+        195
+      ]
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        214,
+        140,
+        259,
+        180
+      ]
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        260,
+        137,
+        310,
+        176
+      ]
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        308,
+        138,
+        348,
+        174
+      ]
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        342,
+        137,
+        363,
+        169
+      ]
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        388,
+        138,
+        442,
+        181
+      ]
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        442,
+        131,
+        472,
+        157
+      ]
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        494,
+        138,
+        544,
+        175
+      ]
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        366,
+        131,
+        395,
+        157
+      ]
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        584,
+        140,
+        611,
+        182
+      ]
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        524,
+        138,
+        567,
+        174
+      ]
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        117,
+        156,
+        132,
+        180
+      ]
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        296,
+        135,
+        337,
+        169
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

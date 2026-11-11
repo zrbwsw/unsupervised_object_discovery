@@ -1,0 +1,68 @@
+{
+  "objects": [
+    {
+      "category": "bottle",
+      "bbox_xyxy": [
+        375,
+        0,
+        463,
+        56
+      ]
+    },
+    {
+      "category": "bottle",
+      "bbox_xyxy": [
+        155,
+        33,
+        238,
+        152
+      ]
+    },
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        361,
+        41,
+        480,
+        114
+      ]
+    },
+    {
+      "category": "pizza",
+      "bbox_xyxy": [
+        20,
+        134,
+        589,
+        474
+      ]
+    },
+    {
+      "category": "bottle",
+      "bbox_xyxy": [
+        153,
+        2,
+        235,
+        63
+      ]
+    },
+    {
+      "category": "dining table",
+      "bbox_xyxy": [
+        0,
+        3,
+        640,
+        480
+      ]
+    },
+    {
+      "category": "bottle",
+      "bbox_xyxy": [
+        288,
+        3,
+        369,
+        106
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

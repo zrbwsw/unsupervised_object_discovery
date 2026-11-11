@@ -1,0 +1,8 @@
+{
+  "eval_object_discovery_mae_b16.sh": "e7f4eae34879920b75cd06f5951302103dc7e8917545b6784eb0628948f04a0e",
+  "eval_object_discovery_dino_b16.sh": "1e7e5967360c2e5b06a3d815ff2240ba0be7ccf0ca5a230c03de98c768712a60",
+  "eval_object_discovery_condgen_b16.sh": "6d17809f087a876048b2bebe39853c9c6cac4d77b6ee8bb90b8605b171962399",
+  "eval_object_discovery_ibot_b16.sh": "78e66e1c126b9e089be3098869d8a7191a29d30cfdc80eaffc0fcbb92ed71dfb",
+  "queue_voc07_tau_gpu67.sh": "e5dc20a5045ce13f5b83c4d76eb6c46eb1880ec9977bcb4a52258285c259c001",
+  "summarize_voc07_queue.py": "71baf0688840380cc73ff4d0f40c81faccb7c5fe795b96c938bb630019dda813"
+}

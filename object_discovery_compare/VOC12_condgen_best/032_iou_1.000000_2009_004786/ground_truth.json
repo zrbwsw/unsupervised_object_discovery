@@ -1,0 +1,115 @@
+{
+  "objects": [
+    {
+      "category": "boat",
+      "bbox_xyxy": [
+        194,
+        68,
+        436,
+        274
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "boat",
+      "bbox_xyxy": [
+        0,
+        0,
+        500,
+        375
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        84,
+        69,
+        113,
+        119
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        221,
+        222,
+        245,
+        277
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        181,
+        207,
+        195,
+        255
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        198,
+        190,
+        219,
+        249
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        246,
+        304,
+        279,
+        366
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        191,
+        203,
+        203,
+        248
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        61,
+        58,
+        74,
+        91
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        80,
+        61,
+        97,
+        102
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

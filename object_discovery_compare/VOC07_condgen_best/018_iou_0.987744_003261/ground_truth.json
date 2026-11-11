@@ -1,0 +1,49 @@
+{
+  "objects": [
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        217,
+        177,
+        239,
+        198
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        0,
+        0,
+        206,
+        374
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        290,
+        200,
+        500,
+        375
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        0,
+        0,
+        205,
+        375
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

@@ -1,0 +1,76 @@
+{
+  "created_at_utc": "2026-09-20T17:20:04.270919+00:00",
+  "task": "VOC12 and COCO20K data preparation and sequential tau sweeps",
+  "upstream_commit": "fed52cd5b60891baefd8ec7110dafa73be816ee1",
+  "full_evaluation_started": false,
+  "datasets": {
+    "VOC12_trainval": 11540,
+    "COCO20k_train": 19817
+  },
+  "methods": [
+    "dino",
+    "ibot",
+    "mae",
+    "condgen"
+  ],
+  "tau_values": [
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "experiments_per_dataset": 20,
+  "gpu_ids": [
+    6,
+    7
+  ],
+  "experiments_per_dataset_per_gpu": 10,
+  "queue_order": [
+    "VOC12",
+    "COCO20k"
+  ],
+  "validation_reports": [
+    "voc12_coco_preparation.json",
+    "voc12_coco_loader_check.json",
+    "voc12_coco_queue_preflight.log",
+    "voc12_coco_smoke_check.json",
+    "voc12_coco_queue_check.json",
+    "tests_voc12_coco.log",
+    "coco_environment.json"
+  ],
+  "tokencut_patch": "reports/tokencut_voc12_coco_changes.patch",
+  "sha256": {
+    "README.md": "618aa718bfbfb87536dd9115509e2b48547d1395c735d9bb84da28eb73139ba5",
+    "TokenCut/dino/vision_transformer.py": "9c78a8f7e9f2de13a6fc38963d8d5d3032ced32f24cb5b5e44b28b35e87120dc",
+    "TokenCut/datasets/coco_20k_filenames.txt": "74637e9b4f93f2ebef9b1f664aff53edd1f41ef08dad97bd22ce8e455052b335",
+    "TokenCut/datasets.py": "51a5f1ca0cf72b1d8c9062d182e23f14a02eb56b923bc48ea8184103aa397e56",
+    "TokenCut/main_tokencut.py": "eb4403f6c15199fcbefa8c08af21d029bfe648a74036902627598b0dd7099fed",
+    "TokenCut/networks.py": "af00e83521fa0bbad52c5739a6cace1895871dd85651c6cefc13746d81fb16e6",
+    "TokenCut/object_discovery.py": "0543b620da447ebfb91f230dd71765f8d6e2e6a7226ac66fd4b6e2634f294555",
+    "scripts/prepare_voc12_coco.py": "b0ba685b2613b34a319195a37eae40a052ad5b994948e142c1b763ab4a60ca64",
+    "scripts/check_voc12_coco.py": "e430d80618a52b8a3d7b4f51ade4722b1c08738862428d7c175718fa6c4fd107",
+    "scripts/queue_voc12_tau_gpu67.sh": "10faec6f6a83991b40ce8908e2d9a88e8b9d69aa319747cdc0eff7a16bd2197b",
+    "scripts/queue_coco20k_tau_gpu67.sh": "eb8e5d007f246ea2e8450dcaccb3e92175560d2bf08aaa0834578a38e0a86012",
+    "scripts/queue_object_discovery_tau_gpu67.sh": "94055a22deba2d7410e8ae53a58f803aa5e087a9450f9cd691cfa9752b266ea6",
+    "scripts/queue_voc12_then_coco_tau_gpu67.sh": "10cd1c3d4366aff5050b3d6d8e7592321cc521014d64a9b80aea7c28ac9c67f5",
+    "scripts/summarize_object_discovery_queue.py": "ac55a908a7854c5ac3fe1354bded5c8679cffd29b4ef37333b943f3bd23c8191",
+    "scripts/eval_object_discovery_dino_b16.sh": "e1d597edb8002be22bcb1e894b1bb956172ed4004ab33769899a506d3672d269",
+    "scripts/eval_object_discovery_ibot_b16.sh": "65e291f831f74b985eafea3c31f1503a56f4fb4a24b97db95b5c426fbd7911bd",
+    "scripts/eval_object_discovery_mae_b16.sh": "01d06e854aea029690fb10590349a80eea430afb4b140c14f5d0f915be67e9c5",
+    "scripts/eval_object_discovery_condgen_b16.sh": "2e5c4e94a9e98c9fe6278c59d8b9c5c3b620912a79fc84a684d99c3c8d838c00",
+    "configs/voc12_tau_sweep.json": "566b0b2e45dd455cb5295928d709559a36a2912c9aa72a01aa7970a5a0851ecb",
+    "configs/coco20k_tau_sweep.json": "3fd75f689829796a815258e9a14a2ae0d1c4faeeb9b00a9db95437b241eecc68",
+    "tests/test_coco_dataset_adapter.py": "ad13126aadc9f524efe14e42c4bcda4c29bad6a1db688f23fefc94553f0cf61f",
+    "tests/test_tokencut_adaptation.py": "9bf5b2e4dde6e54e7c76f7f52731a39def2bcd1b27cdb27c6bea83dd0b21fea5",
+    "reports/voc12_coco_preparation.json": "bd55101617c36e9ecfffaf3633e15cdf96ee0a004d1c3519810ab7775db795b0",
+    "reports/voc12_coco_loader_check.json": "3fb8cd96ec39fc8ff345fe47980fc105dcb47683c44edd1a14039d868c9dc294",
+    "reports/voc12_coco_queue_preflight.log": "6d2da5efc6a406c6edfb82e0d81115e3d435534e5f4db68a3169838e3a06a947",
+    "reports/voc12_coco_smoke_check.json": "7d6085d4c7eabbc54c991b543d5feb7802ae862f5a233dac4d488dc72c9cf159",
+    "reports/voc12_coco_queue_check.json": "8a724a059693e7c05436d2679033daad9d7378c9cba44f83f93a380d51f97436",
+    "reports/tests_voc12_coco.log": "2eb4c83d89c1d810947bbce10cc82287c2fa31592c77fa0be9031101029f8a0d",
+    "reports/coco_environment.json": "483f7c882f6546bca43ffedd4250f113b719a54bf8fd5a855d31eecf042a1a12",
+    "reports/tokencut_voc12_coco_changes.patch": "75c70da73739130b20dbf5f4fa3585643fd7b447d68d44068c02ee6589aca026"
+  },
+  "note": "Current source snapshot; previous VOC07 reports and launch snapshots are preserved."
+}

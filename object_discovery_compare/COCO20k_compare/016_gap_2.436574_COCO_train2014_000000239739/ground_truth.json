@@ -1,0 +1,14 @@
+{
+  "objects": [
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        265,
+        23,
+        431,
+        245
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

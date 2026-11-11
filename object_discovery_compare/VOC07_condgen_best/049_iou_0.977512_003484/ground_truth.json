@@ -1,0 +1,60 @@
+{
+  "objects": [
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        467,
+        34,
+        493,
+        78
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        463,
+        28,
+        500,
+        159
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        449,
+        42,
+        475,
+        93
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        404,
+        29,
+        433,
+        120
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        48,
+        64,
+        491,
+        323
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

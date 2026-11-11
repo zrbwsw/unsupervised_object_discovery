@@ -1,0 +1,104 @@
+{
+  "objects": [
+    {
+      "category": "bus",
+      "bbox_xyxy": [
+        0,
+        46,
+        476,
+        351
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        33,
+        218,
+        70,
+        259
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        332,
+        123,
+        356,
+        144
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        357,
+        126,
+        376,
+        144
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        375,
+        127,
+        397,
+        148
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        397,
+        132,
+        422,
+        150
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        421,
+        132,
+        445,
+        152
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        129,
+        99,
+        153,
+        132
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        110,
+        95,
+        130,
+        131
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

@@ -1,0 +1,41 @@
+{
+  "objects": [
+    {
+      "category": "sports ball",
+      "bbox_xyxy": [
+        404,
+        125,
+        414,
+        134
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        311,
+        129,
+        413,
+        300
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        250,
+        159,
+        270,
+        213
+      ]
+    },
+    {
+      "category": "tennis racket",
+      "bbox_xyxy": [
+        405,
+        123,
+        451,
+        172
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

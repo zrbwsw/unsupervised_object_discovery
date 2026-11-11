@@ -1,0 +1,151 @@
+{
+  "rank": 28,
+  "directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC12_condgen_best/028_iou_1.000000_2009_003419",
+  "image": "2009_003419.jpg",
+  "metrics": {
+    "dino": 0.5811892151832581,
+    "ibot": 1.0,
+    "mae": 0.5199999809265137,
+    "condgen": 1.0
+  },
+  "gap_sum": 0.8988108038902283,
+  "gap_mean": 0.29960360129674274,
+  "gap_min": 0.0,
+  "taus": {
+    "dino": 0.3,
+    "ibot": 0.15,
+    "mae": 0.35,
+    "condgen": 0.45
+  },
+  "dataset": "VOC12",
+  "image_path": "/data0/datasets/dino_object_discovery/voc2012/VOCdevkit/VOC2012/JPEGImages/2009_003419.jpg",
+  "gap_by_method": {
+    "dino": 0.41881078481674194,
+    "ibot": 0.0,
+    "mae": 0.48000001907348633
+  },
+  "predictions": {
+    "dino": {
+      "image": "2009_003419.jpg",
+      "bbox_xyxy": [
+        80,
+        0,
+        416,
+        288
+      ],
+      "image_shape_chw": [
+        3,
+        333,
+        500
+      ],
+      "patch_grid_hw": [
+        21,
+        32
+      ],
+      "max_iou": 0.5811892151832581,
+      "correct": true,
+      "gt_count": 1
+    },
+    "ibot": {
+      "image": "2009_003419.jpg",
+      "bbox_xyxy": [
+        0,
+        0,
+        500,
+        333
+      ],
+      "image_shape_chw": [
+        3,
+        333,
+        500
+      ],
+      "patch_grid_hw": [
+        21,
+        32
+      ],
+      "max_iou": 1.0,
+      "correct": true,
+      "gt_count": 1
+    },
+    "mae": {
+      "image": "2009_003419.jpg",
+      "bbox_xyxy": [
+        240,
+        0,
+        500,
+        333
+      ],
+      "image_shape_chw": [
+        3,
+        333,
+        500
+      ],
+      "patch_grid_hw": [
+        21,
+        32
+      ],
+      "max_iou": 0.5199999809265137,
+      "correct": true,
+      "gt_count": 1
+    },
+    "condgen": {
+      "image": "2009_003419.jpg",
+      "bbox_xyxy": [
+        0,
+        0,
+        500,
+        333
+      ],
+      "image_shape_chw": [
+        3,
+        333,
+        500
+      ],
+      "patch_grid_hw": [
+        21,
+        32
+      ],
+      "max_iou": 1.0,
+      "correct": true,
+      "gt_count": 1
+    }
+  },
+  "sources": {
+    "dino": {
+      "tau": 0.3,
+      "predictions": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/dino/tau_0.30/VOC12_trainval/TokenCut-dino-vit_base16_output_tau0.3/predictions.jsonl",
+      "predictions_sha256": "cdd2fba50d6f0814f7862f0c6cf83bb6977b73eadff157c5b085c60ae49a7367",
+      "run_config": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/dino/tau_0.30/VOC12_trainval/TokenCut-dino-vit_base16_output_tau0.3/run_config.json",
+      "results": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/dino/tau_0.30/VOC12_trainval/TokenCut-dino-vit_base16_output_tau0.3/results.json",
+      "checkpoint": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/dino_vitb16.pth",
+      "corloc_percent": 64.48873483535529
+    },
+    "ibot": {
+      "tau": 0.15,
+      "predictions": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/ibot/tau_0.15/VOC12_trainval/TokenCut-ibot-vit_base16_output_tau0.15/predictions.jsonl",
+      "predictions_sha256": "6289d8346cd49c29dc2a6eaea9ee7b1d0b40b80d873ce4b582e009e638ec7152",
+      "run_config": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/ibot/tau_0.15/VOC12_trainval/TokenCut-ibot-vit_base16_output_tau0.15/run_config.json",
+      "results": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/ibot/tau_0.15/VOC12_trainval/TokenCut-ibot-vit_base16_output_tau0.15/results.json",
+      "checkpoint": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/ibot_vitb16.pth",
+      "corloc_percent": 50.52859618717504
+    },
+    "mae": {
+      "tau": 0.35,
+      "predictions": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/mae/tau_0.35/VOC12_trainval/TokenCut-mae-vit_base16_output_tau0.35/predictions.jsonl",
+      "predictions_sha256": "f28ab75904d0578ab69b7e091404d1db6319c58c2b0853c0dc328e61e9a54935",
+      "run_config": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/mae/tau_0.35/VOC12_trainval/TokenCut-mae-vit_base16_output_tau0.35/run_config.json",
+      "results": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/mae/tau_0.35/VOC12_trainval/TokenCut-mae-vit_base16_output_tau0.35/results.json",
+      "checkpoint": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/mae_vitb16.pth",
+      "corloc_percent": 35.11265164644714
+    },
+    "condgen": {
+      "tau": 0.45,
+      "predictions": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/condgen/tau_0.45/VOC12_trainval/TokenCut-condgen-vit_base16_output_tau0.45/predictions.jsonl",
+      "predictions_sha256": "cabac9e440553066d68ec633c55a1208600d7a624bdc608f39eb2e53fb87076e",
+      "run_config": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/condgen/tau_0.45/VOC12_trainval/TokenCut-condgen-vit_base16_output_tau0.45/run_config.json",
+      "results": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/condgen/tau_0.45/VOC12_trainval/TokenCut-condgen-vit_base16_output_tau0.45/results.json",
+      "checkpoint": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/condgen_vitb16.pth",
+      "corloc_percent": 72.27036395147314
+    }
+  }
+}

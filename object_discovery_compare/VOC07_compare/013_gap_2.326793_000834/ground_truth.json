@@ -1,0 +1,71 @@
+{
+  "objects": [
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        303,
+        84,
+        369,
+        125
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        248,
+        71,
+        313,
+        102
+      ],
+      "difficult": "1",
+      "truncated": "0"
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        9,
+        95,
+        100,
+        154
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        68,
+        122,
+        177,
+        174
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        63,
+        94,
+        145,
+        121
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        97,
+        244,
+        390,
+        375
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

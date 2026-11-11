@@ -1,0 +1,23 @@
+{
+  "objects": [
+    {
+      "category": "train",
+      "bbox_xyxy": [
+        11,
+        21,
+        541,
+        300
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        103,
+        169,
+        113,
+        198
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

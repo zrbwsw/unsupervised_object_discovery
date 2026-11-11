@@ -1,0 +1,32 @@
+{
+  "objects": [
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        268,
+        126,
+        426,
+        350
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        64,
+        105,
+        175,
+        357
+      ]
+    },
+    {
+      "category": "frisbee",
+      "bbox_xyxy": [
+        412,
+        137,
+        452,
+        148
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

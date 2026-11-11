@@ -1,0 +1,38 @@
+{
+  "objects": [
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        357,
+        272,
+        416,
+        328
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        269,
+        229,
+        304,
+        252
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "cow",
+      "bbox_xyxy": [
+        38,
+        223,
+        66,
+        241
+      ],
+      "difficult": "1",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

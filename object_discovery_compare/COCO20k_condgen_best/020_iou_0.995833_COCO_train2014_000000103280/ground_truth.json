@@ -1,0 +1,50 @@
+{
+  "objects": [
+    {
+      "category": "pizza",
+      "bbox_xyxy": [
+        253,
+        311,
+        480,
+        577
+      ]
+    },
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        6,
+        38,
+        246,
+        304
+      ]
+    },
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        224,
+        287,
+        480,
+        601
+      ]
+    },
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        0,
+        325,
+        217,
+        569
+      ]
+    },
+    {
+      "category": "dining table",
+      "bbox_xyxy": [
+        2,
+        0,
+        480,
+        640
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

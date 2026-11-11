@@ -1,0 +1,11 @@
+dataset,gpu,method,tau,status,corloc_percent,successful_images,evaluated_images,output_dir
+COCO20k,6,dino,0.10,completed,33.52172377251854,6643,19817,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/dino/tau_0.10
+COCO20k,6,dino,0.20,completed,46.11697027804411,9139,19817,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/dino/tau_0.20
+COCO20k,6,dino,0.30,completed,50.512186506534796,10010,19817,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/dino/tau_0.30
+COCO20k,6,ibot,0.15,completed,33.83458646616541,6705,19817,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/ibot/tau_0.15
+COCO20k,6,ibot,0.25,completed,33.88504819094717,6715,19817,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/ibot/tau_0.25
+COCO20k,6,mae,0.10,completed,25.276277943180098,5009,19817,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/mae/tau_0.10
+COCO20k,6,mae,0.20,completed,26.21991219659888,5196,19817,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/mae/tau_0.20
+COCO20k,6,mae,0.30,completed,26.5630519251148,5264,19817,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/mae/tau_0.30
+COCO20k,6,condgen,0.15,completed,23.92894989150729,4742,19817,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/condgen/tau_0.15
+COCO20k,6,condgen,0.25,completed,33.19876873391532,6579,19817,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/condgen/tau_0.25

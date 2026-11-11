@@ -1,0 +1,23 @@
+{
+  "objects": [
+    {
+      "category": "cat",
+      "bbox_xyxy": [
+        0,
+        3,
+        500,
+        494
+      ]
+    },
+    {
+      "category": "sink",
+      "bbox_xyxy": [
+        0,
+        3,
+        500,
+        496
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

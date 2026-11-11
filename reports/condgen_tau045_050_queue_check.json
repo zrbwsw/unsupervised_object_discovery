@@ -1,0 +1,9 @@
+{
+  "recorded_at_local": "2026-09-21T17:29:21.083174+08:00",
+  "six_unique_combinations": true,
+  "gpu4_tau045_gpu5_tau050": true,
+  "three_datasets_serial_per_gpu": true,
+  "all_six_cli_protocols_valid": true,
+  "six_completed_summary": true,
+  "gpu_inference": false
+}

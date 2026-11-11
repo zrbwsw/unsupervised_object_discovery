@@ -1,0 +1,96 @@
+{
+  "status": "complete",
+  "generated_at": "2026-09-21T17:49:26.364221+00:00",
+  "selection_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/selection.json",
+  "collections": [
+    {
+      "name": "VOC07_condgen_best",
+      "dataset": "VOC07",
+      "kind": "condgen_best",
+      "samples": 50,
+      "method_renderings": 50,
+      "bbox_matches_saved": 50,
+      "required_files": 450,
+      "present_files": 450,
+      "verified_images": 200,
+      "overviews": 50,
+      "contact_sheet": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC07_condgen_best/contact_sheet.jpg"
+    },
+    {
+      "name": "VOC07_compare",
+      "dataset": "VOC07",
+      "kind": "compare",
+      "samples": 50,
+      "method_renderings": 200,
+      "bbox_matches_saved": 200,
+      "required_files": 1650,
+      "present_files": 1650,
+      "verified_images": 650,
+      "overviews": 50,
+      "contact_sheet": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC07_compare/contact_sheet.jpg"
+    },
+    {
+      "name": "VOC12_condgen_best",
+      "dataset": "VOC12",
+      "kind": "condgen_best",
+      "samples": 50,
+      "method_renderings": 50,
+      "bbox_matches_saved": 50,
+      "required_files": 450,
+      "present_files": 450,
+      "verified_images": 200,
+      "overviews": 50,
+      "contact_sheet": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC12_condgen_best/contact_sheet.jpg"
+    },
+    {
+      "name": "VOC12_compare",
+      "dataset": "VOC12",
+      "kind": "compare",
+      "samples": 50,
+      "method_renderings": 200,
+      "bbox_matches_saved": 200,
+      "required_files": 1650,
+      "present_files": 1650,
+      "verified_images": 650,
+      "overviews": 50,
+      "contact_sheet": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC12_compare/contact_sheet.jpg"
+    },
+    {
+      "name": "COCO20k_condgen_best",
+      "dataset": "COCO20k",
+      "kind": "condgen_best",
+      "samples": 50,
+      "method_renderings": 50,
+      "bbox_matches_saved": 50,
+      "required_files": 450,
+      "present_files": 450,
+      "verified_images": 200,
+      "overviews": 50,
+      "contact_sheet": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/COCO20k_condgen_best/contact_sheet.jpg"
+    },
+    {
+      "name": "COCO20k_compare",
+      "dataset": "COCO20k",
+      "kind": "compare",
+      "samples": 50,
+      "method_renderings": 200,
+      "bbox_matches_saved": 200,
+      "required_files": 1650,
+      "present_files": 1650,
+      "verified_images": 650,
+      "overviews": 50,
+      "contact_sheet": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/COCO20k_compare/contact_sheet.jpg"
+    }
+  ],
+  "totals": {
+    "samples": 300,
+    "method_renderings": 750,
+    "bbox_matches_saved": 750,
+    "required_files": 6300,
+    "present_files": 6300,
+    "verified_images": 2550,
+    "overviews": 300,
+    "contact_sheets": 6
+  },
+  "errors": []
+}

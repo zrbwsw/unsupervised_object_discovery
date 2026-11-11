@@ -1,0 +1,14 @@
+{
+  "objects": [
+    {
+      "category": "giraffe",
+      "bbox_xyxy": [
+        270,
+        92,
+        453,
+        351
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

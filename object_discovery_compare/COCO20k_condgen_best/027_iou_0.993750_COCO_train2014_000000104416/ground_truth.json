@@ -1,0 +1,14 @@
+{
+  "objects": [
+    {
+      "category": "airplane",
+      "bbox_xyxy": [
+        3,
+        48,
+        639,
+        224
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

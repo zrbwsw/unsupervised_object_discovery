@@ -1,0 +1,124 @@
+{
+  "created_at_utc": "2026-09-21T17:46:39.867140+00:00",
+  "manifest": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/render_manifest.json",
+  "task": {
+    "dataset": "VOC07",
+    "image": "007523.jpg",
+    "image_path": "/data0/datasets/dino_downstream/voc2007/VOCdevkit/VOC2007/JPEGImages/007523.jpg",
+    "method": "mae",
+    "tau": 0.35,
+    "checkpoint": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/dino/weights/mae_ibot_b16/mae_vitb_model.pth",
+    "bbox_xyxy": [
+      0,
+      80,
+      496,
+      224
+    ],
+    "image_shape_chw": [
+      3,
+      332,
+      500
+    ]
+  },
+  "expected_bbox_xyxy": [
+    0,
+    80,
+    496,
+    224
+  ],
+  "recomputed_bbox_xyxy": [
+    0,
+    80,
+    496,
+    224
+  ],
+  "bbox_match": true,
+  "bbox_matches_saved": true,
+  "runtime_seconds": 0.06028656102716923,
+  "device": "cuda",
+  "patch_grid_hw": [
+    21,
+    32
+  ],
+  "seed_patch": 290,
+  "checkpoint": {
+    "source": "local",
+    "checkpoint_path": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/dino/weights/mae_ibot_b16/mae_vitb_model.pth",
+    "resolved_checkpoint_path": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/dino/weights/mae_ibot_b16/mae_vitb_model.pth",
+    "checkpoint_size_bytes": 346317473,
+    "checkpoint_sha256": "759b59747e9184b4ed3efbd2b5dfefa17d7ddc5d7adef5d73aad713355c8b561",
+    "checkpoint_key": "model",
+    "state_dict_container": "model",
+    "state_dict_tensor_count": 152,
+    "excluded_head_tensors": {
+      "head.weight": [
+        1000,
+        768
+      ],
+      "head.bias": [
+        1000
+      ]
+    },
+    "backbone_tensor_count": 150,
+    "strict_load": true,
+    "missing_keys": [],
+    "unexpected_keys": []
+  },
+  "source": {
+    "upstream_commit": "fed52cd5b60891baefd8ec7110dafa73be816ee1",
+    "sha256": {
+      "main_tokencut.py": "612636cbdb341afb01d191f7b909800f5434d4f629a6178ddd3a62a93ce81603",
+      "networks.py": "af00e83521fa0bbad52c5739a6cace1895871dd85651c6cefc13746d81fb16e6",
+      "datasets.py": "51a5f1ca0cf72b1d8c9062d182e23f14a02eb56b923bc48ea8184103aa397e56",
+      "object_discovery.py": "0543b620da447ebfb91f230dd71765f8d6e2e6a7226ac66fd4b6e2634f294555",
+      "dino/vision_transformer.py": "9c78a8f7e9f2de13a6fc38963d8d5d3032ced32f24cb5b5e44b28b35e87120dc"
+    },
+    "renderer": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/scripts/render_object_discovery_compare.py",
+    "renderer_sha256": "c81ebd86861db52e2cb756c290b98a619de582b4a3eb28fa602c00170866804e"
+  },
+  "torch_version": "2.7.0+cu126",
+  "numpy_version": "2.2.6",
+  "protocol": {
+    "arch": "vit_base",
+    "patch_size": 16,
+    "features": "output",
+    "final_layernorm": true,
+    "cls_in_graph": false,
+    "encoder_frozen": true,
+    "full_resolution": true,
+    "resize": null,
+    "image_mode": "RGB",
+    "tau": 0.35,
+    "eps": 1e-05,
+    "binary_graph": true,
+    "input_normalization": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "padding": "right/bottom zeros after normalization to patch_size multiple",
+    "mask": "TokenCut connected component containing the seed patch",
+    "mask_upsampling": "nearest repeat by patch_size and crop to original dimensions",
+    "mask_overlay_rgb": [
+      255,
+      0,
+      0
+    ],
+    "mask_overlay_alpha": 0.7,
+    "annotation_used_for_inference": false,
+    "postprocessing": null
+  },
+  "files": [
+    "mask_overlay.png",
+    "mask.png",
+    "foreground_patch.npy",
+    "eigenvector.npy"
+  ]
+}

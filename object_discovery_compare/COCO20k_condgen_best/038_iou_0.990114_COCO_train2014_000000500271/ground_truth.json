@@ -1,0 +1,41 @@
+{
+  "objects": [
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        460,
+        129,
+        596,
+        307
+      ]
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        234,
+        231,
+        249,
+        266
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        0,
+        83,
+        415,
+        480
+      ]
+    },
+    {
+      "category": "toothbrush",
+      "bbox_xyxy": [
+        336,
+        125,
+        479,
+        248
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

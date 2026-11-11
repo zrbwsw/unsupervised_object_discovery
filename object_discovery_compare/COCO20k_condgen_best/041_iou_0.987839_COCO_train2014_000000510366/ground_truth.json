@@ -1,0 +1,23 @@
+{
+  "objects": [
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        67,
+        15,
+        562,
+        479
+      ]
+    },
+    {
+      "category": "skateboard",
+      "bbox_xyxy": [
+        83,
+        229,
+        544,
+        429
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

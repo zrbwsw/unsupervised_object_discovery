@@ -1,0 +1,50 @@
+{
+  "objects": [
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        71,
+        252,
+        203,
+        368
+      ]
+    },
+    {
+      "category": "orange",
+      "bbox_xyxy": [
+        452,
+        123,
+        513,
+        187
+      ]
+    },
+    {
+      "category": "orange",
+      "bbox_xyxy": [
+        252,
+        21,
+        308,
+        77
+      ]
+    },
+    {
+      "category": "orange",
+      "bbox_xyxy": [
+        157,
+        33,
+        221,
+        87
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        525,
+        257,
+        630,
+        383
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

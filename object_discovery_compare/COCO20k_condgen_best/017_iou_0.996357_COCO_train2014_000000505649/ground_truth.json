@@ -1,0 +1,59 @@
+{
+  "objects": [
+    {
+      "category": "wine glass",
+      "bbox_xyxy": [
+        502,
+        0,
+        599,
+        73
+      ]
+    },
+    {
+      "category": "fork",
+      "bbox_xyxy": [
+        30,
+        58,
+        87,
+        119
+      ]
+    },
+    {
+      "category": "pizza",
+      "bbox_xyxy": [
+        19,
+        29,
+        594,
+        404
+      ]
+    },
+    {
+      "category": "wine glass",
+      "bbox_xyxy": [
+        389,
+        0,
+        475,
+        54
+      ]
+    },
+    {
+      "category": "dining table",
+      "bbox_xyxy": [
+        0,
+        1,
+        639,
+        480
+      ]
+    },
+    {
+      "category": "cell phone",
+      "bbox_xyxy": [
+        588,
+        13,
+        640,
+        90
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

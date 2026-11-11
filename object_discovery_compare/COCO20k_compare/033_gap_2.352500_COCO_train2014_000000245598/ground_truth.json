@@ -1,0 +1,86 @@
+{
+  "objects": [
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        193,
+        112,
+        311,
+        389
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        0,
+        149,
+        44,
+        348
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        460,
+        66,
+        543,
+        296
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        49,
+        194,
+        173,
+        372
+      ]
+    },
+    {
+      "category": "baseball bat",
+      "bbox_xyxy": [
+        184,
+        163,
+        277,
+        195
+      ]
+    },
+    {
+      "category": "baseball bat",
+      "bbox_xyxy": [
+        174,
+        171,
+        184,
+        273
+      ]
+    },
+    {
+      "category": "baseball glove",
+      "bbox_xyxy": [
+        127,
+        199,
+        158,
+        238
+      ]
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        393,
+        103,
+        468,
+        150
+      ]
+    },
+    {
+      "category": "sports ball",
+      "bbox_xyxy": [
+        135,
+        209,
+        144,
+        218
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

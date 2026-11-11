@@ -1,0 +1,77 @@
+{
+  "objects": [
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        120,
+        169,
+        202,
+        346
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        173,
+        169,
+        232,
+        287
+      ]
+    },
+    {
+      "category": "giraffe",
+      "bbox_xyxy": [
+        326,
+        109,
+        421,
+        301
+      ]
+    },
+    {
+      "category": "giraffe",
+      "bbox_xyxy": [
+        47,
+        112,
+        143,
+        249
+      ]
+    },
+    {
+      "category": "giraffe",
+      "bbox_xyxy": [
+        468,
+        119,
+        640,
+        379
+      ]
+    },
+    {
+      "category": "giraffe",
+      "bbox_xyxy": [
+        333,
+        119,
+        422,
+        280
+      ]
+    },
+    {
+      "category": "giraffe",
+      "bbox_xyxy": [
+        387,
+        158,
+        434,
+        260
+      ]
+    },
+    {
+      "category": "giraffe",
+      "bbox_xyxy": [
+        470,
+        194,
+        503,
+        258
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

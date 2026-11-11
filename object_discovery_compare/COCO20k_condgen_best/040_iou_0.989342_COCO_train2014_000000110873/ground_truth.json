@@ -1,0 +1,14 @@
+{
+  "objects": [
+    {
+      "category": "toilet",
+      "bbox_xyxy": [
+        127,
+        15,
+        368,
+        627
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

@@ -1,0 +1,23 @@
+{
+  "objects": [
+    {
+      "category": "bear",
+      "bbox_xyxy": [
+        283,
+        179,
+        344,
+        289
+      ]
+    },
+    {
+      "category": "bear",
+      "bbox_xyxy": [
+        501,
+        106,
+        609,
+        209
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

@@ -1,0 +1,116 @@
+{
+  "args": {
+    "arch": "vit_base",
+    "patch_size": 16,
+    "encoder": "condgen",
+    "pretrained_weights": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/condgen_vitb16.pth",
+    "checkpoint_key": "model",
+    "data_path": "/data0/datasets/dino_downstream/voc2007",
+    "device": "cuda",
+    "max_images": null,
+    "dataset": "VOC07",
+    "save_feat_dir": null,
+    "set": "trainval",
+    "image_path": null,
+    "output_dir": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/voc07_tau_sweep/20260921_000514_2652261/condgen/tau_0.15/VOC07_trainval",
+    "no_hard": false,
+    "no_evaluation": false,
+    "save_predictions": true,
+    "visualize": null,
+    "which_features": "output",
+    "k_patches": 100,
+    "resize": null,
+    "tau": 0.15,
+    "eps": 1e-05,
+    "no_binary_graph": false,
+    "dinoseg": false,
+    "dinoseg_head": 4
+  },
+  "command": [
+    "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python",
+    "main_tokencut.py",
+    "--encoder=condgen",
+    "--arch=vit_base",
+    "--patch_size=16",
+    "--checkpoint_key=model",
+    "--pretrained_weights=/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/condgen_vitb16.pth",
+    "--data_path=/data0/datasets/dino_downstream/voc2007",
+    "--dataset=VOC07",
+    "--set=trainval",
+    "--which_features=output",
+    "--tau=0.15",
+    "--eps=1e-5",
+    "--device=cuda",
+    "--output_dir=/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/voc07_tau_sweep/20260921_000514_2652261/condgen/tau_0.15"
+  ],
+  "checkpoint": {
+    "source": "local",
+    "checkpoint_path": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/condgen_vitb16.pth",
+    "resolved_checkpoint_path": "/data0/cuijiequan/code/condssl_20260626/downstream/RAEv2/pretrained_models/encoders/condgen/condgen_vitb.pth",
+    "checkpoint_size_bytes": 346318421,
+    "checkpoint_sha256": "1d6de64a6a67b86b905a5e6d620d3ca7b05a1ca16d16d36eee741604a94ef528",
+    "checkpoint_key": "model",
+    "state_dict_container": "model",
+    "state_dict_tensor_count": 152,
+    "excluded_head_tensors": {
+      "head.weight": [
+        1000,
+        768
+      ],
+      "head.bias": [
+        1000
+      ]
+    },
+    "backbone_tensor_count": 150,
+    "strict_load": true,
+    "missing_keys": [],
+    "unexpected_keys": []
+  },
+  "source": {
+    "upstream_commit": "fed52cd5b60891baefd8ec7110dafa73be816ee1",
+    "sha256": {
+      "main_tokencut.py": "eb4403f6c15199fcbefa8c08af21d029bfe648a74036902627598b0dd7099fed",
+      "networks.py": "af00e83521fa0bbad52c5739a6cace1895871dd85651c6cefc13746d81fb16e6",
+      "datasets.py": "e7bf22f9cf47b2ee473a0e78df2366695a29734ea8d5b50e90a75a850c3ca561",
+      "object_discovery.py": "0543b620da447ebfb91f230dd71765f8d6e2e6a7226ac66fd4b6e2634f294555",
+      "dino/vision_transformer.py": "9c78a8f7e9f2de13a6fc38963d8d5d3032ced32f24cb5b5e44b28b35e87120dc"
+    }
+  },
+  "device": "cuda",
+  "torch_version": "2.7.0+cu126",
+  "numpy_version": "2.2.6",
+  "dataset_images": 5011,
+  "selected_images": 5011,
+  "data_root": "/data0/datasets/dino_downstream/voc2007",
+  "protocol": {
+    "features": "output",
+    "final_layernorm": true,
+    "cls_in_graph": false,
+    "encoder_frozen": true,
+    "full_resolution": true,
+    "input_normalization": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "padding": "right/bottom zeros after normalization to patch_size multiple",
+    "position_interpolation": "DINO bicubic +0.1 scale offset",
+    "tau": 0.15,
+    "eps": 1e-05,
+    "binary_graph": true,
+    "remove_hards": false,
+    "iou_threshold": 0.5,
+    "iou_comparison": ">="
+  },
+  "relocation": {
+    "original_output_dir": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/voc07_tau_sweep/20260921_000514_2652261/condgen/tau_0.15",
+    "relocated_output_dir": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.15"
+  }
+}

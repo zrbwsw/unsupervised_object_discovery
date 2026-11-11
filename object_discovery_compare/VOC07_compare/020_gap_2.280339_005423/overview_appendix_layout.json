@@ -1,0 +1,45 @@
+{
+  "sample": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC07_compare/020_gap_2.280339_005423",
+  "output": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC07_compare/020_gap_2.280339_005423/overview_appendix_layout.jpg",
+  "image_label": "VOC07 5423",
+  "methods": {
+    "condgen": {
+      "iou": 0.8717133402824402,
+      "bbox": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC07_compare/020_gap_2.280339_005423/condgen/prediction_bbox.png",
+      "mask": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC07_compare/020_gap_2.280339_005423/condgen/mask_overlay.png"
+    },
+    "mae": {
+      "iou": 0.0,
+      "bbox": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC07_compare/020_gap_2.280339_005423/mae/prediction_bbox.png",
+      "mask": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC07_compare/020_gap_2.280339_005423/mae/mask_overlay.png"
+    },
+    "ibot": {
+      "iou": 0.16740071773529053,
+      "bbox": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC07_compare/020_gap_2.280339_005423/ibot/prediction_bbox.png",
+      "mask": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC07_compare/020_gap_2.280339_005423/ibot/mask_overlay.png"
+    },
+    "dino": {
+      "iou": 0.16740071773529053,
+      "bbox": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC07_compare/020_gap_2.280339_005423/dino/prediction_bbox.png",
+      "mask": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC07_compare/020_gap_2.280339_005423/dino/mask_overlay.png"
+    }
+  },
+  "layout": {
+    "columns": 5,
+    "rows": 2,
+    "cell_width": 591,
+    "image_height": 394,
+    "font_size_pt": 18,
+    "cell_width_cm": 5.0038,
+    "input_width": 640,
+    "input_height": 427,
+    "input_resize": "direct_resize_before_layout",
+    "label_gap_px": 12,
+    "label_gap_cm": 0.1016,
+    "mask_file": "mask_overlay.png",
+    "dpi": 300,
+    "font_regular": "/data0/cuijiequan/env/miniconda3/envs/irepa/share/fonts/truetype/msttcorefonts/Times_New_Roman.ttf",
+    "font_bold": "/data0/cuijiequan/env/miniconda3/envs/irepa/share/fonts/truetype/msttcorefonts/Times_New_Roman_Bold.ttf",
+    "font_note": "Microsoft Times New Roman in the active environment when available; otherwise Nimbus Roman fallback"
+  }
+}

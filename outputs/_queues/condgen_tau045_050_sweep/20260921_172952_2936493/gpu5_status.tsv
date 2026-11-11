@@ -1,0 +1,4 @@
+dataset	method	tau	started_at	finished_at	exit_code	output_dir
+VOC07	condgen	0.50	2026-09-21T17:29:52+08:00	2026-09-21T17:37:02+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.50
+VOC12	condgen	0.50	2026-09-21T17:37:02+08:00	2026-09-21T17:55:56+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/condgen/tau_0.50
+COCO20k	condgen	0.50	2026-09-21T17:55:56+08:00	2026-09-21T19:13:54+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/condgen/tau_0.50

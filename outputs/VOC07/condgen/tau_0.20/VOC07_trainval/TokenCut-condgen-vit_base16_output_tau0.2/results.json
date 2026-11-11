@@ -1,0 +1,18 @@
+{
+  "corloc_percent": 38.4154859309519,
+  "successful_images": 1925,
+  "evaluated_images": 5011,
+  "skipped_images": 0,
+  "dataset_images": 5011,
+  "selected_images": 5011,
+  "subset_evaluation": false,
+  "dataset": "VOC07_trainval",
+  "encoder": "condgen",
+  "which_features": "output",
+  "tau": 0.2,
+  "eps": 1e-05,
+  "remove_hards": false,
+  "iou_threshold": 0.5,
+  "iou_comparison": ">=",
+  "elapsed_seconds": 350.3709833621979
+}

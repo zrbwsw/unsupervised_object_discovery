@@ -1,0 +1,60 @@
+{
+  "objects": [
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        55,
+        39,
+        162,
+        85
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        135,
+        32,
+        302,
+        103
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        415,
+        29,
+        477,
+        53
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        448,
+        34,
+        500,
+        92
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        110,
+        48,
+        500,
+        321
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

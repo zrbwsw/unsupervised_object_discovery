@@ -1,0 +1,16 @@
+{
+  "objects": [
+    {
+      "category": "bottle",
+      "bbox_xyxy": [
+        145,
+        253,
+        188,
+        411
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

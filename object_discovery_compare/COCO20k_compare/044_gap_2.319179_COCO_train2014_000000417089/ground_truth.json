@@ -1,0 +1,14 @@
+{
+  "objects": [
+    {
+      "category": "scissors",
+      "bbox_xyxy": [
+        252,
+        28,
+        386,
+        396
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

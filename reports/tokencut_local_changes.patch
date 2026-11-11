@@ -1,0 +1,606 @@
+diff --git a/datasets.py b/datasets.py
+index 61368e0..ce0a524 100755
+--- a/datasets.py
++++ b/datasets.py
+@@ -55,19 +55,23 @@ class ImageDataset:
+         return Image.open(self.image_path).convert("RGB").resize(self.img_size)
+ 
+ class Dataset:
+-    def __init__(self, dataset_name, dataset_set, remove_hards):
++    def __init__(self, dataset_name, dataset_set, remove_hards, data_path=None):
+         """
+         Build the dataloader
+         """
+ 
++        if data_path is not None and dataset_name == "COCO20k":
++            raise ValueError("--data_path currently supports VOC07/VOC12 only; "
++                             "COCO20k requires the upstream dataset layout.")
++
+         self.dataset_name = dataset_name
+         self.set = dataset_set
+ 
+         if dataset_name == "VOC07":
+-            self.root_path = "datasets/VOC2007"
++            self.root_path = os.fspath(data_path) if data_path is not None else "datasets/VOC2007"
+             self.year = "2007"
+         elif dataset_name == "VOC12":
+-            self.root_path = "datasets/VOC2012"
++            self.root_path = os.fspath(data_path) if data_path is not None else "datasets/VOC2012"
+             self.year = "2012"
+         elif dataset_name == "COCO20k":
+             self.year = "2014"
+@@ -117,7 +121,9 @@ class Dataset:
+         Load the image corresponding to the im_name
+         """
+         if "VOC" in self.dataset_name:
+-            image = skimage.io.imread(f"./datasets/VOC{self.year}/VOCdevkit/VOC{self.year}/JPEGImages/{im_name}")
++            image = skimage.io.imread(os.path.join(
++                self.root_path, "VOCdevkit", f"VOC{self.year}", "JPEGImages", im_name
++            ))
+         elif "COCO" in self.dataset_name:
+             #im_path = self.path_20k[self.sel_20k.index(im_name)]
+             #im_path = self.train2014['images'][self.sel_20k.index(im_name)]['file_name']
+diff --git a/main_tokencut.py b/main_tokencut.py
+index b24727b..61c2c49 100755
+--- a/main_tokencut.py
++++ b/main_tokencut.py
+@@ -3,26 +3,67 @@ Main experiment file. Code adapted from LOST: https://github.com/valeoai/LOST
+ """
+ import os
+ import argparse
+-import random
++import hashlib
++import itertools
++import json
++from pathlib import Path
++import subprocess
++import sys
+ import pickle
+ 
+ import torch
+ import datetime
+-import torch.nn as nn
+ import numpy as np
+ 
+ from tqdm import tqdm
+-from PIL import Image
++from dino.utils import bool_flag
+ 
+ from networks import get_model
+ from datasets import ImageDataset, Dataset, bbox_iou
+-from visualizations import visualize_img, visualize_eigvec, visualize_predictions, visualize_predictions_gt 
++from visualizations import visualize_eigvec, visualize_predictions
+ from object_discovery import ncut 
+-import matplotlib.pyplot as plt
+ import time
+ 
++
++@torch.no_grad()
++def extract_features(model, image, which_features):
++    """Return [CLS + patches]; ncut removes CLS exactly once."""
++    if which_features == "output":
++        return model.get_intermediate_layers(image, n=1)[0]
++    if which_features not in ("q", "k", "v"):
++        raise ValueError(f"Unknown feature type: {which_features}")
++    captured = {}
++
++    def capture_qkv(module, inputs, output):
++        captured["qkv"] = output
++
++    handle = model.blocks[-1].attn.qkv.register_forward_hook(capture_qkv)
++    try:
++        model.get_last_selfattention(image)
++    finally:
++        handle.remove()
++    qkv = captured["qkv"]
++    batch, count, _ = qkv.shape
++    return qkv.reshape(batch, count, 3, -1)[:, :, {"q": 0, "k": 1, "v": 2}[which_features], :]
++
++
++def source_record():
++    root = Path(__file__).resolve().parent
++    try:
++        commit = subprocess.check_output(
++            ["git", "-C", str(root), "rev-parse", "HEAD"], text=True,
++            stderr=subprocess.DEVNULL,
++        ).strip()
++    except (OSError, subprocess.CalledProcessError):
++        commit = None
++    names = ("main_tokencut.py", "networks.py", "datasets.py", "object_discovery.py", "dino/vision_transformer.py")
++    return {"upstream_commit": commit, "sha256": {
++        name: hashlib.sha256((root / name).read_bytes()).hexdigest() for name in names
++    }}
++
++
+ if __name__ == "__main__":
+-    parser = argparse.ArgumentParser("Visualize Self-Attention maps")
++    parser = argparse.ArgumentParser("TokenCut unsupervised object discovery")
+     parser.add_argument(
+         "--arch",
+         default="vit_small",
+@@ -41,6 +82,15 @@ if __name__ == "__main__":
+         "--patch_size", default=16, type=int, help="Patch resolution of the model."
+     )
+ 
++    parser.add_argument("--encoder", choices=("dino", "ibot", "mae", "condgen"), default=None,
++                        help="Local encoder label; requires --pretrained_weights and ViT-B/16.")
++    parser.add_argument("--pretrained_weights", default=None, help="Explicit local checkpoint; no download fallback.")
++    parser.add_argument("--checkpoint_key", default="model", help="State dict container in the local checkpoint.")
++    parser.add_argument("--data_path", default=None, help="VOC root containing VOCdevkit, e.g. .../voc2007.")
++    parser.add_argument("--device", choices=("auto", "cpu", "cuda"), default="auto")
++    parser.add_argument("--max_images", type=int, default=None,
++                        help="Use only the first N dataset images for a smoke check (default: all).")
++
+     # Use a dataset
+     parser.add_argument(
+         "--dataset",
+@@ -80,7 +130,7 @@ if __name__ == "__main__":
+     # Evaluation setup
+     parser.add_argument("--no_hard", action="store_true", help="Only used in the case of the VOC_all setup (see the paper).")
+     parser.add_argument("--no_evaluation", action="store_true", help="Compute the evaluation.")
+-    parser.add_argument("--save_predictions", default=True, type=bool, help="Save predicted bouding boxes.")
++    parser.add_argument("--save_predictions", default=True, type=bool_flag, help="Save predicted bounding boxes (true/false).")
+ 
+     # Visualization
+     parser.add_argument(
+@@ -96,8 +146,8 @@ if __name__ == "__main__":
+         "--which_features",
+         type=str,
+         default="k",
+-        choices=["k", "q", "v"],
+-        help="Which features to use",
++        choices=["k", "q", "v", "output"],
++        help="k/q/v from last attention, or output after last block and final LayerNorm",
+     )
+     parser.add_argument(
+         "--k_patches",
+@@ -115,6 +165,18 @@ if __name__ == "__main__":
+     parser.add_argument("--dinoseg_head", type=int, default=4)
+ 
+     args = parser.parse_args()
++    if args.max_images is not None and args.max_images <= 0:
++        parser.error("--max_images must be positive")
++    if args.encoder and not args.pretrained_weights:
++        parser.error("--encoder requires --pretrained_weights; local comparisons never download weights")
++    if args.encoder and (args.arch != "vit_base" or args.patch_size != 16):
++        parser.error("The four local encoders require --arch=vit_base --patch_size=16")
++    if args.dinoseg:
++        parser.error("This checkout does not include dino_seg(); use the TokenCut path (omit --dinoseg)")
++    if args.resize is not None and args.image_path is None:
++        parser.error("--resize is only supported for a single --image_path; datasets use full resolution")
++    if not np.isfinite(args.tau) or not np.isfinite(args.eps) or args.eps <= 0:
++        parser.error("--tau must be finite and --eps must be positive and finite")
+ 
+     if args.image_path is not None:
+         args.save_predictions = False
+@@ -128,13 +190,14 @@ if __name__ == "__main__":
+     if args.image_path is not None:
+         dataset = ImageDataset(args.image_path, args.resize)
+     else:
+-        dataset = Dataset(args.dataset, args.set, args.no_hard)
++        dataset = Dataset(args.dataset, args.set, args.no_hard, data_path=args.data_path)
+ 
+     # -------------------------------------------------------------------------------------------------------
+     # Model
+-    device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+-    #device = torch.device('cuda') 
+-    model = get_model(args.arch, args.patch_size, device)
++    device = torch.device("cuda" if torch.cuda.is_available() else "cpu") if args.device == "auto" else torch.device(args.device)
++    if device.type == "cuda" and not torch.cuda.is_available():
++        parser.error("CUDA was requested but is unavailable")
++    model = get_model(args.arch, args.patch_size, device, args.pretrained_weights, args.checkpoint_key)
+ 
+     # -------------------------------------------------------------------------------------------------------
+     # Directories
+@@ -142,36 +205,51 @@ if __name__ == "__main__":
+         args.output_dir = os.path.join(args.output_dir, dataset.name)
+     os.makedirs(args.output_dir, exist_ok=True)
+ 
+-    # Naming
+-    if args.dinoseg:
+-        # Experiment with the baseline DINO-seg
+-        if "vit" not in args.arch:
+-            raise ValueError("DINO-seg can only be applied to tranformer networks.")
+-        exp_name = f"{args.arch}-{args.patch_size}_dinoseg-head{args.dinoseg_head}"
+-    else:
+-        # Experiment with TokenCut 
+-        exp_name = f"TokenCut-{args.arch}"
+-        if "vit" in args.arch:
+-            exp_name += f"{args.patch_size}_{args.which_features}"
+-
+-    print(f"Running TokenCut on the dataset {dataset.name} (exp: {exp_name})")
+-
+-    # Visualization 
+-    if args.visualize:
+-        vis_folder = f"{args.output_dir}/{exp_name}"
+-        os.makedirs(vis_folder, exist_ok=True)
+-        
+-    if args.save_feat_dir is not None : 
+-        os.mkdir(args.save_feat_dir)
++    # Record the encoder, feature type and graph threshold separately in every run.
++    encoder_name = args.encoder or (Path(args.pretrained_weights).stem if args.pretrained_weights else "reference")
++    exp_name = f"TokenCut-{encoder_name}-{args.arch}{args.patch_size}_{args.which_features}_tau{args.tau}"
++    folder = Path(args.output_dir) / exp_name
++    folder.mkdir(parents=True, exist_ok=True)
++    dataset_images = len(dataset.dataloader)
++    selected_images = min(args.max_images, dataset_images) if args.max_images is not None else dataset_images
++    config = {
++        "args": vars(args), "command": [sys.executable, *sys.argv],
++        "checkpoint": getattr(model, "checkpoint_report", None), "source": source_record(),
++        "device": str(device), "torch_version": torch.__version__, "numpy_version": np.__version__,
++        "dataset_images": dataset_images, "selected_images": selected_images,
++        "data_root": str(Path(dataset.root_path).resolve()) if hasattr(dataset, "root_path") else None,
++        "protocol": {
++            "features": args.which_features,
++            "final_layernorm": args.which_features == "output",
++            "cls_in_graph": False, "encoder_frozen": True,
++            "full_resolution": args.resize is None,
++            "input_normalization": {"mean": [0.485, 0.456, 0.406], "std": [0.229, 0.224, 0.225]},
++            "padding": "right/bottom zeros after normalization to patch_size multiple",
++            "position_interpolation": "DINO bicubic +0.1 scale offset",
++            "tau": args.tau, "eps": args.eps, "binary_graph": not args.no_binary_graph,
++            "remove_hards": args.no_hard, "iou_threshold": 0.5, "iou_comparison": ">=",
++        },
++    }
++    # A fresh timestamp in the shell template avoids overwriting an earlier run.
++    with (folder / "run_config.json").open("x") as stream:
++        json.dump(config, stream, indent=2)
++        stream.write("\n")
++    print(f"Running TokenCut on {dataset.name} (exp: {exp_name}, images: {selected_images}/{dataset_images})")
++    print(f"Results directory: {folder}")
++    vis_folder = str(folder)
++    if args.save_feat_dir is not None:
++        Path(args.save_feat_dir).mkdir(parents=True, exist_ok=False)
+ 
+     # -------------------------------------------------------------------------------------------------------
+     # Loop over images
+     preds_dict = {}
+     cnt = 0
++    skipped = 0
++    prediction_records = []
+     corloc = np.zeros(len(dataset.dataloader))
+     
+     start_time = time.time() 
+-    pbar = tqdm(dataset.dataloader)
++    pbar = tqdm(itertools.islice(dataset.dataloader, selected_images), total=selected_images)
+     for im_id, inp in enumerate(pbar):
+ 
+         # ------------ IMAGE PROCESSING -------------------------------------------
+@@ -183,6 +261,7 @@ if __name__ == "__main__":
+         im_name = dataset.get_image_name(inp[1])
+         # Pass in case of no gt boxes in the image
+         if im_name is None:
++            skipped += 1
+             continue
+ 
+         # Padding the image with zeros to fit multiple of patch-size
+@@ -210,82 +289,37 @@ if __name__ == "__main__":
+                 # Discard images with no gt annotations
+                 # Happens only in the case of VOC07 and VOC12
+                 if gt_bbxs.shape[0] == 0 and args.no_hard:
++                    skipped += 1
+                     continue
+ 
+         # ------------ EXTRACT FEATURES -------------------------------------------
+-        with torch.no_grad():
+-
+-            # ------------ FORWARD PASS -------------------------------------------
+-            if "vit"  in args.arch:
+-                # Store the outputs of qkv layer from the last attention layer
+-                feat_out = {}
+-                def hook_fn_forward_qkv(module, input, output):
+-                    feat_out["qkv"] = output
+-                model._modules["blocks"][-1]._modules["attn"]._modules["qkv"].register_forward_hook(hook_fn_forward_qkv)
+-
+-                # Forward pass in the model
+-                attentions = model.get_last_selfattention(img[None, :, :, :])
+-
+-                # Scaling factor
+-                scales = [args.patch_size, args.patch_size]
+-
+-                # Dimensions
+-                nb_im = attentions.shape[0]  # Batch size
+-                nh = attentions.shape[1]  # Number of heads
+-                nb_tokens = attentions.shape[2]  # Number of tokens
+-
+-                # Baseline: compute DINO segmentation technique proposed in the DINO paper
+-                # and select the biggest component
+-                if args.dinoseg:
+-                    pred = dino_seg(attentions, (w_featmap, h_featmap), args.patch_size, head=args.dinoseg_head)
+-                    pred = np.asarray(pred)
+-                else:
+-                    # Extract the qkv features of the last attention layer
+-                    qkv = (
+-                        feat_out["qkv"]
+-                        .reshape(nb_im, nb_tokens, 3, nh, -1 // nh)
+-                        .permute(2, 0, 3, 1, 4)
+-                    )
+-                    q, k, v = qkv[0], qkv[1], qkv[2]
+-                    k = k.transpose(1, 2).reshape(nb_im, nb_tokens, -1)
+-                    q = q.transpose(1, 2).reshape(nb_im, nb_tokens, -1)
+-                    v = v.transpose(1, 2).reshape(nb_im, nb_tokens, -1)
+-
+-                    # Modality selection
+-                    if args.which_features == "k":
+-                        #feats = k[:, 1:, :]
+-                        feats = k
+-                    elif args.which_features == "q":
+-                        #feats = q[:, 1:, :]
+-                        feats = q
+-                    elif args.which_features == "v":
+-                        #feats = v[:, 1:, :]
+-                        feats = v
+-                        
+-                    if args.save_feat_dir is not None : 
+-                        np.save(os.path.join(args.save_feat_dir, im_name.replace('.jpg', '.npy').replace('.jpeg', '.npy').replace('.png', '.npy')), feats.cpu().numpy())
+-                        continue
+-
+-            else:
+-                raise ValueError("Unknown model.")
+-
+-        # ------------ Apply TokenCut ------------------------------------------- 
+-        if not args.dinoseg:
+-            pred, objects, foreground, seed , bins, eigenvector= ncut(feats, [w_featmap, h_featmap], scales, init_image_size, args.tau, args.eps, im_name=im_name, no_binary_graph=args.no_binary_graph)
+-            
+-            if args.visualize == "pred" and args.no_evaluation :
+-                image = dataset.load_image(im_name, size_im)
+-                visualize_predictions(image, pred, vis_folder, im_name)
+-            if args.visualize == "attn" and args.no_evaluation:
+-                visualize_eigvec(eigenvector, vis_folder, im_name, [w_featmap, h_featmap], scales)
+-            if args.visualize == "all" and args.no_evaluation:
+-                image = dataset.load_image(im_name, size_im)
+-                visualize_predictions(image, pred, vis_folder, im_name)
+-                visualize_eigvec(eigenvector, vis_folder, im_name, [w_featmap, h_featmap], scales)
+-                        
++        # Both output and q/k/v include CLS; ncut removes it exactly once.
++        feats = extract_features(model, img[None], args.which_features)
++        expected_tokens = w_featmap * h_featmap + 1
++        if feats.shape != (1, expected_tokens, model.embed_dim):
++            raise ValueError(f"Feature/grid mismatch for {im_name}: {feats.shape}")
++        scales = [args.patch_size, args.patch_size]
++        if args.save_feat_dir is not None:
++            np.save(Path(args.save_feat_dir) / (Path(im_name).stem + ".npy"), feats.cpu().numpy())
++            continue
++
++        # ------------ Apply TokenCut -------------------------------------------
++        pred, objects, foreground, seed, bins, eigenvector = ncut(
++            feats, [w_featmap, h_featmap], scales, init_image_size,
++            args.tau, args.eps, im_name=im_name, no_binary_graph=args.no_binary_graph,
++        )
++        if args.visualize in ("pred", "all"):
++            image = dataset.load_image(im_name)
++            visualize_predictions(image, pred, vis_folder, im_name)
++        if args.visualize in ("attn", "all"):
++            visualize_eigvec(eigenvector, vis_folder, im_name, [w_featmap, h_featmap], scales)
++
+         # ------------ Visualizations -------------------------------------------
+         # Save the prediction
+         preds_dict[im_name] = pred
++        record = {"image": im_name, "bbox_xyxy": pred.tolist(), "image_shape_chw": list(init_image_size),
++                  "patch_grid_hw": [w_featmap, h_featmap], "max_iou": None, "correct": None}
++        prediction_records.append(record)
+ 
+         # Evaluation
+         if args.no_evaluation:
+@@ -296,11 +330,9 @@ if __name__ == "__main__":
+         
+         if torch.any(ious >= 0.5):
+             corloc[im_id] = 1
+-        vis_folder = f"{args.output_dir}/{exp_name}"
+-        os.makedirs(vis_folder, exist_ok=True)
+-        image = dataset.load_image(im_name)
+-        #visualize_predictions(image, pred, vis_folder, im_name)
+-        #visualize_eigvec(eigenvector, vis_folder, im_name, [w_featmap, h_featmap], scales)
++        record["max_iou"] = float(ious.max()) if ious.numel() else 0.0
++        record["correct"] = bool(corloc[im_id])
++        record["gt_count"] = int(len(gt_bbxs))
+ 
+         cnt += 1
+         if cnt % 50 == 0:
+@@ -308,19 +340,40 @@ if __name__ == "__main__":
+ 
+     end_time = time.time()
+     print(f'Time cost: {str(datetime.timedelta(milliseconds=int((end_time - start_time)*1000)))}')
+-    # Save predicted bounding boxes
++    if args.save_feat_dir is not None:
++        print(f"Feature export complete: {args.save_feat_dir}; no CorLoc evaluation performed")
++        sys.exit(0)
++
++    # Save original TokenCut predictions plus per-image scoring details.
+     if args.save_predictions:
+-        folder = f"{args.output_dir}/{exp_name}"
+-        os.makedirs(folder, exist_ok=True)
+-        filename = os.path.join(folder, "preds.pkl")
+-        with open(filename, "wb") as f:
+-            pickle.dump(preds_dict, f)
+-        print("Predictions saved at %s" % filename)
+-
+-    # Evaluate
++        filename = folder / "preds.pkl"
++        with filename.open("wb") as stream:
++            pickle.dump(preds_dict, stream)
++        with (folder / "predictions.jsonl").open("w") as stream:
++            for record in prediction_records:
++                stream.write(json.dumps(record) + "\n")
++        print(f"Predictions saved at {filename}")
++
+     if not args.no_evaluation:
+-        print(f"corloc: {100*np.sum(corloc)/cnt:.2f} ({int(np.sum(corloc))}/{cnt})")
+-        result_file = os.path.join(folder, 'results.txt')
+-        with open(result_file, 'w') as f:
+-            f.write('corloc,%.1f,,\n'%(100*np.sum(corloc)/cnt))
+-        print('File saved at %s'%result_file)
++        if cnt == 0:
++            raise RuntimeError("No images were evaluated; CorLoc is undefined")
++        successful_images = int(np.sum(corloc))
++        corloc_percent = 100 * successful_images / cnt
++        results = {
++            "corloc_percent": corloc_percent, "successful_images": successful_images,
++            "evaluated_images": cnt, "skipped_images": skipped,
++            "dataset_images": dataset_images, "selected_images": selected_images,
++            "subset_evaluation": selected_images < dataset_images,
++            "dataset": dataset.name, "encoder": encoder_name,
++            "which_features": args.which_features, "tau": args.tau, "eps": args.eps,
++            "remove_hards": args.no_hard, "iou_threshold": 0.5, "iou_comparison": ">=",
++            "elapsed_seconds": end_time - start_time,
++        }
++        with (folder / "results.json").open("w") as stream:
++            json.dump(results, stream, indent=2)
++            stream.write("\n")
++        print(f"corloc: {corloc_percent:.2f} ({successful_images}/{cnt})")
++        result_file = folder / "results.txt"
++        with result_file.open("w") as stream:
++            stream.write('corloc,%.1f,,\n' % corloc_percent)
++        print(f"File saved at {result_file}")
+diff --git a/networks.py b/networks.py
+index 844a3b4..89e4b91 100755
+--- a/networks.py
++++ b/networks.py
+@@ -3,6 +3,10 @@ Loads model.
+ Code adapted from LOST: https://github.com/valeoai/LOST
+ """
+ 
++import hashlib
++from collections.abc import Mapping
++from pathlib import Path
++
+ import torch
+ import torch.nn as nn
+ 
+@@ -12,7 +16,66 @@ from torchvision.models.vgg import vgg16
+ import dino.vision_transformer as vits
+ #import moco.vits as vits_moco
+ 
+-def get_model(arch, patch_size, device):
++def _load_local_checkpoint(model, checkpoint_path, checkpoint_key):
++    """Load an exported encoder without hiding missing or unexpected parameters."""
++    payload = torch.load(checkpoint_path, map_location="cpu", weights_only=True)
++    if not isinstance(payload, Mapping):
++        raise ValueError(f"Expected a checkpoint mapping in {checkpoint_path}")
++    if checkpoint_key and checkpoint_key in payload:
++        state_dict = payload[checkpoint_key]
++        container = checkpoint_key
++    elif payload and all(isinstance(key, str) and torch.is_tensor(value)
++                         for key, value in payload.items()):
++        state_dict = payload
++        container = "flat"
++    else:
++        raise ValueError(
++            f"Checkpoint {checkpoint_path} has no {checkpoint_key!r} tensor state dict "
++            "and is not a flat tensor state dict. Set --checkpoint_key explicitly."
++        )
++    if not isinstance(state_dict, Mapping) or not state_dict or not all(
++        isinstance(key, str) and torch.is_tensor(value)
++        for key, value in state_dict.items()
++    ):
++        raise ValueError(f"Expected a nonempty tensor state dict in {checkpoint_path}:{container}")
++    excluded = {key: list(value.shape) for key, value in state_dict.items()
++                if key.startswith("head.")}
++    backbone = {key: value for key, value in state_dict.items()
++                if not key.startswith("head.")}
++    msg = model.load_state_dict(backbone, strict=True)
++    digest = hashlib.sha256()
++    with checkpoint_path.open("rb") as handle:
++        for block in iter(lambda: handle.read(8 * 1024 * 1024), b""):
++            digest.update(block)
++    model.checkpoint_report = {
++        "source": "local",
++        "checkpoint_path": str(checkpoint_path),
++        "resolved_checkpoint_path": str(checkpoint_path.resolve(strict=True)),
++        "checkpoint_size_bytes": checkpoint_path.stat().st_size,
++        "checkpoint_sha256": digest.hexdigest(),
++        "checkpoint_key": checkpoint_key,
++        "state_dict_container": container,
++        "state_dict_tensor_count": len(state_dict),
++        "excluded_head_tensors": excluded,
++        "backbone_tensor_count": len(backbone),
++        "strict_load": True,
++        "missing_keys": msg.missing_keys,
++        "unexpected_keys": msg.unexpected_keys,
++    }
++    print(f"Local weights loaded strictly from {checkpoint_path}: {msg}; "
++          f"excluded {len(excluded)} head tensors.")
++
++
++def get_model(arch, patch_size, device, pretrained_weights=None, checkpoint_key="model"):
++    checkpoint_path = None
++    if pretrained_weights is not None:
++        checkpoint_path = Path(pretrained_weights).expanduser().absolute()
++        if not checkpoint_path.is_file():
++            raise FileNotFoundError(f"Local pretrained checkpoint does not exist: {checkpoint_path}")
++    if arch not in vits.__dict__ or not callable(vits.__dict__[arch]):
++        raise ValueError(f"Unsupported encoder architecture: {arch}")
++    if ("moco" in arch or "mae" in arch) and patch_size != 16:
++        raise ValueError(f"Architecture {arch} only supports patch_size=16")
+ 
+     # Initialize model with pretraining
+     url = None
+@@ -44,7 +107,9 @@ def get_model(arch, patch_size, device):
+     for p in model.parameters():
+         p.requires_grad = False
+ 
+-    if url is not None:
++    if checkpoint_path is not None:
++        _load_local_checkpoint(model, checkpoint_path, checkpoint_key)
++    elif url is not None:
+         print(
+             "Since no pretrained weights have been provided, we load the reference pretrained DINO weights."
+         )
+@@ -71,14 +136,23 @@ def get_model(arch, patch_size, device):
+                     del state_dict[k]
+ 
+         msg = model.load_state_dict(state_dict, strict=True)
++        model.checkpoint_report = {
++            "source": "official_url",
++            "url": "https://dl.fbaipublicfiles.com/" + url,
++            "backbone_tensor_count": len(state_dict),
++            "strict_load": True,
++            "missing_keys": msg.missing_keys,
++            "unexpected_keys": msg.unexpected_keys,
++        }
+         print(
+             "Pretrained weights found at {} and loaded with msg: {}".format(
+                 url, msg
+             )
+         )
+     else:
+-        print(
+-            "There is no reference weights available for this model => We use random weights."
++        raise ValueError(
++            f"No reference pretrained weights for {arch} with patch_size={patch_size}; "
++            "provide --pretrained_weights."
+         )
+ 
+ 
+diff --git a/object_discovery.py b/object_discovery.py
+index 2a24b2f..7d18ec5 100644
+--- a/object_discovery.py
++++ b/object_discovery.py
+@@ -13,7 +13,7 @@ def ncut(feats, dims, scales, init_image_size, tau = 0, eps=1e-5, im_name='', no
+     """
+     Implementation of NCut Method.
+     Inputs
+-      feats: the pixel/patche features of an image
++      feats: [1, 1 + H_p*W_p, dim] tokens, including one leading CLS token
+       dims: dimension of the map from which the features are used
+       scales: from image to map scale
+       init_image_size: size of the image
+@@ -22,8 +22,11 @@ def ncut(feats, dims, scales, init_image_size, tau = 0, eps=1e-5, im_name='', no
+       im_name: image_name
+       no_binary_graph: ablation study for using similarity score as graph edge weight
+     """
+-    cls_token = feats[0,0:1,:].cpu().numpy() 
+-
++    if feats.ndim != 3 or feats.shape[0] != 1 or feats.shape[1] != int(np.prod(dims)) + 1:
++        raise ValueError(f"ncut expects CLS + {int(np.prod(dims))} patch tokens, got {tuple(feats.shape)}")
++    if int(np.prod(dims)) < 3:
++        raise ValueError("TokenCut requires at least three spatial patches")
++    # Keep the upstream CLS convention for both attention and output features.
+     feats = feats[0,1:,:]
+     feats = F.normalize(feats, p=2)
+     A = (feats @ feats.transpose(1,0)) 
+@@ -90,4 +93,3 @@ def detect_box(bipartition, seed,  dims, initial_im_size=None, scales=None, prin
+         return pred, pred_feats, objects, mask
+     else:
+         raise NotImplementedError
+-

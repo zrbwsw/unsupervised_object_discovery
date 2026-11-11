@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-09-21T07:36:32.904383+00:00",
+  "checks": {
+    "shell_syntax": true,
+    "24_unique_combinations_12_per_gpu": true,
+    "all_24_mock_commands_protocol_valid": true,
+    "base_gpu_locks_were_held_during_high_tau_supervisor": {
+      "6": true,
+      "7": true
+    },
+    "high_tau_can_run_while_base_gpu_locks_held": true,
+    "duplicate_high_tau_queue_rejected": true,
+    "per_gpu_events_alternate_start_end_for_12_jobs": true,
+    "complete_summary_passed": true
+  },
+  "gpu_model_inference": false
+}

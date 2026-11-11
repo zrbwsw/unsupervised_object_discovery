@@ -1,0 +1,16 @@
+{
+  "objects": [
+    {
+      "category": "cat",
+      "bbox_xyxy": [
+        2,
+        2,
+        375,
+        500
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

@@ -1,0 +1,158 @@
+{
+  "objects": [
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        0,
+        0,
+        354,
+        640
+      ]
+    },
+    {
+      "category": "tennis racket",
+      "bbox_xyxy": [
+        24,
+        68,
+        271,
+        199
+      ]
+    },
+    {
+      "category": "bench",
+      "bbox_xyxy": [
+        0,
+        460,
+        426,
+        552
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        218,
+        350,
+        324,
+        398
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        256,
+        319,
+        353,
+        463
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        211,
+        283,
+        316,
+        315
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        289,
+        219,
+        388,
+        243
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        344,
+        199,
+        426,
+        237
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        254,
+        254,
+        354,
+        290
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        253,
+        199,
+        343,
+        229
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        216,
+        227,
+        286,
+        252
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        316,
+        288,
+        421,
+        388
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        11,
+        221,
+        77,
+        249
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        353,
+        255,
+        423,
+        303
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        180,
+        416,
+        233,
+        460
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        1,
+        406,
+        52,
+        463
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        178,
+        318,
+        266,
+        383
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

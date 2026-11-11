@@ -1,0 +1,31 @@
+{
+  "recorded_at_utc": "2026-09-20T19:32:14.976031+00:00",
+  "tmux_session": "ruobei_uod_high_tau",
+  "pane_pid": 2674813,
+  "run_root": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/high_tau_sweep/20260921_033125_2674782",
+  "status": "waiting_for_previous_sequence",
+  "after_sequence": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc12_then_coco_tau_sweep/20260921_012108_2663376",
+  "experiments": 24,
+  "gpu_counts": {
+    "6": 12,
+    "7": 12
+  },
+  "dataset_counts": {
+    "VOC07": 8,
+    "VOC12": 8,
+    "COCO20k": 8
+  },
+  "tau_values": [
+    0.35,
+    0.4
+  ],
+  "waiting_without_gpu_locks": true,
+  "new_model_inference_started": false,
+  "sha256": {
+    "scripts/queue_object_discovery_high_tau_gpu67.sh": "b576cef7f2da1e3793a144164943b759dba1f774c4c9cf7a1390153051f3c3f5",
+    "scripts/summarize_high_tau_queue.py": "ffaf3ca73128a5f18aa5095a5bd6139c085aee600f120a613afed2c3d608a98a",
+    "configs/high_tau_sweep.json": "e23a63f63c127b2449cdfdd2d481f0e3f4388bdc71be9527b75663ccc941be54",
+    "reports/high_tau_queue_check.json": "807525b654dd153e2f321250186cd685f882df10d05f6b9c5b897dfb7e165c0f",
+    "reports/high_tau_worker_check.json": "1a7af33eabbeb9a34175c79ccf887a376fa8fee0488e24699aaae1fe71ad3b8c"
+  }
+}

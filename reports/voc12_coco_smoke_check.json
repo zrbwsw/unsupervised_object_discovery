@@ -1,0 +1,416 @@
+{
+  "created_at_utc": "2026-09-20T17:18:34.476194+00:00",
+  "python": "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python",
+  "device": "cpu",
+  "cuda_visible_devices": "",
+  "full_evaluation_started": false,
+  "success": true,
+  "datasets": [
+    {
+      "dataset": "VOC12",
+      "command": [
+        "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python",
+        "-B",
+        "-u",
+        "main_tokencut.py",
+        "--encoder=dino",
+        "--arch=vit_base",
+        "--patch_size=16",
+        "--checkpoint_key=model",
+        "--pretrained_weights=/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/dino_vitb16.pth",
+        "--which_features=output",
+        "--tau=0.2",
+        "--eps=1e-5",
+        "--device=cpu",
+        "--max_images=2",
+        "--dataset=VOC12",
+        "--set=trainval",
+        "--output_dir=/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/voc12"
+      ],
+      "exit_code": 0,
+      "log": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/voc12/discovery.log",
+      "results_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/voc12/VOC12_trainval/TokenCut-dino-vit_base16_output_tau0.2/results.json",
+      "results": {
+        "corloc_percent": 100.0,
+        "successful_images": 2,
+        "evaluated_images": 2,
+        "skipped_images": 0,
+        "dataset_images": 11540,
+        "selected_images": 2,
+        "subset_evaluation": true,
+        "dataset": "VOC12_trainval",
+        "encoder": "dino",
+        "which_features": "output",
+        "tau": 0.2,
+        "eps": 1e-05,
+        "remove_hards": false,
+        "iou_threshold": 0.5,
+        "iou_comparison": ">=",
+        "elapsed_seconds": 2.403620958328247
+      },
+      "run_config": {
+        "args": {
+          "arch": "vit_base",
+          "patch_size": 16,
+          "encoder": "dino",
+          "pretrained_weights": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/dino_vitb16.pth",
+          "checkpoint_key": "model",
+          "data_path": null,
+          "device": "cpu",
+          "max_images": 2,
+          "dataset": "VOC12",
+          "save_feat_dir": null,
+          "set": "trainval",
+          "image_path": null,
+          "output_dir": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/voc12/VOC12_trainval",
+          "no_hard": false,
+          "no_evaluation": false,
+          "save_predictions": true,
+          "visualize": null,
+          "which_features": "output",
+          "k_patches": 100,
+          "resize": null,
+          "tau": 0.2,
+          "eps": 1e-05,
+          "no_binary_graph": false,
+          "dinoseg": false,
+          "dinoseg_head": 4
+        },
+        "command": [
+          "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python",
+          "main_tokencut.py",
+          "--encoder=dino",
+          "--arch=vit_base",
+          "--patch_size=16",
+          "--checkpoint_key=model",
+          "--pretrained_weights=/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/dino_vitb16.pth",
+          "--which_features=output",
+          "--tau=0.2",
+          "--eps=1e-5",
+          "--device=cpu",
+          "--max_images=2",
+          "--dataset=VOC12",
+          "--set=trainval",
+          "--output_dir=/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/voc12"
+        ],
+        "checkpoint": {
+          "source": "local",
+          "checkpoint_path": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/dino_vitb16.pth",
+          "resolved_checkpoint_path": "/data0/cuijiequan/code/condssl_20260626/downstream/RAEv2/pretrained_models/encoders/dino/dino_vitb.pth",
+          "checkpoint_size_bytes": 349389947,
+          "checkpoint_sha256": "6d9e8fa0ebe1fcce571de9fb62a0c376e534491b47e7deda80fd485464c1f24f",
+          "checkpoint_key": "model",
+          "state_dict_container": "model",
+          "state_dict_tensor_count": 152,
+          "excluded_head_tensors": {
+            "head.weight": [
+              1000,
+              1536
+            ],
+            "head.bias": [
+              1000
+            ]
+          },
+          "backbone_tensor_count": 150,
+          "strict_load": true,
+          "missing_keys": [],
+          "unexpected_keys": []
+        },
+        "source": {
+          "upstream_commit": "fed52cd5b60891baefd8ec7110dafa73be816ee1",
+          "sha256": {
+            "main_tokencut.py": "eb4403f6c15199fcbefa8c08af21d029bfe648a74036902627598b0dd7099fed",
+            "networks.py": "af00e83521fa0bbad52c5739a6cace1895871dd85651c6cefc13746d81fb16e6",
+            "datasets.py": "51a5f1ca0cf72b1d8c9062d182e23f14a02eb56b923bc48ea8184103aa397e56",
+            "object_discovery.py": "0543b620da447ebfb91f230dd71765f8d6e2e6a7226ac66fd4b6e2634f294555",
+            "dino/vision_transformer.py": "9c78a8f7e9f2de13a6fc38963d8d5d3032ced32f24cb5b5e44b28b35e87120dc"
+          }
+        },
+        "device": "cpu",
+        "torch_version": "2.7.0+cu126",
+        "numpy_version": "2.2.6",
+        "dataset_images": 11540,
+        "selected_images": 2,
+        "data_root": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/TokenCut/datasets/VOC2012",
+        "protocol": {
+          "features": "output",
+          "final_layernorm": true,
+          "cls_in_graph": false,
+          "encoder_frozen": true,
+          "full_resolution": true,
+          "input_normalization": {
+            "mean": [
+              0.485,
+              0.456,
+              0.406
+            ],
+            "std": [
+              0.229,
+              0.224,
+              0.225
+            ]
+          },
+          "padding": "right/bottom zeros after normalization to patch_size multiple",
+          "position_interpolation": "DINO bicubic +0.1 scale offset",
+          "tau": 0.2,
+          "eps": 1e-05,
+          "binary_graph": true,
+          "remove_hards": false,
+          "iou_threshold": 0.5,
+          "iou_comparison": ">="
+        }
+      },
+      "predictions": [
+        {
+          "image": "2008_000002.jpg",
+          "bbox_xyxy": [
+            64,
+            16,
+            432,
+            240
+          ],
+          "image_shape_chw": [
+            3,
+            375,
+            500
+          ],
+          "patch_grid_hw": [
+            24,
+            32
+          ],
+          "max_iou": 0.7018774747848511,
+          "correct": true,
+          "gt_count": 1
+        },
+        {
+          "image": "2008_000003.jpg",
+          "bbox_xyxy": [
+            48,
+            80,
+            500,
+            288
+          ],
+          "image_shape_chw": [
+            3,
+            333,
+            500
+          ],
+          "patch_grid_hw": [
+            21,
+            32
+          ],
+          "max_iou": 0.6397169232368469,
+          "correct": true,
+          "gt_count": 2
+        }
+      ]
+    },
+    {
+      "dataset": "COCO20k",
+      "command": [
+        "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python",
+        "-B",
+        "-u",
+        "main_tokencut.py",
+        "--encoder=dino",
+        "--arch=vit_base",
+        "--patch_size=16",
+        "--checkpoint_key=model",
+        "--pretrained_weights=/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/dino_vitb16.pth",
+        "--which_features=output",
+        "--tau=0.2",
+        "--eps=1e-5",
+        "--device=cpu",
+        "--max_images=2",
+        "--dataset=COCO20k",
+        "--set=train",
+        "--output_dir=/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/coco20k"
+      ],
+      "exit_code": 0,
+      "log": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/coco20k/discovery.log",
+      "results_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/coco20k/COCO20k_train/TokenCut-dino-vit_base16_output_tau0.2/results.json",
+      "results": {
+        "corloc_percent": 50.0,
+        "successful_images": 1,
+        "evaluated_images": 2,
+        "skipped_images": 0,
+        "dataset_images": 19817,
+        "selected_images": 2,
+        "subset_evaluation": true,
+        "dataset": "COCO20k_train",
+        "encoder": "dino",
+        "which_features": "output",
+        "tau": 0.2,
+        "eps": 1e-05,
+        "remove_hards": false,
+        "iou_threshold": 0.5,
+        "iou_comparison": ">=",
+        "elapsed_seconds": 4.584327220916748
+      },
+      "run_config": {
+        "args": {
+          "arch": "vit_base",
+          "patch_size": 16,
+          "encoder": "dino",
+          "pretrained_weights": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/dino_vitb16.pth",
+          "checkpoint_key": "model",
+          "data_path": null,
+          "device": "cpu",
+          "max_images": 2,
+          "dataset": "COCO20k",
+          "save_feat_dir": null,
+          "set": "train",
+          "image_path": null,
+          "output_dir": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/coco20k/COCO20k_train",
+          "no_hard": false,
+          "no_evaluation": false,
+          "save_predictions": true,
+          "visualize": null,
+          "which_features": "output",
+          "k_patches": 100,
+          "resize": null,
+          "tau": 0.2,
+          "eps": 1e-05,
+          "no_binary_graph": false,
+          "dinoseg": false,
+          "dinoseg_head": 4
+        },
+        "command": [
+          "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python",
+          "main_tokencut.py",
+          "--encoder=dino",
+          "--arch=vit_base",
+          "--patch_size=16",
+          "--checkpoint_key=model",
+          "--pretrained_weights=/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/dino_vitb16.pth",
+          "--which_features=output",
+          "--tau=0.2",
+          "--eps=1e-5",
+          "--device=cpu",
+          "--max_images=2",
+          "--dataset=COCO20k",
+          "--set=train",
+          "--output_dir=/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/coco20k"
+        ],
+        "checkpoint": {
+          "source": "local",
+          "checkpoint_path": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/dino_vitb16.pth",
+          "resolved_checkpoint_path": "/data0/cuijiequan/code/condssl_20260626/downstream/RAEv2/pretrained_models/encoders/dino/dino_vitb.pth",
+          "checkpoint_size_bytes": 349389947,
+          "checkpoint_sha256": "6d9e8fa0ebe1fcce571de9fb62a0c376e534491b47e7deda80fd485464c1f24f",
+          "checkpoint_key": "model",
+          "state_dict_container": "model",
+          "state_dict_tensor_count": 152,
+          "excluded_head_tensors": {
+            "head.weight": [
+              1000,
+              1536
+            ],
+            "head.bias": [
+              1000
+            ]
+          },
+          "backbone_tensor_count": 150,
+          "strict_load": true,
+          "missing_keys": [],
+          "unexpected_keys": []
+        },
+        "source": {
+          "upstream_commit": "fed52cd5b60891baefd8ec7110dafa73be816ee1",
+          "sha256": {
+            "main_tokencut.py": "eb4403f6c15199fcbefa8c08af21d029bfe648a74036902627598b0dd7099fed",
+            "networks.py": "af00e83521fa0bbad52c5739a6cace1895871dd85651c6cefc13746d81fb16e6",
+            "datasets.py": "51a5f1ca0cf72b1d8c9062d182e23f14a02eb56b923bc48ea8184103aa397e56",
+            "object_discovery.py": "0543b620da447ebfb91f230dd71765f8d6e2e6a7226ac66fd4b6e2634f294555",
+            "dino/vision_transformer.py": "9c78a8f7e9f2de13a6fc38963d8d5d3032ced32f24cb5b5e44b28b35e87120dc"
+          }
+        },
+        "device": "cpu",
+        "torch_version": "2.7.0+cu126",
+        "numpy_version": "2.2.6",
+        "dataset_images": 19817,
+        "selected_images": 2,
+        "data_root": "/data0/datasets/dino_object_discovery/coco2014/images/train2014",
+        "protocol": {
+          "features": "output",
+          "final_layernorm": true,
+          "cls_in_graph": false,
+          "encoder_frozen": true,
+          "full_resolution": true,
+          "input_normalization": {
+            "mean": [
+              0.485,
+              0.456,
+              0.406
+            ],
+            "std": [
+              0.229,
+              0.224,
+              0.225
+            ]
+          },
+          "padding": "right/bottom zeros after normalization to patch_size multiple",
+          "position_interpolation": "DINO bicubic +0.1 scale offset",
+          "tau": 0.2,
+          "eps": 1e-05,
+          "binary_graph": true,
+          "remove_hards": false,
+          "iou_threshold": 0.5,
+          "iou_comparison": ">="
+        }
+      },
+      "predictions": [
+        {
+          "image": "COCO_train2014_000000000036.jpg",
+          "bbox_xyxy": [
+            0,
+            0,
+            481,
+            640
+          ],
+          "image_shape_chw": [
+            3,
+            640,
+            481
+          ],
+          "patch_grid_hw": [
+            40,
+            31
+          ],
+          "max_iou": 0.6397479176521301,
+          "correct": true,
+          "gt_count": 2
+        },
+        {
+          "image": "COCO_train2014_000000000077.jpg",
+          "bbox_xyxy": [
+            0,
+            0,
+            500,
+            375
+          ],
+          "image_shape_chw": [
+            3,
+            375,
+            500
+          ],
+          "patch_grid_hw": [
+            24,
+            32
+          ],
+          "max_iou": 0.08535999804735184,
+          "correct": false,
+          "gt_count": 8
+        }
+      ]
+    }
+  ],
+  "verified": [
+    "CPU device and strict local checkpoint loading",
+    "output/final LayerNorm/full resolution/binary graph/tau/eps/no_hard/IoU protocol",
+    "expected image filenames and complete output files",
+    "predicted boxes within original image bounds",
+    "IoU and per-image/aggregate success consistent",
+    "expected total dataset sizes; two evaluated and zero skipped per dataset"
+  ]
+}

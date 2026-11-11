@@ -1,0 +1,91 @@
+2026-09-21 01:10:59,643 INFO Hashing VOCtrainval_11-May-2012.tar (1999639040 bytes)
+2026-09-21 01:11:01,560 INFO Extracting or comparing VOCtrainval_11-May-2012.tar
+2026-09-21 01:11:03,453 INFO VOCtrainval_11-May-2012.tar: processed 5000/40189 members
+2026-09-21 01:11:04,372 INFO VOCtrainval_11-May-2012.tar: processed 10000/40189 members
+2026-09-21 01:11:05,296 INFO VOCtrainval_11-May-2012.tar: processed 15000/40189 members
+2026-09-21 01:11:06,435 INFO VOCtrainval_11-May-2012.tar: processed 20000/40189 members
+2026-09-21 01:11:07,803 INFO VOCtrainval_11-May-2012.tar: processed 25000/40189 members
+2026-09-21 01:11:09,172 INFO VOCtrainval_11-May-2012.tar: processed 30000/40189 members
+2026-09-21 01:11:10,554 INFO VOCtrainval_11-May-2012.tar: processed 35000/40189 members
+2026-09-21 01:11:11,449 INFO VOCtrainval_11-May-2012.tar: processed 40000/40189 members
+2026-09-21 01:11:11,488 INFO Archive ready: VOCtrainval_11-May-2012.tar
+2026-09-21 01:11:11,488 INFO Hashing annotations_trainval2014.zip (252872794 bytes)
+2026-09-21 01:11:11,739 INFO Extracting or comparing annotations_trainval2014.zip
+2026-09-21 01:11:15,025 INFO Archive ready: annotations_trainval2014.zip
+2026-09-21 01:11:15,026 INFO Hashing train2014.zip (13510573713 bytes)
+2026-09-21 01:11:27,864 INFO Extracting or comparing train2014.zip
+2026-09-21 01:11:30,184 INFO train2014.zip: processed 5000/82784 members
+2026-09-21 01:11:32,084 INFO train2014.zip: processed 10000/82784 members
+2026-09-21 01:11:33,978 INFO train2014.zip: processed 15000/82784 members
+2026-09-21 01:11:35,876 INFO train2014.zip: processed 20000/82784 members
+2026-09-21 01:11:37,771 INFO train2014.zip: processed 25000/82784 members
+2026-09-21 01:11:39,668 INFO train2014.zip: processed 30000/82784 members
+2026-09-21 01:11:41,576 INFO train2014.zip: processed 35000/82784 members
+2026-09-21 01:11:43,467 INFO train2014.zip: processed 40000/82784 members
+2026-09-21 01:11:45,354 INFO train2014.zip: processed 45000/82784 members
+2026-09-21 01:11:47,220 INFO train2014.zip: processed 50000/82784 members
+2026-09-21 01:11:49,100 INFO train2014.zip: processed 55000/82784 members
+2026-09-21 01:11:50,973 INFO train2014.zip: processed 60000/82784 members
+2026-09-21 01:11:52,848 INFO train2014.zip: processed 65000/82784 members
+2026-09-21 01:11:54,733 INFO train2014.zip: processed 70000/82784 members
+2026-09-21 01:11:56,627 INFO train2014.zip: processed 75000/82784 members
+2026-09-21 01:11:58,492 INFO train2014.zip: processed 80000/82784 members
+2026-09-21 01:11:59,546 INFO Archive ready: train2014.zip
+2026-09-21 01:12:02,946 INFO VOC2012: decoded and verified 2000/17125 JPEG/XML pairs
+2026-09-21 01:12:06,486 INFO VOC2012: decoded and verified 4000/17125 JPEG/XML pairs
+2026-09-21 01:12:10,319 INFO VOC2012: decoded and verified 6000/17125 JPEG/XML pairs
+2026-09-21 01:12:14,211 INFO VOC2012: decoded and verified 8000/17125 JPEG/XML pairs
+2026-09-21 01:12:17,888 INFO VOC2012: decoded and verified 10000/17125 JPEG/XML pairs
+2026-09-21 01:12:21,560 INFO VOC2012: decoded and verified 12000/17125 JPEG/XML pairs
+2026-09-21 01:13:34,440 INFO Hashing VOCtrainval_11-May-2012.tar (1999639040 bytes)
+2026-09-21 01:13:36,534 INFO Extracting or comparing VOCtrainval_11-May-2012.tar
+2026-09-21 01:13:38,023 INFO VOCtrainval_11-May-2012.tar: processed 5000/40189 members
+2026-09-21 01:13:38,545 INFO VOCtrainval_11-May-2012.tar: processed 10000/40189 members
+2026-09-21 01:13:39,067 INFO VOCtrainval_11-May-2012.tar: processed 15000/40189 members
+2026-09-21 01:13:39,699 INFO VOCtrainval_11-May-2012.tar: processed 20000/40189 members
+2026-09-21 01:13:40,445 INFO VOCtrainval_11-May-2012.tar: processed 25000/40189 members
+2026-09-21 01:13:41,183 INFO VOCtrainval_11-May-2012.tar: processed 30000/40189 members
+2026-09-21 01:13:41,888 INFO VOCtrainval_11-May-2012.tar: processed 35000/40189 members
+2026-09-21 01:13:42,424 INFO VOCtrainval_11-May-2012.tar: processed 40000/40189 members
+2026-09-21 01:13:42,449 INFO Archive ready: VOCtrainval_11-May-2012.tar
+2026-09-21 01:13:42,449 INFO Hashing annotations_trainval2014.zip (252872794 bytes)
+2026-09-21 01:13:42,694 INFO Extracting or comparing annotations_trainval2014.zip
+2026-09-21 01:13:45,849 INFO Archive ready: annotations_trainval2014.zip
+2026-09-21 01:13:45,849 INFO Hashing train2014.zip (13510573713 bytes)
+2026-09-21 01:13:58,520 INFO Extracting or comparing train2014.zip
+2026-09-21 01:14:00,272 INFO train2014.zip: processed 5000/82784 members
+2026-09-21 01:14:01,596 INFO train2014.zip: processed 10000/82784 members
+2026-09-21 01:14:02,912 INFO train2014.zip: processed 15000/82784 members
+2026-09-21 01:14:04,237 INFO train2014.zip: processed 20000/82784 members
+2026-09-21 01:14:05,553 INFO train2014.zip: processed 25000/82784 members
+2026-09-21 01:14:06,869 INFO train2014.zip: processed 30000/82784 members
+2026-09-21 01:14:08,187 INFO train2014.zip: processed 35000/82784 members
+2026-09-21 01:14:09,497 INFO train2014.zip: processed 40000/82784 members
+2026-09-21 01:14:10,795 INFO train2014.zip: processed 45000/82784 members
+2026-09-21 01:14:12,077 INFO train2014.zip: processed 50000/82784 members
+2026-09-21 01:14:13,363 INFO train2014.zip: processed 55000/82784 members
+2026-09-21 01:14:14,647 INFO train2014.zip: processed 60000/82784 members
+2026-09-21 01:14:15,929 INFO train2014.zip: processed 65000/82784 members
+2026-09-21 01:14:17,211 INFO train2014.zip: processed 70000/82784 members
+2026-09-21 01:14:18,495 INFO train2014.zip: processed 75000/82784 members
+2026-09-21 01:14:19,783 INFO train2014.zip: processed 80000/82784 members
+2026-09-21 01:14:20,515 INFO Archive ready: train2014.zip
+2026-09-21 01:14:23,991 INFO VOC2012: decoded and verified 2000/17125 JPEG/XML pairs
+2026-09-21 01:14:27,582 INFO VOC2012: decoded and verified 4000/17125 JPEG/XML pairs
+2026-09-21 01:14:31,348 INFO VOC2012: decoded and verified 6000/17125 JPEG/XML pairs
+2026-09-21 01:14:35,306 INFO VOC2012: decoded and verified 8000/17125 JPEG/XML pairs
+2026-09-21 01:14:39,046 INFO VOC2012: decoded and verified 10000/17125 JPEG/XML pairs
+2026-09-21 01:14:42,758 INFO VOC2012: decoded and verified 12000/17125 JPEG/XML pairs
+2026-09-21 01:14:46,462 INFO VOC2012: decoded and verified 14000/17125 JPEG/XML pairs
+2026-09-21 01:14:50,072 INFO VOC2012: decoded and verified 16000/17125 JPEG/XML pairs
+2026-09-21 01:14:52,131 INFO Loading source COCO2014 instance annotations
+2026-09-21 01:15:05,438 INFO COCO20K: decoded and verified 2000/19817 selected images
+2026-09-21 01:15:10,550 INFO COCO20K: decoded and verified 4000/19817 selected images
+2026-09-21 01:15:15,613 INFO COCO20K: decoded and verified 6000/19817 selected images
+2026-09-21 01:15:20,635 INFO COCO20K: decoded and verified 8000/19817 selected images
+2026-09-21 01:15:25,788 INFO COCO20K: decoded and verified 10000/19817 selected images
+2026-09-21 01:15:30,877 INFO COCO20K: decoded and verified 12000/19817 selected images
+2026-09-21 01:15:35,927 INFO COCO20K: decoded and verified 14000/19817 selected images
+2026-09-21 01:15:40,877 INFO COCO20K: decoded and verified 16000/19817 selected images
+2026-09-21 01:15:45,912 INFO COCO20K: decoded and verified 18000/19817 selected images
+2026-09-21 01:15:53,673 INFO Complete: VOC12 trainval=11540, COCO20K=19817; report=/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/reports/voc12_coco_preparation.json

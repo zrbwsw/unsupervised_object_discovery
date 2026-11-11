@@ -1,0 +1,140 @@
+{
+  "objects": [
+    {
+      "category": "fork",
+      "bbox_xyxy": [
+        312,
+        0,
+        370,
+        70
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        210,
+        70,
+        351,
+        187
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        410,
+        89,
+        485,
+        165
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        12,
+        80,
+        143,
+        192
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        301,
+        179,
+        368,
+        198
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        343,
+        107,
+        491,
+        219
+      ]
+    },
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        0,
+        0,
+        500,
+        375
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        140,
+        0,
+        328,
+        68
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        323,
+        150,
+        365,
+        165
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        129,
+        200,
+        214,
+        294
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        188,
+        231,
+        298,
+        276
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        368,
+        190,
+        404,
+        233
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        275,
+        193,
+        309,
+        299
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        317,
+        165,
+        366,
+        178
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        370,
+        225,
+        385,
+        299
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

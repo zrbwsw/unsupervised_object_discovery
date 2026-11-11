@@ -1,0 +1,113 @@
+{
+  "objects": [
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        0,
+        0,
+        640,
+        426
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        83,
+        151,
+        167,
+        268
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        357,
+        274,
+        428,
+        364
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        279,
+        170,
+        410,
+        300
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        381,
+        234,
+        498,
+        313
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        24,
+        135,
+        77,
+        202
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        175,
+        270,
+        247,
+        319
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        286,
+        122,
+        347,
+        176
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        299,
+        100,
+        359,
+        144
+      ]
+    },
+    {
+      "category": "dining table",
+      "bbox_xyxy": [
+        1,
+        0,
+        640,
+        422
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        159,
+        153,
+        226,
+        212
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        25,
+        111,
+        127,
+        177
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

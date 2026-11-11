@@ -1,0 +1,23 @@
+{
+  "objects": [
+    {
+      "category": "clock",
+      "bbox_xyxy": [
+        430,
+        176,
+        466,
+        212
+      ]
+    },
+    {
+      "category": "airplane",
+      "bbox_xyxy": [
+        0,
+        2,
+        640,
+        486
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

@@ -1,0 +1,16 @@
+{
+  "objects": [
+    {
+      "category": "pottedplant",
+      "bbox_xyxy": [
+        1,
+        0,
+        500,
+        325
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

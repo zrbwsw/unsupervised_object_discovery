@@ -1,0 +1,104 @@
+{
+  "objects": [
+    {
+      "category": "pottedplant",
+      "bbox_xyxy": [
+        25,
+        134,
+        106,
+        236
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "pottedplant",
+      "bbox_xyxy": [
+        167,
+        70,
+        234,
+        154
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "pottedplant",
+      "bbox_xyxy": [
+        240,
+        70,
+        315,
+        127
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "pottedplant",
+      "bbox_xyxy": [
+        265,
+        27,
+        300,
+        68
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "pottedplant",
+      "bbox_xyxy": [
+        288,
+        93,
+        355,
+        171
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "pottedplant",
+      "bbox_xyxy": [
+        337,
+        114,
+        412,
+        201
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "pottedplant",
+      "bbox_xyxy": [
+        400,
+        154,
+        455,
+        233
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "dog",
+      "bbox_xyxy": [
+        211,
+        213,
+        351,
+        332
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "pottedplant",
+      "bbox_xyxy": [
+        235,
+        1,
+        261,
+        61
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

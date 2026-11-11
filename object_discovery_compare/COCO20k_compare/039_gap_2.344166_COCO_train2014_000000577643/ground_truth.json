@@ -1,0 +1,23 @@
+{
+  "objects": [
+    {
+      "category": "dog",
+      "bbox_xyxy": [
+        239,
+        160,
+        437,
+        352
+      ]
+    },
+    {
+      "category": "potted plant",
+      "bbox_xyxy": [
+        389,
+        261,
+        565,
+        352
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

@@ -1,0 +1,104 @@
+{
+  "objects": [
+    {
+      "category": "dining table",
+      "bbox_xyxy": [
+        0,
+        0,
+        640,
+        640
+      ]
+    },
+    {
+      "category": "knife",
+      "bbox_xyxy": [
+        72,
+        2,
+        284,
+        59
+      ]
+    },
+    {
+      "category": "spoon",
+      "bbox_xyxy": [
+        170,
+        2,
+        364,
+        76
+      ]
+    },
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        384,
+        129,
+        533,
+        232
+      ]
+    },
+    {
+      "category": "fork",
+      "bbox_xyxy": [
+        131,
+        0,
+        328,
+        65
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        382,
+        294,
+        458,
+        382
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        9,
+        0,
+        167,
+        49
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        20,
+        378,
+        169,
+        595
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        53,
+        304,
+        130,
+        376
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        304,
+        224,
+        344,
+        256
+      ]
+    },
+    {
+      "category": "cup",
+      "bbox_xyxy": [
+        389,
+        132,
+        533,
+        234
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

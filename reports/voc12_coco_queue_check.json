@@ -1,0 +1,82 @@
+{
+  "checked_at": "2026-09-21T01:15:34.277533+08:00",
+  "scope": "VOC12/COCO20k queue and method scripts; synthetic model outputs in temporary directories only",
+  "full_evaluation_started": false,
+  "gpu_model_inference_started": false,
+  "checks": {
+    "shell_syntax": {
+      "status": "passed",
+      "files": "All scripts/*.sh, including modified four method entry scripts"
+    },
+    "dry_run": {
+      "status": "passed",
+      "VOC12": {
+        "unique_combinations": 20,
+        "gpu6": 10,
+        "gpu7": 10
+      },
+      "COCO20k": {
+        "unique_combinations": 20,
+        "gpu6": 10,
+        "gpu7": 10
+      },
+      "sequence": {
+        "unique_combinations": 40,
+        "gpu6": 20,
+        "gpu7": 20
+      },
+      "methods": [
+        "dino",
+        "ibot",
+        "mae",
+        "condgen"
+      ],
+      "tau": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3
+      ]
+    },
+    "method_cli_arguments": {
+      "status": "passed",
+      "combinations_checked": 8,
+      "assertions": [
+        "encoder matches method checkpoint",
+        "VOC12 set=trainval and correct --data_path",
+        "COCO20k set=train and omits --data_path",
+        "tau/output feature/eps/device preserved"
+      ]
+    },
+    "failure_continuation": {
+      "status": "passed",
+      "mock_failure": "VOC12 dino tau=0.10 returns exit code 9",
+      "all_voc12_jobs_attempted": 20,
+      "jobs_per_gpu": 10,
+      "final_exit_nonzero": true,
+      "coco_started": false
+    },
+    "sequence_barrier": {
+      "status": "passed",
+      "total_mock_jobs": 40,
+      "assertion": "First COCO start timestamp is strictly after final VOC12 end timestamp across both GPU workers"
+    },
+    "summaries": {
+      "status": "passed",
+      "valid_VOC12_rows": 20,
+      "valid_COCO20k_rows": 20,
+      "expected_dataset_labels": [
+        "VOC12_trainval",
+        "COCO20k_train"
+      ],
+      "expected_image_counts": [
+        11540,
+        19817
+      ],
+      "partial_evaluation_rejected": true,
+      "partial_evaluation_test": "Change one mock COCO evaluated_images to 2; summary marks invalid_protocol and --require-complete returns nonzero"
+    }
+  },
+  "limitations": "Real dataset integrity, dependency imports and real DINO CPU smoke checks are verified separately; these tests do not measure CorLoc."
+}

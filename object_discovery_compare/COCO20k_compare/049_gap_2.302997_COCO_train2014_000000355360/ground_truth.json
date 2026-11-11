@@ -1,0 +1,140 @@
+{
+  "objects": [
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        465,
+        178,
+        595,
+        376
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        265,
+        178,
+        281,
+        189
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        322,
+        182,
+        337,
+        195
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        312,
+        182,
+        325,
+        195
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        306,
+        183,
+        313,
+        193
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        350,
+        181,
+        363,
+        196
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        374,
+        188,
+        384,
+        196
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        308,
+        299,
+        323,
+        310
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        283,
+        292,
+        300,
+        306
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        341,
+        292,
+        357,
+        307
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        314,
+        290,
+        328,
+        302
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        280,
+        179,
+        297,
+        190
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        366,
+        182,
+        375,
+        195
+      ]
+    },
+    {
+      "category": "handbag",
+      "bbox_xyxy": [
+        466,
+        319,
+        484,
+        375
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        193,
+        363,
+        207,
+        373
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

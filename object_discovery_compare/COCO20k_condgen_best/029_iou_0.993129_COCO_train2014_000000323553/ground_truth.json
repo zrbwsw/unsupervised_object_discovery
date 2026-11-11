@@ -1,0 +1,41 @@
+{
+  "objects": [
+    {
+      "category": "knife",
+      "bbox_xyxy": [
+        0,
+        213,
+        386,
+        427
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        0,
+        0,
+        335,
+        255
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        214,
+        297,
+        399,
+        426
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        2,
+        1,
+        492,
+        383
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

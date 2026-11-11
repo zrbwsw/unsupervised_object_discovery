@@ -1,0 +1,289 @@
+{
+  "created_at_utc": "2026-09-20T17:17:37.429592+00:00",
+  "python": "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python",
+  "pycocotools": "2.0.11",
+  "datasets": [
+    {
+      "name": "VOC12_trainval",
+      "image_count": 11540,
+      "remove_hards": false,
+      "resolved_image_root": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/TokenCut/datasets/VOC2012",
+      "samples": [
+        {
+          "index": 0,
+          "filename": "2008_000002.jpg",
+          "image_shape_chw": [
+            3,
+            375,
+            500
+          ],
+          "gt_count": 1,
+          "boxes_xyxy": [
+            [
+              33,
+              10,
+              448,
+              293
+            ]
+          ],
+          "classes": [
+            "tvmonitor"
+          ]
+        },
+        {
+          "index": 5770,
+          "filename": "2009_002785.jpg",
+          "image_shape_chw": [
+            3,
+            333,
+            500
+          ],
+          "gt_count": 4,
+          "boxes_xyxy": [
+            [
+              351,
+              7,
+              463,
+              104
+            ],
+            [
+              17,
+              129,
+              135,
+              299
+            ],
+            [
+              0,
+              31,
+              182,
+              144
+            ],
+            [
+              0,
+              8,
+              112,
+              123
+            ]
+          ],
+          "classes": [
+            "bicycle",
+            "chair",
+            "bicycle",
+            "bicycle"
+          ]
+        },
+        {
+          "index": 11539,
+          "filename": "2011_003276.jpg",
+          "image_shape_chw": [
+            3,
+            400,
+            500
+          ],
+          "gt_count": 1,
+          "boxes_xyxy": [
+            [
+              263,
+              141,
+              292,
+              217
+            ]
+          ],
+          "classes": [
+            "bird"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "COCO20k_train",
+      "image_count": 19817,
+      "remove_hards": false,
+      "resolved_image_root": "/data0/datasets/dino_object_discovery/coco2014/images/train2014",
+      "samples": [
+        {
+          "index": 0,
+          "filename": "COCO_train2014_000000000036.jpg",
+          "image_shape_chw": [
+            3,
+            640,
+            481
+          ],
+          "gt_count": 2,
+          "boxes_xyxy": [
+            [
+              0,
+              50,
+              458,
+              480
+            ],
+            [
+              168,
+              163,
+              478,
+              628
+            ]
+          ],
+          "classes": [
+            28,
+            1
+          ]
+        },
+        {
+          "index": 9908,
+          "filename": "COCO_train2014_000000292358.jpg",
+          "image_shape_chw": [
+            3,
+            480,
+            640
+          ],
+          "gt_count": 15,
+          "boxes_xyxy": [
+            [
+              200,
+              256,
+              369,
+              474
+            ],
+            [
+              489,
+              232,
+              570,
+              281
+            ],
+            [
+              182,
+              184,
+              492,
+              328
+            ],
+            [
+              1,
+              376,
+              59,
+              462
+            ],
+            [
+              12,
+              281,
+              86,
+              456
+            ],
+            [
+              217,
+              333,
+              334,
+              480
+            ],
+            [
+              535,
+              257,
+              552,
+              288
+            ],
+            [
+              183,
+              184,
+              493,
+              329
+            ],
+            [
+              369,
+              219,
+              382,
+              229
+            ],
+            [
+              0,
+              253,
+              12,
+              326
+            ],
+            [
+              307,
+              203,
+              337,
+              231
+            ],
+            [
+              327,
+              206,
+              336,
+              215
+            ],
+            [
+              59,
+              281,
+              310,
+              480
+            ],
+            [
+              5,
+              196,
+              206,
+              479
+            ],
+            [
+              157,
+              251,
+              175,
+              293
+            ]
+          ],
+          "classes": [
+            1,
+            8,
+            8,
+            27,
+            31,
+            31,
+            1,
+            6,
+            1,
+            1,
+            1,
+            1,
+            27,
+            1,
+            1
+          ]
+        },
+        {
+          "index": 19816,
+          "filename": "COCO_train2014_000000581860.jpg",
+          "image_shape_chw": [
+            3,
+            400,
+            500
+          ],
+          "gt_count": 2,
+          "boxes_xyxy": [
+            [
+              76,
+              150,
+              287,
+              303
+            ],
+            [
+              40,
+              0,
+              500,
+              400
+            ]
+          ],
+          "classes": [
+            54,
+            1
+          ]
+        }
+      ],
+      "actual_ids_match_fixed_list": true,
+      "total_annotations": 145654,
+      "noncrowd_annotations": 143951,
+      "all_images_have_noncrowd_gt": true,
+      "list_sha256": "74637e9b4f93f2ebef9b1f664aff53edd1f41ef08dad97bd22ce8e455052b335",
+      "annotation_cache": "/data0/datasets/dino_object_discovery/coco2014/annotations/instances_train2014_sel20k.json"
+    }
+  ],
+  "success": true
+}

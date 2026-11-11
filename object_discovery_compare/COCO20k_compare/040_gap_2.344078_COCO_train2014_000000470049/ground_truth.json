@@ -1,0 +1,68 @@
+{
+  "objects": [
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        161,
+        68,
+        296,
+        282
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        150,
+        100,
+        214,
+        245
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        0,
+        96,
+        45,
+        246
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        415,
+        214,
+        461,
+        247
+      ]
+    },
+    {
+      "category": "tennis racket",
+      "bbox_xyxy": [
+        316,
+        118,
+        337,
+        159
+      ]
+    },
+    {
+      "category": "handbag",
+      "bbox_xyxy": [
+        0,
+        129,
+        16,
+        156
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        386,
+        214,
+        418,
+        245
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

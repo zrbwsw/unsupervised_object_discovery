@@ -1,0 +1,38 @@
+{
+  "objects": [
+    {
+      "category": "sheep",
+      "bbox_xyxy": [
+        371,
+        192,
+        474,
+        326
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "sheep",
+      "bbox_xyxy": [
+        157,
+        151,
+        258,
+        254
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "sheep",
+      "bbox_xyxy": [
+        225,
+        141,
+        273,
+        195
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

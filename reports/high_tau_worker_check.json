@@ -1,0 +1,7 @@
+{
+  "recorded_at_utc": "2026-09-20T19:29:17.287433+00:00",
+  "full_model_inference_started": false,
+  "all_24_worker_commands_and_complete_summary": "passed",
+  "partial_results_rejected": "passed",
+  "continues_all_12_jobs_after_one_failure": "passed"
+}

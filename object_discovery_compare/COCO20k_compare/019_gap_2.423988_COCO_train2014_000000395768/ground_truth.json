@@ -1,0 +1,140 @@
+{
+  "objects": [
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        424,
+        324,
+        513,
+        440
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        268,
+        234,
+        371,
+        428
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        482,
+        36,
+        512,
+        75
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        403,
+        53,
+        425,
+        75
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        293,
+        27,
+        317,
+        66
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        547,
+        65,
+        578,
+        94
+      ]
+    },
+    {
+      "category": "baseball bat",
+      "bbox_xyxy": [
+        335,
+        198,
+        348,
+        244
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        422,
+        61,
+        441,
+        76
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        582,
+        17,
+        624,
+        55
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        372,
+        18,
+        388,
+        34
+      ]
+    },
+    {
+      "category": "baseball glove",
+      "bbox_xyxy": [
+        416,
+        391,
+        434,
+        412
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        367,
+        53,
+        400,
+        76
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        318,
+        48,
+        337,
+        71
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        434,
+        39,
+        457,
+        75
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        552,
+        238,
+        596,
+        440
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

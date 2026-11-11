@@ -1,0 +1,32 @@
+{
+  "objects": [
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        0,
+        99,
+        154,
+        474
+      ]
+    },
+    {
+      "category": "zebra",
+      "bbox_xyxy": [
+        262,
+        225,
+        310,
+        269
+      ]
+    },
+    {
+      "category": "zebra",
+      "bbox_xyxy": [
+        425,
+        234,
+        485,
+        284
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

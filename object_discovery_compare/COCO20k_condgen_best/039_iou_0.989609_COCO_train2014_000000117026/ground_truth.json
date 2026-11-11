@@ -1,0 +1,32 @@
+{
+  "objects": [
+    {
+      "category": "giraffe",
+      "bbox_xyxy": [
+        0,
+        1,
+        409,
+        632
+      ]
+    },
+    {
+      "category": "giraffe",
+      "bbox_xyxy": [
+        2,
+        0,
+        480,
+        636
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        354,
+        527,
+        369,
+        590
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

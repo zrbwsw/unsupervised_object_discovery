@@ -1,0 +1,153 @@
+{
+  "args": {
+    "arch": "vit_base",
+    "patch_size": 16,
+    "encoder": "ibot",
+    "pretrained_weights": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/ibot_vitb16.pth",
+    "checkpoint_key": "model",
+    "data_path": "/data0/datasets/dino_downstream/voc2007",
+    "device": "cuda",
+    "max_images": null,
+    "dataset": "VOC07",
+    "save_feat_dir": null,
+    "set": "trainval",
+    "image_path": null,
+    "output_dir": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/high_tau_sweep/20260921_153706_2862331/VOC07/ibot/tau_0.35/VOC07_trainval",
+    "no_hard": false,
+    "no_evaluation": false,
+    "save_predictions": true,
+    "visualize": null,
+    "which_features": "output",
+    "k_patches": 100,
+    "resize": null,
+    "tau": 0.35,
+    "eps": 1e-05,
+    "no_binary_graph": false,
+    "dinoseg": false,
+    "dinoseg_head": 4
+  },
+  "command": [
+    "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python",
+    "main_tokencut.py",
+    "--encoder=ibot",
+    "--arch=vit_base",
+    "--patch_size=16",
+    "--checkpoint_key=model",
+    "--pretrained_weights=/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/ibot_vitb16.pth",
+    "--data_path=/data0/datasets/dino_downstream/voc2007",
+    "--dataset=VOC07",
+    "--set=trainval",
+    "--which_features=output",
+    "--tau=0.35",
+    "--eps=1e-5",
+    "--device=cuda",
+    "--output_dir=/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/high_tau_sweep/20260921_153706_2862331/VOC07/ibot/tau_0.35"
+  ],
+  "checkpoint": {
+    "source": "local",
+    "checkpoint_path": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/ibot_vitb16.pth",
+    "resolved_checkpoint_path": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/dino/weights/mae_ibot_b16/ibot2mae_vitb_model.pth",
+    "checkpoint_size_bytes": 389141511,
+    "checkpoint_sha256": "d1ed773b1429ed98c042786d4528bbe1a47da891b0e54dcbbc5ac1cf43e71850",
+    "checkpoint_key": "model",
+    "state_dict_container": "model",
+    "state_dict_tensor_count": 162,
+    "excluded_head_tensors": {
+      "head.mlp.0.weight": [
+        2048,
+        768
+      ],
+      "head.mlp.0.bias": [
+        2048
+      ],
+      "head.mlp.2.weight": [
+        2048,
+        2048
+      ],
+      "head.mlp.2.bias": [
+        2048
+      ],
+      "head.mlp.4.weight": [
+        256,
+        2048
+      ],
+      "head.mlp.4.bias": [
+        256
+      ],
+      "head.last_layer.weight_g": [
+        8192,
+        1
+      ],
+      "head.last_layer.weight_v": [
+        8192,
+        256
+      ],
+      "head.last_layer2.weight_g": [
+        8192,
+        1
+      ],
+      "head.last_layer2.weight_v": [
+        8192,
+        256
+      ],
+      "head.weight": [
+        1000,
+        3072
+      ],
+      "head.bias": [
+        1000
+      ]
+    },
+    "backbone_tensor_count": 150,
+    "strict_load": true,
+    "missing_keys": [],
+    "unexpected_keys": []
+  },
+  "source": {
+    "upstream_commit": "fed52cd5b60891baefd8ec7110dafa73be816ee1",
+    "sha256": {
+      "main_tokencut.py": "eb4403f6c15199fcbefa8c08af21d029bfe648a74036902627598b0dd7099fed",
+      "networks.py": "af00e83521fa0bbad52c5739a6cace1895871dd85651c6cefc13746d81fb16e6",
+      "datasets.py": "51a5f1ca0cf72b1d8c9062d182e23f14a02eb56b923bc48ea8184103aa397e56",
+      "object_discovery.py": "0543b620da447ebfb91f230dd71765f8d6e2e6a7226ac66fd4b6e2634f294555",
+      "dino/vision_transformer.py": "9c78a8f7e9f2de13a6fc38963d8d5d3032ced32f24cb5b5e44b28b35e87120dc"
+    }
+  },
+  "device": "cuda",
+  "torch_version": "2.7.0+cu126",
+  "numpy_version": "2.2.6",
+  "dataset_images": 5011,
+  "selected_images": 5011,
+  "data_root": "/data0/datasets/dino_downstream/voc2007",
+  "protocol": {
+    "features": "output",
+    "final_layernorm": true,
+    "cls_in_graph": false,
+    "encoder_frozen": true,
+    "full_resolution": true,
+    "input_normalization": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "padding": "right/bottom zeros after normalization to patch_size multiple",
+    "position_interpolation": "DINO bicubic +0.1 scale offset",
+    "tau": 0.35,
+    "eps": 1e-05,
+    "binary_graph": true,
+    "remove_hards": false,
+    "iou_threshold": 0.5,
+    "iou_comparison": ">="
+  },
+  "relocation": {
+    "original_output_dir": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/high_tau_sweep/20260921_153706_2862331/VOC07/ibot/tau_0.35",
+    "relocated_output_dir": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/ibot/tau_0.35"
+  }
+}

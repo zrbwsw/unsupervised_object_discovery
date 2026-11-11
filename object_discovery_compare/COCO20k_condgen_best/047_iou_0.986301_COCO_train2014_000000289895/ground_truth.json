@@ -1,0 +1,32 @@
+{
+  "objects": [
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        119,
+        0,
+        624,
+        292
+      ]
+    },
+    {
+      "category": "parking meter",
+      "bbox_xyxy": [
+        269,
+        1,
+        523,
+        172
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        0,
+        0,
+        292,
+        512
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

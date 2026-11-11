@@ -1,0 +1,29 @@
+{
+  "recorded_at_utc": "2026-09-20T17:22:15.556366+00:00",
+  "tmux_session": "ruobei_uod_voc12_then_coco",
+  "sequence_root": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc12_then_coco_tau_sweep/20260921_012108_2663376",
+  "voc12_run_root": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc12_tau_sweep/20260921_012115_2663798",
+  "status_at_check": "VOC12 running on GPU 6 and 7; COCO20k queued after successful VOC12 completion",
+  "total_experiments": 40,
+  "experiments_per_dataset": 20,
+  "gpus": [
+    6,
+    7
+  ],
+  "experiments_per_dataset_per_gpu": 10,
+  "first_jobs": [
+    {
+      "gpu": 6,
+      "encoder": "dino",
+      "tau": 0.1,
+      "pid": 2664090
+    },
+    {
+      "gpu": 7,
+      "encoder": "dino",
+      "tau": 0.15,
+      "pid": 2664094
+    }
+  ],
+  "verification": "Both GPU jobs loaded local checkpoint strictly and progressed beyond 300 of 11540 VOC12 images; manifest has 20 unique combinations."
+}

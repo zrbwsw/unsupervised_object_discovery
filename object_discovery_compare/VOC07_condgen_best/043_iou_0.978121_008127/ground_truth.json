@@ -1,0 +1,71 @@
+{
+  "objects": [
+    {
+      "category": "diningtable",
+      "bbox_xyxy": [
+        192,
+        223,
+        500,
+        334
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        207,
+        185,
+        244,
+        334
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "pottedplant",
+      "bbox_xyxy": [
+        267,
+        108,
+        341,
+        205
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        345,
+        128,
+        449,
+        247
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        224,
+        148,
+        328,
+        255
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        57,
+        76,
+        178,
+        334
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

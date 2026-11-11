@@ -1,0 +1,148 @@
+{
+  "objects": [
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        167,
+        151,
+        404,
+        240
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        45,
+        116,
+        80,
+        203
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        384,
+        131,
+        409,
+        198
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        416,
+        129,
+        439,
+        197
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        432,
+        124,
+        463,
+        200
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        481,
+        130,
+        500,
+        198
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        475,
+        124,
+        491,
+        198
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        76,
+        135,
+        156,
+        170
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        104,
+        121,
+        127,
+        171
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        142,
+        120,
+        166,
+        174
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        158,
+        123,
+        174,
+        171
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        1,
+        120,
+        47,
+        159
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        322,
+        132,
+        374,
+        154
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

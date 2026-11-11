@@ -1,0 +1,69 @@
+{
+  "recorded_at_local": "2026-09-21T17:30:38.833626+08:00",
+  "run_root": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/condgen_tau045_050_sweep/20260921_172952_2936493",
+  "tmux_session": "ruobei_uod_condgen_tau045_050",
+  "manifest_count": 6,
+  "experiments_per_gpu": {
+    "4": 3,
+    "5": 3
+  },
+  "evaluators": [
+    {
+      "pid": 2936653,
+      "gpu": "5",
+      "command": [
+        "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python",
+        "-u",
+        "main_tokencut.py",
+        "--encoder=condgen",
+        "--arch=vit_base",
+        "--patch_size=16",
+        "--checkpoint_key=model",
+        "--pretrained_weights=/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/condgen_vitb16.pth",
+        "--data_path=/data0/datasets/dino_downstream/voc2007",
+        "--dataset=VOC07",
+        "--set=trainval",
+        "--which_features=output",
+        "--tau=0.50",
+        "--eps=1e-5",
+        "--device=cuda",
+        "--output_dir=/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.50"
+      ]
+    },
+    {
+      "pid": 2936656,
+      "gpu": "4",
+      "command": [
+        "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python",
+        "-u",
+        "main_tokencut.py",
+        "--encoder=condgen",
+        "--arch=vit_base",
+        "--patch_size=16",
+        "--checkpoint_key=model",
+        "--pretrained_weights=/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/condgen_vitb16.pth",
+        "--data_path=/data0/datasets/dino_downstream/voc2007",
+        "--dataset=VOC07",
+        "--set=trainval",
+        "--which_features=output",
+        "--tau=0.45",
+        "--eps=1e-5",
+        "--device=cuda",
+        "--output_dir=/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.45"
+      ]
+    }
+  ],
+  "validated_initial_configs": [
+    "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.50/VOC07_trainval/TokenCut-condgen-vit_base16_output_tau0.5/run_config.json",
+    "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.45/VOC07_trainval/TokenCut-condgen-vit_base16_output_tau0.45/run_config.json"
+  ],
+  "launch_script_sha256": {
+    "queue_condgen_tau045_050_gpu45.sh": "de06b4ca0445c399a969cb899f2c8d68d9597d762ea399e8f80593876d673f75",
+    "eval_object_discovery_condgen_b16.sh": "2e5c4e94a9e98c9fe6278c59d8b9c5c3b620912a79fc84a684d99c3c8d838c00",
+    "summarize_condgen_tau045_050_queue.py": "403036c3ed771ec493afef3ae313863fed4ba344027a76634a36a8f2700f9df0"
+  },
+  "checks": [
+    "reports/condgen_tau045_050_queue_check.json",
+    "reports/condgen_tau045_050_summary_check.json"
+  ]
+}

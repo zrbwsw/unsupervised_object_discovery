@@ -1,0 +1,193 @@
+{
+  "script": "scripts/queue_object_discovery_high_tau_gpu67.sh",
+  "summary": "High tau sweep for VOC07, VOC12 and COCO20k",
+  "datasets": {
+    "VOC07": 5011,
+    "VOC12": 11540,
+    "COCO20k": 19817
+  },
+  "methods": [
+    "dino",
+    "ibot",
+    "mae",
+    "condgen"
+  ],
+  "taus": [
+    "0.35",
+    "0.40"
+  ],
+  "expected_experiments": 24,
+  "plan_rows": 24,
+  "gpu_counts": {
+    "6": 12,
+    "7": 12
+  },
+  "dataset_counts": {
+    "VOC07": 8,
+    "VOC12": 8,
+    "COCO20k": 8
+  },
+  "preflight": "passed",
+  "preflight_command": "CUDA_VISIBLE_DEVICES=\"\" scripts/queue_object_discovery_high_tau_gpu67.sh --preflight",
+  "launched": false,
+  "session": "ruobei_uod_high_tau",
+  "rows": [
+    {
+      "gpu": 6,
+      "dataset": "VOC07",
+      "method": "dino",
+      "tau": "0.35"
+    },
+    {
+      "gpu": 7,
+      "dataset": "VOC07",
+      "method": "dino",
+      "tau": "0.40"
+    },
+    {
+      "gpu": 6,
+      "dataset": "VOC07",
+      "method": "ibot",
+      "tau": "0.35"
+    },
+    {
+      "gpu": 7,
+      "dataset": "VOC07",
+      "method": "ibot",
+      "tau": "0.40"
+    },
+    {
+      "gpu": 6,
+      "dataset": "VOC07",
+      "method": "mae",
+      "tau": "0.35"
+    },
+    {
+      "gpu": 7,
+      "dataset": "VOC07",
+      "method": "mae",
+      "tau": "0.40"
+    },
+    {
+      "gpu": 6,
+      "dataset": "VOC07",
+      "method": "condgen",
+      "tau": "0.35"
+    },
+    {
+      "gpu": 7,
+      "dataset": "VOC07",
+      "method": "condgen",
+      "tau": "0.40"
+    },
+    {
+      "gpu": 6,
+      "dataset": "VOC12",
+      "method": "dino",
+      "tau": "0.35"
+    },
+    {
+      "gpu": 7,
+      "dataset": "VOC12",
+      "method": "dino",
+      "tau": "0.40"
+    },
+    {
+      "gpu": 6,
+      "dataset": "VOC12",
+      "method": "ibot",
+      "tau": "0.35"
+    },
+    {
+      "gpu": 7,
+      "dataset": "VOC12",
+      "method": "ibot",
+      "tau": "0.40"
+    },
+    {
+      "gpu": 6,
+      "dataset": "VOC12",
+      "method": "mae",
+      "tau": "0.35"
+    },
+    {
+      "gpu": 7,
+      "dataset": "VOC12",
+      "method": "mae",
+      "tau": "0.40"
+    },
+    {
+      "gpu": 6,
+      "dataset": "VOC12",
+      "method": "condgen",
+      "tau": "0.35"
+    },
+    {
+      "gpu": 7,
+      "dataset": "VOC12",
+      "method": "condgen",
+      "tau": "0.40"
+    },
+    {
+      "gpu": 6,
+      "dataset": "COCO20k",
+      "method": "dino",
+      "tau": "0.35"
+    },
+    {
+      "gpu": 7,
+      "dataset": "COCO20k",
+      "method": "dino",
+      "tau": "0.40"
+    },
+    {
+      "gpu": 6,
+      "dataset": "COCO20k",
+      "method": "ibot",
+      "tau": "0.35"
+    },
+    {
+      "gpu": 7,
+      "dataset": "COCO20k",
+      "method": "ibot",
+      "tau": "0.40"
+    },
+    {
+      "gpu": 6,
+      "dataset": "COCO20k",
+      "method": "mae",
+      "tau": "0.35"
+    },
+    {
+      "gpu": 7,
+      "dataset": "COCO20k",
+      "method": "mae",
+      "tau": "0.40"
+    },
+    {
+      "gpu": 6,
+      "dataset": "COCO20k",
+      "method": "condgen",
+      "tau": "0.35"
+    },
+    {
+      "gpu": 7,
+      "dataset": "COCO20k",
+      "method": "condgen",
+      "tau": "0.40"
+    }
+  ],
+  "mock_worker_check": {
+    "24_jobs_completed": true,
+    "dataset_split_paths_cuda_assignments_checked": true,
+    "mock_dir": "/tmp/uod_high_tau_mock_02fzyxe8",
+    "real_gpu_inference": false
+  },
+  "after_sequence_checks": {
+    "failed_predecessor_rejected": true,
+    "wait_without_gpu_locks": true,
+    "success_recognized_before_locking": true,
+    "test_root": "/tmp/uod_high_tau_after_tgo2xxer",
+    "launched_gpu_workers": false
+  }
+}

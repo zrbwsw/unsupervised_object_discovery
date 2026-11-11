@@ -1,0 +1,73 @@
+{
+  "verified_at_utc": "2026-09-21T07:42:54.995072+00:00",
+  "tmux_session": "ruobei_uod_high_tau",
+  "run_root": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/high_tau_sweep/20260921_153706_2862331",
+  "experiments_total": 24,
+  "experiments_per_gpu": {
+    "6": 12,
+    "7": 12
+  },
+  "queue_script_sha256": "98981bf6303d07857fcfca961142f3192113dce1a3377104dc36bdd89f3fb399",
+  "launch_snapshot_matches_script": true,
+  "base_evaluators_uninterrupted": [
+    {
+      "pid": 2805183,
+      "gpu": "7",
+      "same_process_still_running": true
+    },
+    {
+      "pid": 2855614,
+      "gpu": "6",
+      "same_process_still_running": true
+    }
+  ],
+  "concurrent_gpu_processes": [
+    {
+      "gpu_uuid": "GPU-d3417a96-4203-385d-3359-e102e950b634",
+      "pid": 2855614,
+      "used_memory": "1712 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-d3417a96-4203-385d-3359-e102e950b634",
+      "pid": 2862463,
+      "used_memory": "1162 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-6df6cc82-2300-bdb6-8630-b496302de83b",
+      "pid": 2805183,
+      "used_memory": "1714 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-6df6cc82-2300-bdb6-8630-b496302de83b",
+      "pid": 2862466,
+      "used_memory": "1162 MiB"
+    }
+  ],
+  "high_tau_evaluators": [
+    {
+      "gpu": 6,
+      "pid": 2862463,
+      "dataset": "VOC07",
+      "method": "dino",
+      "tau": 0.35,
+      "command": "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python -u main_tokencut.py --encoder=dino --arch=vit_base --patch_size=16 --checkpoint_key=model --pretrained_weights=/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/dino_vitb16.pth --data_path=/data0/datasets/dino_downstream/voc2007 --dataset=VOC07 --set=trainval --which_features=output --tau=0.35 --eps=1e-5 --device=cuda --output_dir=/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.35",
+      "config_path": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.35/VOC07_trainval/TokenCut-dino-vit_base16_output_tau0.35/run_config.json",
+      "progress_at_verification": [
+        "Found 2355/4100:  82%|████████▏ | 4099/5011 [05:43<01:14, 12.22it/s]"
+      ]
+    },
+    {
+      "gpu": 7,
+      "pid": 2862466,
+      "dataset": "VOC07",
+      "method": "dino",
+      "tau": 0.4,
+      "command": "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python -u main_tokencut.py --encoder=dino --arch=vit_base --patch_size=16 --checkpoint_key=model --pretrained_weights=/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/dino_vitb16.pth --data_path=/data0/datasets/dino_downstream/voc2007 --dataset=VOC07 --set=trainval --which_features=output --tau=0.40 --eps=1e-5 --device=cuda --output_dir=/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.40",
+      "config_path": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.40/VOC07_trainval/TokenCut-dino-vit_base16_output_tau0.4/run_config.json",
+      "progress_at_verification": [
+        "Found 2203/4350:  87%|████████▋ | 4363/5011 [05:42<00:50, 12.92it/s]"
+      ]
+    }
+  ],
+  "scheduler_check_report": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/reports/high_tau_shared_gpu_check.json"
+}

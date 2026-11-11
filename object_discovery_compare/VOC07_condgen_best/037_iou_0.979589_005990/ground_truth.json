@@ -1,0 +1,38 @@
+{
+  "objects": [
+    {
+      "category": "motorbike",
+      "bbox_xyxy": [
+        96,
+        0,
+        397,
+        372
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        372,
+        183,
+        500,
+        375
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        361,
+        178,
+        454,
+        276
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

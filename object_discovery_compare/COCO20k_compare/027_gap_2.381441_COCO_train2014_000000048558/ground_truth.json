@@ -1,0 +1,23 @@
+{
+  "objects": [
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        332,
+        253,
+        534,
+        428
+      ]
+    },
+    {
+      "category": "baseball bat",
+      "bbox_xyxy": [
+        331,
+        353,
+        454,
+        412
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

@@ -1,0 +1,1 @@
+[2026-11-11T18:01:30+08:00] Starting DINOv3 workers; each GPU runs its assigned experiments serially.

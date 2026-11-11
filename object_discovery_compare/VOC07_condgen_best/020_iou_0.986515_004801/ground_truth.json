@@ -1,0 +1,27 @@
+{
+  "objects": [
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        257,
+        126,
+        412,
+        333
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        0,
+        13,
+        482,
+        333
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

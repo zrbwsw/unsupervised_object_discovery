@@ -1,0 +1,816 @@
+{
+  "snapshot_at": "2026-09-21T01:48:19+08:00",
+  "task_root": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery",
+  "hardware": "NVIDIA RTX 6000 Ada Generation; concurrent workers on GPU 6 and GPU 7",
+  "protocol": {
+    "architecture": "ViT-B/16",
+    "input": "full resolution, zero padding to multiples of 16",
+    "tau_values": [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ],
+    "methods": [
+      "dino",
+      "ibot",
+      "mae",
+      "condgen"
+    ],
+    "batch_size": 1,
+    "features": "final block output after final LayerNorm; patch tokens",
+    "binary_graph": true,
+    "eps": 1e-05,
+    "remove_hards": false,
+    "corloc_iou_comparison": ">= 0.5"
+  },
+  "timing_definitions": {
+    "evaluation_seconds": "results.json elapsed_seconds: dataset iteration including image loading/transforms, GPU encoder, CPU normalized-cut eigensolver, IoU scoring; excludes dataset/model initialization and final prediction/result serialization.",
+    "wall_seconds": "gpu*_status.tsv finished_at minus started_at: command startup, initialization, complete evaluation, output serialization and tee exit; one-second timestamp resolution.",
+    "eligibility": "Only exit_code=0 with one full results.json, full expected image count, zero skipped images; no smoke runs or in-progress tasks.",
+    "unit_of_experiment": "One method + one tau + one complete dataset split on one GPU, while the other GPU runs another experiment.",
+    "aggregation": "Descriptive statistics of the currently completed tau/method configurations, not repeated-trial confidence intervals."
+  },
+  "datasets": {
+    "VOC07": {
+      "images_per_experiment": 5011,
+      "scheduled_experiments": 20,
+      "overall": {
+        "completed_experiments": 20,
+        "methods": [
+          "condgen",
+          "dino",
+          "ibot",
+          "mae"
+        ],
+        "evaluation_seconds": {
+          "mean": 350.0394317626953,
+          "median": 349.585830450058,
+          "min": 341.44047927856445,
+          "max": 360.942396402359
+        },
+        "wall_seconds": {
+          "mean": 355.6,
+          "median": 355.0,
+          "min": 347.0,
+          "max": 367.0
+        },
+        "evaluation_seconds_per_image": {
+          "mean": 0.06985420709692583,
+          "median": 0.06976368598085372,
+          "min": 0.0681381918336788,
+          "max": 0.0720300132513189
+        },
+        "wall_seconds_per_image": {
+          "mean": 0.07096387946517661,
+          "median": 0.07084414288565156,
+          "min": 0.06924765515865097,
+          "max": 0.07323887447615246
+        },
+        "setup_and_finish_overhead_seconds": {
+          "mean": 5.560568237304688,
+          "median": 5.549372434616089,
+          "min": 5.07139253616333,
+          "max": 6.122304439544678
+        }
+      },
+      "by_method": {
+        "dino": {
+          "completed_experiments": 5,
+          "methods": [
+            "dino"
+          ],
+          "evaluation_seconds": {
+            "mean": 348.86586771011355,
+            "median": 347.85647201538086,
+            "min": 344.8776955604553,
+            "max": 353.4919488430023
+          },
+          "wall_seconds": {
+            "mean": 354.6,
+            "median": 353.0,
+            "min": 351.0,
+            "max": 359.0
+          },
+          "evaluation_seconds_per_image": {
+            "mean": 0.06962000952107633,
+            "median": 0.06941857354128535,
+            "min": 0.06882412603481447,
+            "max": 0.07054319474017208
+          },
+          "wall_seconds_per_image": {
+            "mean": 0.07076431849930154,
+            "median": 0.07044502095390141,
+            "min": 0.07004589902215126,
+            "max": 0.07164238674915187
+          },
+          "setup_and_finish_overhead_seconds": {
+            "mean": 5.734132289886475,
+            "median": 5.832491636276245,
+            "min": 5.143527984619141,
+            "max": 6.122304439544678
+          }
+        },
+        "ibot": {
+          "completed_experiments": 5,
+          "methods": [
+            "ibot"
+          ],
+          "evaluation_seconds": {
+            "mean": 345.1454786300659,
+            "median": 343.30233120918274,
+            "min": 341.44047927856445,
+            "max": 351.6852128505707
+          },
+          "wall_seconds": {
+            "mean": 350.6,
+            "median": 349.0,
+            "min": 347.0,
+            "max": 357.0
+          },
+          "evaluation_seconds_per_image": {
+            "mean": 0.06887756508283095,
+            "median": 0.06850974480326935,
+            "min": 0.0681381918336788,
+            "max": 0.07018264076044116
+          },
+          "wall_seconds_per_image": {
+            "mean": 0.06996607463580123,
+            "median": 0.06964677709040112,
+            "min": 0.06924765515865097,
+            "max": 0.07124326481740172
+          },
+          "setup_and_finish_overhead_seconds": {
+            "mean": 5.454521369934082,
+            "median": 5.471441268920898,
+            "min": 5.229188919067383,
+            "max": 5.697668790817261
+          }
+        },
+        "mae": {
+          "completed_experiments": 5,
+          "methods": [
+            "mae"
+          ],
+          "evaluation_seconds": {
+            "mean": 353.08857769966124,
+            "median": 355.4212341308594,
+            "min": 348.61054491996765,
+            "max": 357.0217261314392
+          },
+          "wall_seconds": {
+            "mean": 358.6,
+            "median": 361.0,
+            "min": 354.0,
+            "max": 363.0
+          },
+          "evaluation_seconds_per_image": {
+            "mean": 0.07046269760520081,
+            "median": 0.07092820477566542,
+            "min": 0.0695690570584649,
+            "max": 0.07124760050517645
+          },
+          "wall_seconds_per_image": {
+            "mean": 0.07156256236280184,
+            "median": 0.07204150868090202,
+            "min": 0.07064458191977649,
+            "max": 0.07244063061265217
+          },
+          "setup_and_finish_overhead_seconds": {
+            "mean": 5.5114223003387455,
+            "median": 5.539224147796631,
+            "min": 5.07139253616333,
+            "max": 5.978273868560791
+          }
+        },
+        "condgen": {
+          "completed_experiments": 5,
+          "methods": [
+            "condgen"
+          ],
+          "evaluation_seconds": {
+            "mean": 353.0578030109406,
+            "median": 350.3709833621979,
+            "min": 347.84518361091614,
+            "max": 360.942396402359
+          },
+          "wall_seconds": {
+            "mean": 358.6,
+            "median": 356.0,
+            "min": 353.0,
+            "max": 367.0
+          },
+          "evaluation_seconds_per_image": {
+            "mean": 0.0704565561785952,
+            "median": 0.06992037185435998,
+            "min": 0.06941632081638717,
+            "max": 0.0720300132513189
+          },
+          "wall_seconds_per_image": {
+            "mean": 0.07156256236280184,
+            "median": 0.07104370385152664,
+            "min": 0.07044502095390141,
+            "max": 0.07323887447615246
+          },
+          "setup_and_finish_overhead_seconds": {
+            "mean": 5.542196989059448,
+            "median": 5.629016637802124,
+            "min": 5.1126017570495605,
+            "max": 6.057603597640991
+          }
+        }
+      },
+      "queue_completed": true,
+      "observed_completed_experiments_span_seconds": 3565.0,
+      "observed_full_queue_wall_seconds": 3565.0
+    },
+    "VOC12": {
+      "images_per_experiment": 11540,
+      "scheduled_experiments": 20,
+      "overall": {
+        "completed_experiments": 2,
+        "methods": [
+          "dino"
+        ],
+        "evaluation_seconds": {
+          "mean": 846.1788259744644,
+          "median": 846.1788259744644,
+          "min": 844.3498449325562,
+          "max": 848.0078070163727
+        },
+        "wall_seconds": {
+          "mean": 856.5,
+          "median": 856.5,
+          "min": 855.0,
+          "max": 858.0
+        },
+        "evaluation_seconds_per_image": {
+          "mean": 0.07332572148825514,
+          "median": 0.07332572148825514,
+          "min": 0.07316723093003086,
+          "max": 0.07348421204647944
+        },
+        "wall_seconds_per_image": {
+          "mean": 0.07422010398613518,
+          "median": 0.07422010398613518,
+          "min": 0.07409012131715771,
+          "max": 0.07435008665511265
+        },
+        "setup_and_finish_overhead_seconds": {
+          "mean": 10.321174025535583,
+          "median": 10.321174025535583,
+          "min": 9.99219298362732,
+          "max": 10.650155067443848
+        }
+      },
+      "by_method": {
+        "dino": {
+          "completed_experiments": 2,
+          "methods": [
+            "dino"
+          ],
+          "evaluation_seconds": {
+            "mean": 846.1788259744644,
+            "median": 846.1788259744644,
+            "min": 844.3498449325562,
+            "max": 848.0078070163727
+          },
+          "wall_seconds": {
+            "mean": 856.5,
+            "median": 856.5,
+            "min": 855.0,
+            "max": 858.0
+          },
+          "evaluation_seconds_per_image": {
+            "mean": 0.07332572148825514,
+            "median": 0.07332572148825514,
+            "min": 0.07316723093003086,
+            "max": 0.07348421204647944
+          },
+          "wall_seconds_per_image": {
+            "mean": 0.07422010398613518,
+            "median": 0.07422010398613518,
+            "min": 0.07409012131715771,
+            "max": 0.07435008665511265
+          },
+          "setup_and_finish_overhead_seconds": {
+            "mean": 10.321174025535583,
+            "median": 10.321174025535583,
+            "min": 9.99219298362732,
+            "max": 10.650155067443848
+          }
+        },
+        "ibot": {
+          "completed_experiments": 0,
+          "methods": [],
+          "evaluation_seconds": null,
+          "wall_seconds": null,
+          "evaluation_seconds_per_image": null,
+          "wall_seconds_per_image": null,
+          "setup_and_finish_overhead_seconds": null
+        },
+        "mae": {
+          "completed_experiments": 0,
+          "methods": [],
+          "evaluation_seconds": null,
+          "wall_seconds": null,
+          "evaluation_seconds_per_image": null,
+          "wall_seconds_per_image": null,
+          "setup_and_finish_overhead_seconds": null
+        },
+        "condgen": {
+          "completed_experiments": 0,
+          "methods": [],
+          "evaluation_seconds": null,
+          "wall_seconds": null,
+          "evaluation_seconds_per_image": null,
+          "wall_seconds_per_image": null,
+          "setup_and_finish_overhead_seconds": null
+        }
+      },
+      "queue_completed": false,
+      "observed_completed_experiments_span_seconds": 858.0
+    },
+    "COCO20K": {
+      "images_per_experiment": 19817,
+      "scheduled_experiments": 20,
+      "overall": {
+        "completed_experiments": 0,
+        "methods": [],
+        "evaluation_seconds": null,
+        "wall_seconds": null,
+        "evaluation_seconds_per_image": null,
+        "wall_seconds_per_image": null,
+        "setup_and_finish_overhead_seconds": null
+      },
+      "by_method": {
+        "dino": {
+          "completed_experiments": 0,
+          "methods": [],
+          "evaluation_seconds": null,
+          "wall_seconds": null,
+          "evaluation_seconds_per_image": null,
+          "wall_seconds_per_image": null,
+          "setup_and_finish_overhead_seconds": null
+        },
+        "ibot": {
+          "completed_experiments": 0,
+          "methods": [],
+          "evaluation_seconds": null,
+          "wall_seconds": null,
+          "evaluation_seconds_per_image": null,
+          "wall_seconds_per_image": null,
+          "setup_and_finish_overhead_seconds": null
+        },
+        "mae": {
+          "completed_experiments": 0,
+          "methods": [],
+          "evaluation_seconds": null,
+          "wall_seconds": null,
+          "evaluation_seconds_per_image": null,
+          "wall_seconds_per_image": null,
+          "setup_and_finish_overhead_seconds": null
+        },
+        "condgen": {
+          "completed_experiments": 0,
+          "methods": [],
+          "evaluation_seconds": null,
+          "wall_seconds": null,
+          "evaluation_seconds_per_image": null,
+          "wall_seconds_per_image": null,
+          "setup_and_finish_overhead_seconds": null
+        }
+      },
+      "queue_completed": false,
+      "observed_completed_experiments_span_seconds": null
+    }
+  },
+  "image_and_graph_size": {
+    "VOC07": {
+      "source": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.10/VOC07_trainval/TokenCut-dino-vit_base16_output_tau0.1/predictions.jsonl",
+      "source_kind": "completed DINO tau=0.10 prediction records",
+      "images": 5011,
+      "pixels": {
+        "mean": 178854.7012572341,
+        "median": 187500,
+        "min": 48000,
+        "max": 250000
+      },
+      "patch_tokens": {
+        "mean": 729.1672320894033,
+        "median": 768,
+        "min": 192,
+        "max": 1024
+      },
+      "mean_squared_patch_tokens": 539038.2664138895,
+      "mean_cubed_patch_tokens": 402774568.0724406
+    },
+    "VOC12": {
+      "source": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/dino/tau_0.10/VOC12_trainval/TokenCut-dino-vit_base16_output_tau0.1/predictions.jsonl",
+      "source_kind": "completed DINO tau=0.10 prediction records",
+      "images": 11540,
+      "pixels": {
+        "mean": 179142.78986135183,
+        "median": 187500.0,
+        "min": 35200,
+        "max": 250000
+      },
+      "patch_tokens": {
+        "mean": 730.6224436741768,
+        "median": 768.0,
+        "min": 150,
+        "max": 1024
+      },
+      "mean_squared_patch_tokens": 541540.1855285962,
+      "mean_cubed_patch_tokens": 406027037.7246967
+    },
+    "COCO20K": {
+      "source": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/TokenCut/datasets/instances_train2014_sel20k.json",
+      "source_kind": "COCO annotation metadata; no image inference performed",
+      "images": 19817,
+      "pixels": {
+        "mean": 275398.2854115154,
+        "median": 273280,
+        "min": 3672,
+        "max": 409600
+      },
+      "patch_tokens": {
+        "mean": 1089.4857445627492,
+        "median": 1080,
+        "min": 20,
+        "max": 1600
+      },
+      "mean_squared_patch_tokens": 1227063.2897512238,
+      "mean_cubed_patch_tokens": 1419279783.268961
+    }
+  },
+  "comparisons": {
+    "voc12_to_voc07_image_count_ratio": 2.3029335461983638,
+    "voc12_to_voc07_dino_wall_mean_ratio": 2.4153976311336716,
+    "coco_to_voc12_image_count_ratio": 1.7172443674176776,
+    "coco_to_voc12_mean_patch_tokens_ratio": 1.4911747565321283,
+    "coco_to_voc12_mean_squared_patch_tokens_ratio": 2.265876702305093,
+    "coco_to_voc12_mean_cubed_patch_tokens_ratio": 3.4955302268103927
+  },
+  "planning_estimates_not_measurements": {
+    "VOC12_20_experiments_two_gpus_seconds": 8565.0,
+    "assumption": "Ten sequential tasks per GPU, applying current two completed DINO runs mean to all methods and tau values; excludes queue preflight and gaps; provisional.",
+    "COCO20K_single_experiment_seconds": null,
+    "COCO20K_note": "No full COCO run completed. Full-resolution dense graph/eigensolver cost prevents reliable estimation using only image-count scaling; wait for first completed full run."
+  },
+  "experiments": [
+    {
+      "dataset": "VOC07",
+      "method": "dino",
+      "tau": 0.1,
+      "gpu": 6,
+      "started_at": "2026-09-21T00:05:14+08:00",
+      "finished_at": "2026-09-21T00:11:07+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 347.85647201538086,
+      "wall_seconds": 353.0,
+      "corloc_percent": 44.64178806625424,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.10/VOC07_trainval/TokenCut-dino-vit_base16_output_tau0.1/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu6_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "66ff7d63d0b6a4fc81b37df3f94bf5e8d047320f97f7c20da0eae38d2c8baddf"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "dino",
+      "tau": 0.15,
+      "gpu": 7,
+      "started_at": "2026-09-21T00:05:14+08:00",
+      "finished_at": "2026-09-21T00:11:05+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 344.8776955604553,
+      "wall_seconds": 351.0,
+      "corloc_percent": 52.065455996807025,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.15/VOC07_trainval/TokenCut-dino-vit_base16_output_tau0.15/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu7_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "5aa379b13cee6a856efb70b74dace84b74beb4539cd89df2fdd04dacc91ffa0a"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "dino",
+      "tau": 0.2,
+      "gpu": 6,
+      "started_at": "2026-09-21T00:11:07+08:00",
+      "finished_at": "2026-09-21T00:17:04+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 350.93571376800537,
+      "wall_seconds": 357.0,
+      "corloc_percent": 57.83276791059669,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.20/VOC07_trainval/TokenCut-dino-vit_base16_output_tau0.2/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu6_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "39a8fa6b89169c970f03e9637fb78cc54ea3cb4d541f1da04f6f30509982ae0f"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "dino",
+      "tau": 0.25,
+      "gpu": 7,
+      "started_at": "2026-09-21T00:11:05+08:00",
+      "finished_at": "2026-09-21T00:17:04+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 353.4919488430023,
+      "wall_seconds": 359.0,
+      "corloc_percent": 60.34723608062263,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.25/VOC07_trainval/TokenCut-dino-vit_base16_output_tau0.25/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu7_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "b92ae81632c861350909d0014eb6de5c1b7f4a839213f395d174a79c85d714b5"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "dino",
+      "tau": 0.3,
+      "gpu": 6,
+      "started_at": "2026-09-21T00:17:04+08:00",
+      "finished_at": "2026-09-21T00:22:57+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 347.16750836372375,
+      "wall_seconds": 353.0,
+      "corloc_percent": 60.18758730792257,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.30/VOC07_trainval/TokenCut-dino-vit_base16_output_tau0.3/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu6_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "c7976ba78bc0a5979e8360fef12898ba4b6649fbd82490866233a2cdd022f35f"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "ibot",
+      "tau": 0.1,
+      "gpu": 7,
+      "started_at": "2026-09-21T00:17:04+08:00",
+      "finished_at": "2026-09-21T00:22:52+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 342.7708110809326,
+      "wall_seconds": 348.0,
+      "corloc_percent": 41.94771502694073,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/ibot/tau_0.10/VOC07_trainval/TokenCut-ibot-vit_base16_output_tau0.1/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu7_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "a8d03e11f9e8556c1f53d67f8d6882c1221951ab225a40a6bdfdb425cf89003a"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "ibot",
+      "tau": 0.15,
+      "gpu": 6,
+      "started_at": "2026-09-21T00:22:57+08:00",
+      "finished_at": "2026-09-21T00:28:54+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 351.6852128505707,
+      "wall_seconds": 357.0,
+      "corloc_percent": 43.444422271003795,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/ibot/tau_0.15/VOC07_trainval/TokenCut-ibot-vit_base16_output_tau0.15/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu6_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "e2fd1f44d870e8af302fb29a31668104a7cbe1b6a837ff97e09bd2a1c88e16e9"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "ibot",
+      "tau": 0.2,
+      "gpu": 7,
+      "started_at": "2026-09-21T00:22:52+08:00",
+      "finished_at": "2026-09-21T00:28:39+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 341.44047927856445,
+      "wall_seconds": 347.0,
+      "corloc_percent": 43.16503691877869,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/ibot/tau_0.20/VOC07_trainval/TokenCut-ibot-vit_base16_output_tau0.2/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu7_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "f9e243beb93b1d33afd06135f367c64a0454da09b77453a95f55b27b11628d18"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "ibot",
+      "tau": 0.25,
+      "gpu": 6,
+      "started_at": "2026-09-21T00:28:54+08:00",
+      "finished_at": "2026-09-21T00:34:46+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 346.5285587310791,
+      "wall_seconds": 352.0,
+      "corloc_percent": 42.007583316703254,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/ibot/tau_0.25/VOC07_trainval/TokenCut-ibot-vit_base16_output_tau0.25/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu6_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "f9fe83bc571dcf48d05cbb8d1b388bef72e7cbd981cb5bb3eb84d80a91291874"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "ibot",
+      "tau": 0.3,
+      "gpu": 7,
+      "started_at": "2026-09-21T00:28:39+08:00",
+      "finished_at": "2026-09-21T00:34:28+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 343.30233120918274,
+      "wall_seconds": 349.0,
+      "corloc_percent": 41.26920774296548,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/ibot/tau_0.30/VOC07_trainval/TokenCut-ibot-vit_base16_output_tau0.3/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu7_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "368e9b34feffd51ac200e59e2d2c0d09cf87bb99d99be494c16b06f0c8a30d6a"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "mae",
+      "tau": 0.1,
+      "gpu": 6,
+      "started_at": "2026-09-21T00:34:46+08:00",
+      "finished_at": "2026-09-21T00:40:47+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 355.4212341308594,
+      "wall_seconds": 361.0,
+      "corloc_percent": 31.510676511674315,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/mae/tau_0.10/VOC07_trainval/TokenCut-mae-vit_base16_output_tau0.1/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu6_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "a6025b12a16c39b4eb73e677a505b3ea6306bfa870410a061b87e3fafa377f76"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "mae",
+      "tau": 0.15,
+      "gpu": 7,
+      "started_at": "2026-09-21T00:34:28+08:00",
+      "finished_at": "2026-09-21T00:40:22+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 348.61054491996765,
+      "wall_seconds": 354.0,
+      "corloc_percent": 31.41089602873678,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/mae/tau_0.15/VOC07_trainval/TokenCut-mae-vit_base16_output_tau0.15/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu7_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "766f2b9808d4e09b94b60365143d88a0b36dc94078677d18e6022acee3787dc7"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "mae",
+      "tau": 0.2,
+      "gpu": 6,
+      "started_at": "2026-09-21T00:40:47+08:00",
+      "finished_at": "2026-09-21T00:46:41+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 348.92860746383667,
+      "wall_seconds": 354.0,
+      "corloc_percent": 31.550588704849332,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/mae/tau_0.20/VOC07_trainval/TokenCut-mae-vit_base16_output_tau0.2/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu6_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "a8f30d97e40097bf0f6819594f70dde28ae4ec8afaa8a53fe2cd3132c344499d"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "mae",
+      "tau": 0.25,
+      "gpu": 7,
+      "started_at": "2026-09-21T00:40:22+08:00",
+      "finished_at": "2026-09-21T00:46:25+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 357.0217261314392,
+      "wall_seconds": 363.0,
+      "corloc_percent": 31.15146677309918,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/mae/tau_0.25/VOC07_trainval/TokenCut-mae-vit_base16_output_tau0.25/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu7_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "6b63645259c689474c6aa99faa9ed1234a30b59ee0644e9f6e737073be57df92"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "mae",
+      "tau": 0.3,
+      "gpu": 6,
+      "started_at": "2026-09-21T00:46:41+08:00",
+      "finished_at": "2026-09-21T00:52:42+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 355.46077585220337,
+      "wall_seconds": 361.0,
+      "corloc_percent": 31.470764318499302,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/mae/tau_0.30/VOC07_trainval/TokenCut-mae-vit_base16_output_tau0.3/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu6_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "4cbb77154725229ece58d8dca69167419abe6ccc7eb4d3273797c4ac911abacc"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "condgen",
+      "tau": 0.1,
+      "gpu": 7,
+      "started_at": "2026-09-21T00:46:25+08:00",
+      "finished_at": "2026-09-21T00:52:18+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 347.84518361091614,
+      "wall_seconds": 353.0,
+      "corloc_percent": 25.164637796846936,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.10/VOC07_trainval/TokenCut-condgen-vit_base16_output_tau0.1/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu7_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "56da84a3d72eb8d22a9e65e28b9443a7f13858969ae2566fa0ac605f0da2429f"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "condgen",
+      "tau": 0.15,
+      "gpu": 6,
+      "started_at": "2026-09-21T00:52:42+08:00",
+      "finished_at": "2026-09-21T00:58:38+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 350.2430534362793,
+      "wall_seconds": 356.0,
+      "corloc_percent": 32.249052085412096,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.15/VOC07_trainval/TokenCut-condgen-vit_base16_output_tau0.15/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu6_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "8fcf922228d5e27b01fb7a8e300059926a2f369a01133bb5252fe15b0948c813"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "condgen",
+      "tau": 0.2,
+      "gpu": 7,
+      "started_at": "2026-09-21T00:52:18+08:00",
+      "finished_at": "2026-09-21T00:58:14+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 350.3709833621979,
+      "wall_seconds": 356.0,
+      "corloc_percent": 38.4154859309519,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.20/VOC07_trainval/TokenCut-condgen-vit_base16_output_tau0.2/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu7_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "a8c6e1769bb28e53149f8dccda056f334bf7e385f6d804e355d492e8e5d27fc6"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "condgen",
+      "tau": 0.25,
+      "gpu": 6,
+      "started_at": "2026-09-21T00:58:38+08:00",
+      "finished_at": "2026-09-21T01:04:39+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 355.88739824295044,
+      "wall_seconds": 361.0,
+      "corloc_percent": 47.475553781680304,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.25/VOC07_trainval/TokenCut-condgen-vit_base16_output_tau0.25/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu6_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "cb53a3bd72e86ae642ba62769a2cfec25ee1132fe08a6314cd977bf0cea68329"
+    },
+    {
+      "dataset": "VOC07",
+      "method": "condgen",
+      "tau": 0.3,
+      "gpu": 7,
+      "started_at": "2026-09-21T00:58:14+08:00",
+      "finished_at": "2026-09-21T01:04:21+08:00",
+      "evaluated_images": 5011,
+      "evaluation_seconds": 360.942396402359,
+      "wall_seconds": 367.0,
+      "corloc_percent": 57.41368988225903,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.30/VOC07_trainval/TokenCut-condgen-vit_base16_output_tau0.3/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261/gpu7_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc07_tau_sweep/20260921_000514_2652261",
+      "result_sha256": "d8f0a1bfabb8d093d44324f138f92a0ee60ee135458223c879d055dbc86e8bde"
+    },
+    {
+      "dataset": "VOC12",
+      "method": "dino",
+      "tau": 0.1,
+      "gpu": 6,
+      "started_at": "2026-09-21T01:21:15+08:00",
+      "finished_at": "2026-09-21T01:35:33+08:00",
+      "evaluated_images": 11540,
+      "evaluation_seconds": 848.0078070163727,
+      "wall_seconds": 858.0,
+      "corloc_percent": 50.94454072790295,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/dino/tau_0.10/VOC12_trainval/TokenCut-dino-vit_base16_output_tau0.1/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc12_tau_sweep/20260921_012115_2663798/gpu6_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc12_tau_sweep/20260921_012115_2663798",
+      "result_sha256": "68cda25ad29d0e854ba5ede59611a96491e622ab2ed819547d665367bafd3c66"
+    },
+    {
+      "dataset": "VOC12",
+      "method": "dino",
+      "tau": 0.15,
+      "gpu": 7,
+      "started_at": "2026-09-21T01:21:15+08:00",
+      "finished_at": "2026-09-21T01:35:30+08:00",
+      "evaluated_images": 11540,
+      "evaluation_seconds": 844.3498449325562,
+      "wall_seconds": 855.0,
+      "corloc_percent": 57.85961871750433,
+      "result_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/dino/tau_0.15/VOC12_trainval/TokenCut-dino-vit_base16_output_tau0.15/results.json",
+      "status_file": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc12_tau_sweep/20260921_012115_2663798/gpu7_status.tsv",
+      "run_directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/voc12_tau_sweep/20260921_012115_2663798",
+      "result_sha256": "707761816b1a6a8e679fd93f51ab3baed1e258c64da94f970e65546fd8f3a143"
+    }
+  ]
+}

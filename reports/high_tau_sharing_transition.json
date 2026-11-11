@@ -1,0 +1,48 @@
+{
+  "recorded_at_utc": "2026-09-21T07:34:16.458445+00:00",
+  "old_waiting_run": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/high_tau_sweep/20260921_033125_2674782",
+  "old_waiting_pid": 2674813,
+  "reason": "User requested concurrent base/high-tau queues with one sequential worker per GPU in each queue.",
+  "old_high_tau_inference_started": false,
+  "base_evaluators_before": [
+    {
+      "pid": 2805183,
+      "gpu": "7",
+      "process_start_ticks": "1258768789",
+      "command": "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python -u main_tokencut.py --encoder=ibot --arch=vit_base --patch_size=16 --checkpoint_key=model --pretrained_weights=/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/ibot_vitb16.pth --dataset=COCO20k --set=train --which_features=output --tau=0.20 --eps=1e-5 --device=cuda --output_dir=/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/ibot/tau_0.20"
+    },
+    {
+      "pid": 2855614,
+      "gpu": "6",
+      "process_start_ticks": "1259551910",
+      "command": "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python -u main_tokencut.py --encoder=ibot --arch=vit_base --patch_size=16 --checkpoint_key=model --pretrained_weights=/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/ibot_vitb16.pth --dataset=COCO20k --set=train --which_features=output --tau=0.15 --eps=1e-5 --device=cuda --output_dir=/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/ibot/tau_0.15"
+    }
+  ],
+  "archived_waiting_tmux_session": "ruobei_uod_high_tau_wait_033125",
+  "restarted_at_local": "2026-09-21T15:37:06+08:00",
+  "verified_at_utc": "2026-09-21T07:42:54.995072+00:00",
+  "new_run_root": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/high_tau_sweep/20260921_153706_2862331",
+  "new_tmux_session": "ruobei_uod_high_tau",
+  "new_worker_pids": {
+    "6": 2862456,
+    "7": 2862457
+  },
+  "new_initial_evaluator_pids": {
+    "6": 2862463,
+    "7": 2862466
+  },
+  "base_evaluators_after": [
+    {
+      "pid": 2805183,
+      "gpu": "7",
+      "same_process_still_running": true
+    },
+    {
+      "pid": 2855614,
+      "gpu": "6",
+      "same_process_still_running": true
+    }
+  ],
+  "scheduler_check_report": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/reports/high_tau_shared_gpu_check.json",
+  "launch_verification": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/high_tau_sweep/20260921_153706_2862331/launch_verification.json"
+}

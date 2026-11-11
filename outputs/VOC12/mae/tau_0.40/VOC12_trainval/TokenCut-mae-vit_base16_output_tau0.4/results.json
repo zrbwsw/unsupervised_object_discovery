@@ -1,0 +1,18 @@
+{
+  "corloc_percent": 35.17331022530329,
+  "successful_images": 4059,
+  "evaluated_images": 11540,
+  "skipped_images": 0,
+  "dataset_images": 11540,
+  "selected_images": 11540,
+  "subset_evaluation": false,
+  "dataset": "VOC12_trainval",
+  "encoder": "mae",
+  "which_features": "output",
+  "tau": 0.4,
+  "eps": 1e-05,
+  "remove_hards": false,
+  "iou_threshold": 0.5,
+  "iou_comparison": ">=",
+  "elapsed_seconds": 952.3977165222168
+}

@@ -1,0 +1,41 @@
+{
+  "objects": [
+    {
+      "category": "dog",
+      "bbox_xyxy": [
+        174,
+        180,
+        640,
+        608
+      ]
+    },
+    {
+      "category": "tv",
+      "bbox_xyxy": [
+        133,
+        1,
+        383,
+        194
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        145,
+        33,
+        298,
+        182
+      ]
+    },
+    {
+      "category": "couch",
+      "bbox_xyxy": [
+        210,
+        207,
+        639,
+        613
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

@@ -1,0 +1,7 @@
+gpu,dataset,method,tau,status,corloc_percent,successful_images,evaluated_images,elapsed_seconds,output_dir
+4,VOC07,condgen,0.45,completed,67.33186988625025,3374,5011,410.5114448070526,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.45
+5,VOC07,condgen,0.50,completed,66.45380163639992,3330,5011,424.479364156723,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.50
+4,VOC12,condgen,0.45,completed,72.27036395147314,8340,11540,1113.727187871933,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/condgen/tau_0.45
+5,VOC12,condgen,0.50,completed,71.38648180242635,8238,11540,1126.6760215759277,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/condgen/tau_0.50
+4,COCO20k,condgen,0.45,completed,57.011656658424585,11298,19817,4571.457370519638,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/condgen/tau_0.45
+5,COCO20k,condgen,0.50,completed,56.744209517081295,11245,19817,4666.705751180649,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/condgen/tau_0.50

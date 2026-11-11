@@ -1,0 +1,1 @@
+[2026-09-21T15:37:06+08:00] Sharing GPU 6/7 with other queues; starting high-tau workers, each running its own experiments serially.

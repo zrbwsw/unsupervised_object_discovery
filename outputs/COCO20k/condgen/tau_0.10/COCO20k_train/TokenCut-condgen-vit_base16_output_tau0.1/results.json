@@ -1,0 +1,18 @@
+{
+  "corloc_percent": 18.852500378462935,
+  "successful_images": 3736,
+  "evaluated_images": 19817,
+  "skipped_images": 0,
+  "dataset_images": 19817,
+  "selected_images": 19817,
+  "subset_evaluation": false,
+  "dataset": "COCO20k_train",
+  "encoder": "condgen",
+  "which_features": "output",
+  "tau": 0.1,
+  "eps": 1e-05,
+  "remove_hards": false,
+  "iou_threshold": 0.5,
+  "iou_comparison": ">=",
+  "elapsed_seconds": 4388.395632982254
+}

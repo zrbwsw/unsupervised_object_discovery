@@ -1,0 +1,93 @@
+{
+  "status": "ready_sharded_checkpoint_and_real_forward_validated",
+  "usage": "Reference only. The DINOv3 evaluation and queue scripts set the actual CLI protocol.",
+  "model_id": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+  "checkpoint_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+  "checkpoint_directory": "/data1/pretrain_models",
+  "checkpoint_format": "sharded_safetensors_with_index_or_single_safetensors",
+  "checkpoint_shards": 6,
+  "consolidated_checkpoint": "/data1/pretrain_models/dinov3_vit7b16.safetensors",
+  "consolidation_script": "scripts/consolidate_dinov3_safetensors.py",
+  "loading_backend": "accelerate meta initialization plus per-tensor safetensors loading with key, shape, dtype, and parameter-count checks",
+  "expected_parameters": 6716035072,
+  "expected_weight_bytes": 26864140288,
+  "transformers_version": "4.56.1",
+  "encoder": "dinov3",
+  "architecture": "vit_7b",
+  "patch_size": 16,
+  "hidden_layers": 40,
+  "attention_heads": 32,
+  "feature_dimension": 4096,
+  "dtype": "float32",
+  "attention_implementation": "sdpa",
+  "encoder_frozen": true,
+  "feature": "last_block_output_after_final_layernorm",
+  "feature_layers": 1,
+  "cls_in_graph": false,
+  "register_tokens": 4,
+  "register_tokens_in_graph": false,
+  "token_order_before_adapter": "CLS + 4 register tokens + spatial patches",
+  "token_order_after_adapter": "CLS + spatial patches",
+  "random_masking": false,
+  "input_resolution": "original_image",
+  "resize": null,
+  "crop": null,
+  "normalization": {
+    "mean": [0.485, 0.456, 0.406],
+    "std": [0.229, 0.224, 0.225]
+  },
+  "padding": {
+    "edges": ["right", "bottom"],
+    "multiple": 16,
+    "value_in_normalized_space": 0
+  },
+  "position_encoding": "DINOv3 RoPE in eval mode; no random shift, jitter, or rescale",
+  "graph": "binary",
+  "edge_comparison": ">",
+  "eps": 1e-05,
+  "remove_difficult_or_truncated": false,
+  "iou_threshold": 0.5,
+  "iou_comparison": ">=",
+  "iou_note": "Retain TokenCut source comparison; DINOv3 D.4 prose says exceeds 0.5.",
+  "tau_selection": "Run and report every tau separately; no automatic best-tau selection.",
+  "tau_values": [0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4],
+  "methods": ["dinov3"],
+  "default_gpu_ids": [6, 7],
+  "default_single_evaluation_gpu": 6,
+  "default_device": "cuda",
+  "gpu_ids_environment": "GPU_IDS=comma-separated physical GPU indices",
+  "experiments_total": 27,
+  "experiments_per_dataset": 9,
+  "experiments_per_default_gpu": {
+    "6": 14,
+    "7": 13
+  },
+  "tmux_session": "ruobei_uod_dinov3_7b",
+  "queue_script": "scripts/queue_dinov3_7b_tau.sh",
+  "evaluation_script": "scripts/eval_object_discovery_dinov3_7b.sh",
+  "summary_script": "scripts/summarize_dinov3_7b_queue.py",
+  "scheduling": "Round-robin manifest across GPU_IDS; one foreground evaluator per GPU, continuing after individual failures. No experiment is started until checkpoint, datasets, source, and GPUs pass preflight.",
+  "queue_lock": "outputs/.queue_locks/dinov3_7b_tau.lock",
+  "datasets": [
+    {
+      "name": "VOC07",
+      "split": "trainval",
+      "expected_images": 5011,
+      "data_root": "/data0/datasets/dino_downstream/voc2007"
+    },
+    {
+      "name": "VOC12",
+      "split": "trainval",
+      "expected_images": 11540,
+      "data_root": "/data0/datasets/dino_object_discovery/voc2012"
+    },
+    {
+      "name": "COCO20k",
+      "split": "train",
+      "expected_images": 19817,
+      "data_root": "/data0/datasets/dino_object_discovery/coco2014",
+      "fixed_subset_list": "TokenCut/datasets/coco_20k_filenames.txt",
+      "remove_iscrowd": true
+    }
+  ]
+}

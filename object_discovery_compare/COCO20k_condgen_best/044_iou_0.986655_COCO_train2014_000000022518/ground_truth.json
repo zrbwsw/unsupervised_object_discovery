@@ -1,0 +1,41 @@
+{
+  "objects": [
+    {
+      "category": "cake",
+      "bbox_xyxy": [
+        1,
+        167,
+        459,
+        585
+      ]
+    },
+    {
+      "category": "cake",
+      "bbox_xyxy": [
+        239,
+        241,
+        493,
+        493
+      ]
+    },
+    {
+      "category": "dining table",
+      "bbox_xyxy": [
+        2,
+        2,
+        499,
+        636
+      ]
+    },
+    {
+      "category": "fork",
+      "bbox_xyxy": [
+        249,
+        43,
+        310,
+        98
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

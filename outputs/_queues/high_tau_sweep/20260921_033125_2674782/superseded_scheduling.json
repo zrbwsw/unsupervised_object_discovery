@@ -1,0 +1,5 @@
+{
+  "reason": "User requested concurrent base/high-tau queues with one sequential worker per GPU in each queue.",
+  "archived_session": "ruobei_uod_high_tau_wait_033125",
+  "real_experiments_started": 0
+}

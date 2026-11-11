@@ -1,0 +1,59 @@
+{
+  "objects": [
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        1,
+        0,
+        256,
+        366
+      ]
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        321,
+        116,
+        462,
+        221
+      ]
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        204,
+        89,
+        500,
+        373
+      ]
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        272,
+        144,
+        333,
+        188
+      ]
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        222,
+        145,
+        266,
+        178
+      ]
+    },
+    {
+      "category": "cell phone",
+      "bbox_xyxy": [
+        46,
+        310,
+        104,
+        370
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

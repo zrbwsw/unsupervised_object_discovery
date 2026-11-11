@@ -1,0 +1,18 @@
+{
+  "corloc_percent": 62.96360485268631,
+  "successful_images": 7266,
+  "evaluated_images": 11540,
+  "skipped_images": 0,
+  "dataset_images": 11540,
+  "selected_images": 11540,
+  "subset_evaluation": false,
+  "dataset": "VOC12_trainval",
+  "encoder": "dino",
+  "which_features": "output",
+  "tau": 0.2,
+  "eps": 1e-05,
+  "remove_hards": false,
+  "iou_threshold": 0.5,
+  "iou_comparison": ">=",
+  "elapsed_seconds": 1598.7529995441437
+}

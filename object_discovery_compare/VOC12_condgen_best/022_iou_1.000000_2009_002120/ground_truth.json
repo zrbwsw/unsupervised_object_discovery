@@ -1,0 +1,27 @@
+{
+  "objects": [
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        0,
+        0,
+        500,
+        332
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        430,
+        0,
+        500,
+        99
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

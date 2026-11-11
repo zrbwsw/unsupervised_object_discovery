@@ -1,0 +1,86 @@
+{
+  "objects": [
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        0,
+        226,
+        47,
+        268
+      ]
+    },
+    {
+      "category": "dining table",
+      "bbox_xyxy": [
+        0,
+        453,
+        480,
+        631
+      ]
+    },
+    {
+      "category": "cup",
+      "bbox_xyxy": [
+        55,
+        452,
+        205,
+        590
+      ]
+    },
+    {
+      "category": "cup",
+      "bbox_xyxy": [
+        367,
+        457,
+        461,
+        627
+      ]
+    },
+    {
+      "category": "spoon",
+      "bbox_xyxy": [
+        232,
+        624,
+        289,
+        640
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        218,
+        493,
+        317,
+        574
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        79,
+        158,
+        122,
+        193
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        0,
+        0,
+        480,
+        498
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        0,
+        159,
+        63,
+        287
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

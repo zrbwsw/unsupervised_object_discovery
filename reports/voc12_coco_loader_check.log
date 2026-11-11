@@ -1,0 +1,7 @@
+VOC12: 11540 images; first/middle/last samples and GT verified
+loading annotations into memory...
+Done (t=1.91s)
+creating index...
+index created!
+COCO20k: 19817 images; first/middle/last samples and GT verified
+Report: /data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/reports/voc12_coco_loader_check.json

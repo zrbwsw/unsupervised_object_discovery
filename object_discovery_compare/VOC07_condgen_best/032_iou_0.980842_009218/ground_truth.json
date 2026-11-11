@@ -1,0 +1,16 @@
+{
+  "objects": [
+    {
+      "category": "train",
+      "bbox_xyxy": [
+        2,
+        59,
+        374,
+        500
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

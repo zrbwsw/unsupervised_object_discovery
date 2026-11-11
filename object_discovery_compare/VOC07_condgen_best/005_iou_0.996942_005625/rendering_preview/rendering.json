@@ -1,0 +1,36 @@
+{
+  "sample": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/VOC07_condgen_best/005_iou_0.996942_005625",
+  "image_size_wh": [
+    500,
+    375
+  ],
+  "patch_size": 16,
+  "display_only": true,
+  "inference_rerun": false,
+  "sources_unchanged": true,
+  "raw_overlay_pixel_match": true,
+  "variants": [
+    {
+      "method": "condgen",
+      "file": "condgen_nearest_alpha0.70.png",
+      "interpolation": "nearest",
+      "alpha": 0.7,
+      "source_mask_sha256": "595aecae8d47a02433035f00da9b7063f16ca185f9abc84b0e361076d731be2e"
+    },
+    {
+      "method": "condgen",
+      "file": "condgen_bilinear_alpha0.70.png",
+      "interpolation": "bilinear",
+      "alpha": 0.7,
+      "source_mask_sha256": "595aecae8d47a02433035f00da9b7063f16ca185f9abc84b0e361076d731be2e"
+    },
+    {
+      "method": "condgen",
+      "file": "condgen_bilinear_alpha0.45.png",
+      "interpolation": "bilinear",
+      "alpha": 0.45,
+      "source_mask_sha256": "595aecae8d47a02433035f00da9b7063f16ca185f9abc84b0e361076d731be2e"
+    }
+  ],
+  "bilinear_alignment": "resize patch grid to padded dimensions, then crop to image dimensions"
+}

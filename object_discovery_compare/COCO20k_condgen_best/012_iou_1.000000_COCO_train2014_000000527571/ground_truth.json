@@ -1,0 +1,32 @@
+{
+  "objects": [
+    {
+      "category": "banana",
+      "bbox_xyxy": [
+        73,
+        147,
+        640,
+        289
+      ]
+    },
+    {
+      "category": "apple",
+      "bbox_xyxy": [
+        261,
+        260,
+        489,
+        427
+      ]
+    },
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        0,
+        0,
+        640,
+        427
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

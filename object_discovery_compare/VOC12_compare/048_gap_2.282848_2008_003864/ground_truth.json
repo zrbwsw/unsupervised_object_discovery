@@ -1,0 +1,16 @@
+{
+  "objects": [
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        374,
+        54,
+        500,
+        375
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

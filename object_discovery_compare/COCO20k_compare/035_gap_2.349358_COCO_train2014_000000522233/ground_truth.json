@@ -1,0 +1,50 @@
+{
+  "objects": [
+    {
+      "category": "sports ball",
+      "bbox_xyxy": [
+        466,
+        140,
+        478,
+        151
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        218,
+        140,
+        315,
+        301
+      ]
+    },
+    {
+      "category": "baseball bat",
+      "bbox_xyxy": [
+        207,
+        184,
+        272,
+        196
+      ]
+    },
+    {
+      "category": "baseball glove",
+      "bbox_xyxy": [
+        114,
+        203,
+        144,
+        223
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        0,
+        185,
+        145,
+        338
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

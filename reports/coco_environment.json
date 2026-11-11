@@ -1,0 +1,8 @@
+{
+  "python": "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python",
+  "pycocotools": "2.0.11",
+  "install_command": "python -m pip install --no-deps pycocotools==2.0.11",
+  "coco_api_import": true,
+  "compiled_mask_import": true,
+  "other_packages_modified": false
+}

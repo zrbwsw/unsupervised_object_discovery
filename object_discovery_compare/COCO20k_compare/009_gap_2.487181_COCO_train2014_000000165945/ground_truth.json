@@ -1,0 +1,212 @@
+{
+  "objects": [
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        275,
+        13,
+        297,
+        36
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        240,
+        50,
+        264,
+        84
+      ]
+    },
+    {
+      "category": "baseball bat",
+      "bbox_xyxy": [
+        292,
+        101,
+        341,
+        140
+      ]
+    },
+    {
+      "category": "baseball glove",
+      "bbox_xyxy": [
+        461,
+        258,
+        475,
+        278
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        158,
+        128,
+        214,
+        218
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        270,
+        70,
+        298,
+        95
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        374,
+        225,
+        474,
+        339
+      ]
+    },
+    {
+      "category": "baseball glove",
+      "bbox_xyxy": [
+        204,
+        171,
+        214,
+        184
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        459,
+        74,
+        481,
+        89
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        450,
+        85,
+        477,
+        97
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        447,
+        43,
+        470,
+        75
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        523,
+        42,
+        549,
+        74
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        249,
+        110,
+        312,
+        190
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        9,
+        133,
+        64,
+        225
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        325,
+        71,
+        354,
+        99
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        154,
+        61,
+        183,
+        90
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        179,
+        66,
+        202,
+        90
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        486,
+        82,
+        511,
+        107
+      ]
+    },
+    {
+      "category": "bench",
+      "bbox_xyxy": [
+        566,
+        42,
+        586,
+        57
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        212,
+        44,
+        245,
+        93
+      ]
+    },
+    {
+      "category": "bench",
+      "bbox_xyxy": [
+        253,
+        12,
+        274,
+        30
+      ]
+    },
+    {
+      "category": "bench",
+      "bbox_xyxy": [
+        577,
+        114,
+        640,
+        125
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        249,
+        19,
+        279,
+        84
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

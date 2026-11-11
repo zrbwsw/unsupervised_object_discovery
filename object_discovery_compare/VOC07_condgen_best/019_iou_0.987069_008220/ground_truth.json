@@ -1,0 +1,27 @@
+{
+  "objects": [
+    {
+      "category": "train",
+      "bbox_xyxy": [
+        0,
+        0,
+        458,
+        333
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        213,
+        152,
+        295,
+        219
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

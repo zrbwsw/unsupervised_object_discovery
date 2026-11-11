@@ -1,0 +1,27 @@
+{
+  "objects": [
+    {
+      "category": "horse",
+      "bbox_xyxy": [
+        198,
+        194,
+        396,
+        308
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "horse",
+      "bbox_xyxy": [
+        2,
+        197,
+        139,
+        284
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

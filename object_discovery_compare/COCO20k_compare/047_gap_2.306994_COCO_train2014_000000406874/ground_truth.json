@@ -1,0 +1,23 @@
+{
+  "objects": [
+    {
+      "category": "dog",
+      "bbox_xyxy": [
+        154,
+        97,
+        292,
+        400
+      ]
+    },
+    {
+      "category": "frisbee",
+      "bbox_xyxy": [
+        152,
+        391,
+        262,
+        426
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

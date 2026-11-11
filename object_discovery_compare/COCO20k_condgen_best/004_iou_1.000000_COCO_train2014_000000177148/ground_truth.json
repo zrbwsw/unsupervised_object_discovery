@@ -1,0 +1,122 @@
+{
+  "objects": [
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        378,
+        207,
+        493,
+        323
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        251,
+        122,
+        370,
+        226
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        259,
+        37,
+        369,
+        135
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        368,
+        43,
+        474,
+        130
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        367,
+        121,
+        479,
+        212
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        119,
+        209,
+        250,
+        327
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        136,
+        111,
+        256,
+        215
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        158,
+        38,
+        260,
+        130
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        23,
+        106,
+        137,
+        203
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        250,
+        217,
+        384,
+        330
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        51,
+        32,
+        158,
+        120
+      ]
+    },
+    {
+      "category": "donut",
+      "bbox_xyxy": [
+        3,
+        195,
+        124,
+        304
+      ]
+    },
+    {
+      "category": "dining table",
+      "bbox_xyxy": [
+        0,
+        0,
+        500,
+        332
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

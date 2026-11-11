@@ -1,0 +1,77 @@
+{
+  "objects": [
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        33,
+        183,
+        492,
+        375
+      ]
+    },
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        21,
+        119,
+        448,
+        229
+      ]
+    },
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        36,
+        44,
+        399,
+        151
+      ]
+    },
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        359,
+        14,
+        585,
+        285
+      ]
+    },
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        489,
+        280,
+        610,
+        403
+      ]
+    },
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        355,
+        344,
+        491,
+        456
+      ]
+    },
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        152,
+        387,
+        357,
+        477
+      ]
+    },
+    {
+      "category": "dining table",
+      "bbox_xyxy": [
+        1,
+        3,
+        640,
+        474
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

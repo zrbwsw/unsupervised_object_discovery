@@ -1,0 +1,24 @@
+{
+  "created_at_utc": "2026-09-20T15:05:18.468188+00:00",
+  "url": "https://github.com/YangtaoWANG95/TokenCut.git",
+  "commit": "fed52cd5b60891baefd8ec7110dafa73be816ee1",
+  "commit_date": "2023-03-30T19:19:22+02:00",
+  "tracked_upstream_files_modified": false,
+  "sha256": {
+    "main_tokencut.py": "74ea5acc1d4d038900bc5689ee78d39fe296caea84a82a5f3f4db71bbdc62679",
+    "object_discovery.py": "580a5718197dcde4aff364ec9bb3a3bc33bed888c6f24b479d69ecd2eb98efd6",
+    "datasets.py": "8d6abda8f2224553956b88dd9f4e34c790c4017e9f5c1220c4b4275c3dea62a2",
+    "networks.py": "95d371454ac55cb9b3a8aff8cea9217d914d5192241bf44098c8194ca758af32",
+    "dino/vision_transformer.py": "9c78a8f7e9f2de13a6fc38963d8d5d3032ced32f24cb5b5e44b28b35e87120dc",
+    "DOWNLOAD_DATA.md": "cead583efc9bd392976d3471d1866849d57dbf3d448631473e931806138fc8e9",
+    "LICENSE": "a8b8f8d969f1775a00f7580c491d859e973bb7f3b70d2f28f021e24a242768a7",
+    "datasets/coco_20k_filenames.txt": "74637e9b4f93f2ebef9b1f664aff53edd1f41ef08dad97bd22ce8e455052b335"
+  },
+  "paper_path": "/data0/cuijiequan/zhangruobei/related paper/2508.DINOv3.pdf",
+  "paper_sections": [
+    "6.1.4",
+    "Figure 14",
+    "D.4"
+  ],
+  "task_description": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/readme/Unsupervised Object Discovery.md"
+}

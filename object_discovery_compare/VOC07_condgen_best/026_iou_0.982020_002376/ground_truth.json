@@ -1,0 +1,16 @@
+{
+  "objects": [
+    {
+      "category": "aeroplane",
+      "bbox_xyxy": [
+        0,
+        31,
+        458,
+        224
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

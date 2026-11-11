@@ -1,0 +1,16 @@
+{
+  "objects": [
+    {
+      "category": "boat",
+      "bbox_xyxy": [
+        135,
+        229,
+        230,
+        299
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

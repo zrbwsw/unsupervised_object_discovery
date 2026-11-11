@@ -1,0 +1,11 @@
+gpu,method,tau,status,corloc_percent,successful_images,evaluated_images,output_dir
+6,dino,0.10,completed,44.64178806625424,2237,5011,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.10
+6,dino,0.20,completed,57.83276791059669,2898,5011,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.20
+6,dino,0.30,completed,60.18758730792257,3016,5011,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.30
+6,ibot,0.15,completed,43.444422271003795,2177,5011,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/ibot/tau_0.15
+6,ibot,0.25,completed,42.007583316703254,2105,5011,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/ibot/tau_0.25
+6,mae,0.10,completed,31.510676511674315,1579,5011,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/mae/tau_0.10
+6,mae,0.20,completed,31.550588704849332,1581,5011,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/mae/tau_0.20
+6,mae,0.30,completed,31.470764318499302,1577,5011,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/mae/tau_0.30
+6,condgen,0.15,completed,32.249052085412096,1616,5011,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.15
+6,condgen,0.25,completed,47.475553781680304,2379,5011,/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.25

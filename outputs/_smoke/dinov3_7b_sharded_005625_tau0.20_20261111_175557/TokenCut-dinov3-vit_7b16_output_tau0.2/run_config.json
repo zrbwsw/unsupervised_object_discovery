@@ -1,0 +1,166 @@
+{
+  "args": {
+    "arch": "vit_7b",
+    "patch_size": 16,
+    "encoder": "dinov3",
+    "pretrained_weights": "/data1/pretrain_models",
+    "checkpoint_key": "model",
+    "checkpoint_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+    "data_path": null,
+    "device": "cuda",
+    "max_images": null,
+    "dataset": null,
+    "save_feat_dir": null,
+    "set": "train",
+    "image_path": "/data0/datasets/dino_downstream/voc2007/VOCdevkit/VOC2007/JPEGImages/005625.jpg",
+    "output_dir": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/dinov3_7b_sharded_005625_tau0.20_20261111_175557",
+    "no_hard": false,
+    "no_evaluation": true,
+    "save_predictions": false,
+    "visualize": "pred",
+    "which_features": "output",
+    "k_patches": 100,
+    "resize": null,
+    "tau": 0.2,
+    "eps": 1e-05,
+    "no_binary_graph": false,
+    "dinoseg": false,
+    "dinoseg_head": 4
+  },
+  "command": [
+    "/data0/cuijiequan/env/miniconda3/envs/irepa/bin/python",
+    "main_tokencut.py",
+    "--encoder=dinov3",
+    "--arch=vit_7b",
+    "--patch_size=16",
+    "--pretrained_weights=/data1/pretrain_models",
+    "--checkpoint_revision=b80367753773648a6793235ab9c65cdbb029506f",
+    "--image_path=/data0/datasets/dino_downstream/voc2007/VOCdevkit/VOC2007/JPEGImages/005625.jpg",
+    "--which_features=output",
+    "--tau=0.20",
+    "--eps=1e-5",
+    "--device=cuda",
+    "--output_dir=/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/dinov3_7b_sharded_005625_tau0.20_20261111_175557",
+    "--visualize=pred"
+  ],
+  "checkpoint": {
+    "source": "local_huggingface_safetensors",
+    "checkpoint_path": "/data1/pretrain_models",
+    "resolved_checkpoint_path": "/data1/pretrain_models",
+    "config_directory": "/data1/pretrain_models",
+    "checkpoint_index": "/data1/pretrain_models/model.safetensors.index.json",
+    "checkpoint_index_sha256": "ae26856def93bcf537202109c60ef76ca22d1f373dc85d2b68aeb6fe940c85fd",
+    "ignored_empty_incomplete_files": [
+      "/data1/pretrain_models/.cache/huggingface/download/uHlhOCT17Z6wYlt1x1jlrCcHTyE=.d3f77e2cbd0f9a349eeaf2559213f2495e43e4229a02a33f083f48ab5539ecbb.incomplete"
+    ],
+    "shards": [
+      {
+        "name": "model-00001-of-00006.safetensors",
+        "size_bytes": 4980241600,
+        "tensors": 134
+      },
+      {
+        "name": "model-00002-of-00006.safetensors",
+        "size_bytes": 4967510232,
+        "tensors": 123
+      },
+      {
+        "name": "model-00003-of-00006.safetensors",
+        "size_bytes": 4967510568,
+        "tensors": 126
+      },
+      {
+        "name": "model-00004-of-00006.safetensors",
+        "size_bytes": 4967543448,
+        "tensors": 127
+      },
+      {
+        "name": "model-00005-of-00006.safetensors",
+        "size_bytes": 4967543320,
+        "tensors": 126
+      },
+      {
+        "name": "model-00006-of-00006.safetensors",
+        "size_bytes": 2013860920,
+        "tensors": 51
+      }
+    ],
+    "total_parameters": 6716035072,
+    "total_size_bytes": 26864140288,
+    "model_config": {
+      "model_type": "dinov3_vit",
+      "hidden_size": 4096,
+      "intermediate_size": 8192,
+      "num_hidden_layers": 40,
+      "num_attention_heads": 32,
+      "patch_size": 16,
+      "num_register_tokens": 4,
+      "hidden_act": "silu",
+      "layer_norm_eps": 1e-05,
+      "rope_theta": 100.0,
+      "use_gated_mlp": true,
+      "query_bias": false,
+      "key_bias": false,
+      "value_bias": false,
+      "proj_bias": true,
+      "mlp_bias": true
+    },
+    "checkpoint_revision": "b80367753773648a6793235ab9c65cdbb029506f",
+    "transformers_version": "4.56.1",
+    "attention_implementation": "sdpa",
+    "loading_backend": "accelerate_meta_initialization_and_safetensors_per_tensor_loading",
+    "dtype": "float32",
+    "strict_load": true,
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "loaded_parameter_count": 6716035072,
+    "verified_tensor_count": 687,
+    "register_tokens_removed_before_ncut": 4
+  },
+  "source": {
+    "upstream_commit": "fed52cd5b60891baefd8ec7110dafa73be816ee1",
+    "sha256": {
+      "main_tokencut.py": "224548e1a256576b8a8f70778ec22afbfe6b38407796a89ba07293ab82e7047e",
+      "networks.py": "79695b3e35a89b0bcf0b866676f0094c508aaab1eb0bab96673c740655b069dc",
+      "datasets.py": "51a5f1ca0cf72b1d8c9062d182e23f14a02eb56b923bc48ea8184103aa397e56",
+      "object_discovery.py": "0543b620da447ebfb91f230dd71765f8d6e2e6a7226ac66fd4b6e2634f294555",
+      "dino/vision_transformer.py": "9c78a8f7e9f2de13a6fc38963d8d5d3032ced32f24cb5b5e44b28b35e87120dc",
+      "dinov3_adapter.py": "2175960634eed51a731c8bd380357699fda97780aa49f5aedf515563f2aede3e"
+    }
+  },
+  "device": "cuda",
+  "torch_version": "2.7.0+cu126",
+  "numpy_version": "2.2.6",
+  "dataset_images": 1,
+  "selected_images": 1,
+  "data_root": null,
+  "protocol": {
+    "features": "output",
+    "final_layernorm": true,
+    "cls_in_graph": false,
+    "encoder_frozen": true,
+    "register_tokens_in_graph": false,
+    "full_resolution": true,
+    "input_normalization": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "padding": "right/bottom zeros after normalization to patch_size multiple",
+    "position_interpolation": "DINOv3 RoPE in eval mode without random shift, jitter, or rescale",
+    "tau": 0.2,
+    "eps": 1e-05,
+    "binary_graph": true,
+    "remove_hards": false,
+    "iou_threshold": 0.5,
+    "iou_comparison": ">="
+  }
+}

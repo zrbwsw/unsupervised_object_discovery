@@ -1,0 +1,77 @@
+{
+  "objects": [
+    {
+      "category": "sports ball",
+      "bbox_xyxy": [
+        294,
+        273,
+        313,
+        292
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        364,
+        157,
+        421,
+        293
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        280,
+        159,
+        340,
+        298
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        248,
+        146,
+        275,
+        201
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        339,
+        173,
+        382,
+        246
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        545,
+        143,
+        626,
+        350
+      ]
+    },
+    {
+      "category": "dog",
+      "bbox_xyxy": [
+        139,
+        184,
+        153,
+        197
+      ]
+    },
+    {
+      "category": "dog",
+      "bbox_xyxy": [
+        98,
+        191,
+        117,
+        196
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

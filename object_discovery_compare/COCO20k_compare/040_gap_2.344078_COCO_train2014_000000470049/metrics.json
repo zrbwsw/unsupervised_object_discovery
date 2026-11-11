@@ -1,0 +1,151 @@
+{
+  "rank": 40,
+  "directory": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/COCO20k_compare/040_gap_2.344078_COCO_train2014_000000470049",
+  "image": "COCO_train2014_000000470049.jpg",
+  "metrics": {
+    "dino": 0.08108948171138763,
+    "ibot": 0.08108948171138763,
+    "mae": 0.20050965249538422,
+    "condgen": 0.902255654335022
+  },
+  "gap_sum": 2.3440783470869064,
+  "gap_mean": 0.7813594490289688,
+  "gap_min": 0.7017460018396378,
+  "taus": {
+    "dino": 0.3,
+    "ibot": 0.15,
+    "mae": 0.35,
+    "condgen": 0.45
+  },
+  "dataset": "COCO20k",
+  "image_path": "/data0/datasets/dino_object_discovery/coco2014/images/train2014/COCO_train2014_000000470049.jpg",
+  "gap_by_method": {
+    "dino": 0.8211661726236343,
+    "ibot": 0.8211661726236343,
+    "mae": 0.7017460018396378
+  },
+  "predictions": {
+    "dino": {
+      "image": "COCO_train2014_000000470049.jpg",
+      "bbox_xyxy": [
+        0,
+        224,
+        500,
+        375
+      ],
+      "image_shape_chw": [
+        3,
+        375,
+        500
+      ],
+      "patch_grid_hw": [
+        24,
+        32
+      ],
+      "max_iou": 0.08108948171138763,
+      "correct": false,
+      "gt_count": 7
+    },
+    "ibot": {
+      "image": "COCO_train2014_000000470049.jpg",
+      "bbox_xyxy": [
+        0,
+        224,
+        500,
+        375
+      ],
+      "image_shape_chw": [
+        3,
+        375,
+        500
+      ],
+      "patch_grid_hw": [
+        24,
+        32
+      ],
+      "max_iou": 0.08108948171138763,
+      "correct": false,
+      "gt_count": 7
+    },
+    "mae": {
+      "image": "COCO_train2014_000000470049.jpg",
+      "bbox_xyxy": [
+        0,
+        0,
+        500,
+        272
+      ],
+      "image_shape_chw": [
+        3,
+        375,
+        500
+      ],
+      "patch_grid_hw": [
+        24,
+        32
+      ],
+      "max_iou": 0.20050965249538422,
+      "correct": false,
+      "gt_count": 7
+    },
+    "condgen": {
+      "image": "COCO_train2014_000000470049.jpg",
+      "bbox_xyxy": [
+        0,
+        96,
+        48,
+        240
+      ],
+      "image_shape_chw": [
+        3,
+        375,
+        500
+      ],
+      "patch_grid_hw": [
+        24,
+        32
+      ],
+      "max_iou": 0.902255654335022,
+      "correct": true,
+      "gt_count": 7
+    }
+  },
+  "sources": {
+    "dino": {
+      "tau": 0.3,
+      "predictions": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/dino/tau_0.30/COCO20k_train/TokenCut-dino-vit_base16_output_tau0.3/predictions.jsonl",
+      "predictions_sha256": "662ff8389110a25607ea934b2409de232616a29dea814c50f18cb94494bebf4f",
+      "run_config": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/dino/tau_0.30/COCO20k_train/TokenCut-dino-vit_base16_output_tau0.3/run_config.json",
+      "results": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/dino/tau_0.30/COCO20k_train/TokenCut-dino-vit_base16_output_tau0.3/results.json",
+      "checkpoint": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/dino_vitb16.pth",
+      "corloc_percent": 50.512186506534796
+    },
+    "ibot": {
+      "tau": 0.15,
+      "predictions": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/ibot/tau_0.15/COCO20k_train/TokenCut-ibot-vit_base16_output_tau0.15/predictions.jsonl",
+      "predictions_sha256": "048d096eedda0abd7ed50f9d3a6f008f8c115df8f52539fe92ce575af0123bf7",
+      "run_config": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/ibot/tau_0.15/COCO20k_train/TokenCut-ibot-vit_base16_output_tau0.15/run_config.json",
+      "results": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/ibot/tau_0.15/COCO20k_train/TokenCut-ibot-vit_base16_output_tau0.15/results.json",
+      "checkpoint": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/ibot_vitb16.pth",
+      "corloc_percent": 33.83458646616541
+    },
+    "mae": {
+      "tau": 0.35,
+      "predictions": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/mae/tau_0.35/COCO20k_train/TokenCut-mae-vit_base16_output_tau0.35/predictions.jsonl",
+      "predictions_sha256": "f6798f8133ddb995cfe4a09dda8b2eeb1fb44042a6d1fc18b4db8e2aed397f85",
+      "run_config": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/mae/tau_0.35/COCO20k_train/TokenCut-mae-vit_base16_output_tau0.35/run_config.json",
+      "results": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/mae/tau_0.35/COCO20k_train/TokenCut-mae-vit_base16_output_tau0.35/results.json",
+      "checkpoint": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/mae_vitb16.pth",
+      "corloc_percent": 26.603421304940202
+    },
+    "condgen": {
+      "tau": 0.45,
+      "predictions": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/condgen/tau_0.45/COCO20k_train/TokenCut-condgen-vit_base16_output_tau0.45/predictions.jsonl",
+      "predictions_sha256": "3495258597b3adb8a0e530b8ad68ae644b13be4df95cf818321f947cf7cc07c9",
+      "run_config": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/condgen/tau_0.45/COCO20k_train/TokenCut-condgen-vit_base16_output_tau0.45/run_config.json",
+      "results": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/condgen/tau_0.45/COCO20k_train/TokenCut-condgen-vit_base16_output_tau0.45/results.json",
+      "checkpoint": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/condgen_vitb16.pth",
+      "corloc_percent": 57.011656658424585
+    }
+  }
+}

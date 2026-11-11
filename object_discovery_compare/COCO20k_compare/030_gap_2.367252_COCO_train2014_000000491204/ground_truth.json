@@ -1,0 +1,239 @@
+{
+  "objects": [
+    {
+      "category": "bottle",
+      "bbox_xyxy": [
+        420,
+        115,
+        478,
+        263
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        236,
+        0,
+        430,
+        129
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        525,
+        28,
+        640,
+        197
+      ]
+    },
+    {
+      "category": "cup",
+      "bbox_xyxy": [
+        405,
+        460,
+        465,
+        549
+      ]
+    },
+    {
+      "category": "cup",
+      "bbox_xyxy": [
+        519,
+        161,
+        585,
+        218
+      ]
+    },
+    {
+      "category": "fork",
+      "bbox_xyxy": [
+        239,
+        498,
+        335,
+        640
+      ]
+    },
+    {
+      "category": "fork",
+      "bbox_xyxy": [
+        338,
+        136,
+        376,
+        188
+      ]
+    },
+    {
+      "category": "knife",
+      "bbox_xyxy": [
+        539,
+        345,
+        616,
+        500
+      ]
+    },
+    {
+      "category": "knife",
+      "bbox_xyxy": [
+        291,
+        340,
+        369,
+        455
+      ]
+    },
+    {
+      "category": "spoon",
+      "bbox_xyxy": [
+        0,
+        396,
+        65,
+        474
+      ]
+    },
+    {
+      "category": "fork",
+      "bbox_xyxy": [
+        477,
+        201,
+        518,
+        217
+      ]
+    },
+    {
+      "category": "knife",
+      "bbox_xyxy": [
+        445,
+        555,
+        498,
+        640
+      ]
+    },
+    {
+      "category": "knife",
+      "bbox_xyxy": [
+        587,
+        192,
+        622,
+        282
+      ]
+    },
+    {
+      "category": "knife",
+      "bbox_xyxy": [
+        222,
+        104,
+        285,
+        167
+      ]
+    },
+    {
+      "category": "knife",
+      "bbox_xyxy": [
+        0,
+        388,
+        132,
+        488
+      ]
+    },
+    {
+      "category": "knife",
+      "bbox_xyxy": [
+        352,
+        230,
+        413,
+        261
+      ]
+    },
+    {
+      "category": "spoon",
+      "bbox_xyxy": [
+        441,
+        586,
+        453,
+        625
+      ]
+    },
+    {
+      "category": "dining table",
+      "bbox_xyxy": [
+        0,
+        56,
+        640,
+        631
+      ]
+    },
+    {
+      "category": "knife",
+      "bbox_xyxy": [
+        319,
+        364,
+        369,
+        465
+      ]
+    },
+    {
+      "category": "knife",
+      "bbox_xyxy": [
+        308,
+        215,
+        378,
+        292
+      ]
+    },
+    {
+      "category": "spoon",
+      "bbox_xyxy": [
+        603,
+        224,
+        632,
+        268
+      ]
+    },
+    {
+      "category": "cup",
+      "bbox_xyxy": [
+        62,
+        408,
+        155,
+        495
+      ]
+    },
+    {
+      "category": "cup",
+      "bbox_xyxy": [
+        131,
+        361,
+        189,
+        441
+      ]
+    },
+    {
+      "category": "cup",
+      "bbox_xyxy": [
+        188,
+        58,
+        232,
+        122
+      ]
+    },
+    {
+      "category": "cup",
+      "bbox_xyxy": [
+        520,
+        203,
+        567,
+        272
+      ]
+    },
+    {
+      "category": "cup",
+      "bbox_xyxy": [
+        252,
+        133,
+        289,
+        195
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

@@ -1,0 +1,59 @@
+{
+  "objects": [
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        280,
+        396,
+        403,
+        485
+      ]
+    },
+    {
+      "category": "pizza",
+      "bbox_xyxy": [
+        149,
+        395,
+        296,
+        437
+      ]
+    },
+    {
+      "category": "knife",
+      "bbox_xyxy": [
+        411,
+        457,
+        460,
+        568
+      ]
+    },
+    {
+      "category": "spoon",
+      "bbox_xyxy": [
+        316,
+        379,
+        330,
+        427
+      ]
+    },
+    {
+      "category": "clock",
+      "bbox_xyxy": [
+        242,
+        343,
+        264,
+        361
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        199,
+        67,
+        474,
+        432
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

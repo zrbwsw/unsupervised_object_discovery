@@ -1,0 +1,27 @@
+{
+  "objects": [
+    {
+      "category": "dog",
+      "bbox_xyxy": [
+        166,
+        165,
+        415,
+        334
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "dog",
+      "bbox_xyxy": [
+        0,
+        0,
+        350,
+        300
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

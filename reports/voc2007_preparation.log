@@ -1,0 +1,69 @@
+Extracting/verifying VOCtrainval_06-Nov-2007.tar
+Extracting/verifying VOCtest_06-Nov-2007.tar
+Verified 1000/9963 JPEG/XML pairs
+Verified 2000/9963 JPEG/XML pairs
+Verified 3000/9963 JPEG/XML pairs
+Verified 4000/9963 JPEG/XML pairs
+Verified 5000/9963 JPEG/XML pairs
+Verified 6000/9963 JPEG/XML pairs
+Verified 7000/9963 JPEG/XML pairs
+Verified 8000/9963 JPEG/XML pairs
+Verified 9000/9963 JPEG/XML pairs
+{
+  "created_at_utc": "2026-09-20T15:03:24.078669+00:00",
+  "data_root": "/data0/datasets/dino_downstream/voc2007",
+  "archives": [
+    {
+      "path": "/data0/datasets/dino_downstream/voc2007/archives/VOCtrainval_06-Nov-2007.tar",
+      "bytes": 460032000,
+      "sha256": "7d8cd951101b0957ddfd7a530bdc8a94f06121cfc1e511bb5937e973020c7508",
+      "created_files": 10935,
+      "identical_existing_files": 0
+    },
+    {
+      "path": "/data0/datasets/dino_downstream/voc2007/archives/VOCtest_06-Nov-2007.tar",
+      "bytes": 451020800,
+      "sha256": "6836888e2e01dca84577a849d339fa4f73e1e4f135d312430c4856b5609b4892",
+      "created_files": 10347,
+      "identical_existing_files": 0
+    }
+  ],
+  "voc_directory": "/data0/datasets/dino_downstream/voc2007/VOCdevkit/VOC2007",
+  "splits": {
+    "train": {
+      "images": 2501,
+      "list_sha256": "78ed68b8b6cdcf491c9335fa49df42134766608b0381e071c852f0b4f5e71637"
+    },
+    "val": {
+      "images": 2510,
+      "list_sha256": "9e122e1f5e3a1130e4a3bae378e6760a4ddc97e68f9947200dcdde45969078a5"
+    },
+    "trainval": {
+      "images": 5011,
+      "list_sha256": "15a0c17dd13dd526194ed09fe773fd3000e951570a041c509078c634a63761e0"
+    },
+    "test": {
+      "images": 4952,
+      "list_sha256": "46f3424f5769b4b9032673364380b6652346ab4d2fa66390cb75adf9d0f95afa"
+    }
+  },
+  "jpeg_count": 9963,
+  "xml_count": 9963,
+  "all_images_decoded": true,
+  "all_xml_parsed": true,
+  "xml_image_dimensions_match": true,
+  "bounding_boxes_in_image_bounds": true,
+  "object_counts": {
+    "trainval": 15662,
+    "test": 14976
+  },
+  "images_with_only_difficult_or_truncated_objects": {
+    "trainval": 1461,
+    "test": 1531
+  },
+  "boxes_with_zero_coordinate": 0,
+  "evaluation_split": "trainval",
+  "evaluation_images": 5011,
+  "annotations_modified": false,
+  "tokencut_data_link": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/TokenCut/datasets/VOC2007/VOCdevkit"
+}

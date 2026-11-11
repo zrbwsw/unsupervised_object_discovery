@@ -1,0 +1,104 @@
+{
+  "objects": [
+    {
+      "category": "pottedplant",
+      "bbox_xyxy": [
+        233,
+        47,
+        280,
+        128
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "dog",
+      "bbox_xyxy": [
+        257,
+        327,
+        357,
+        500
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "dog",
+      "bbox_xyxy": [
+        265,
+        204,
+        299,
+        283
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "tvmonitor",
+      "bbox_xyxy": [
+        212,
+        127,
+        269,
+        178
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "diningtable",
+      "bbox_xyxy": [
+        100,
+        176,
+        253,
+        307
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        197,
+        174,
+        270,
+        302
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        137,
+        186,
+        209,
+        327
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        84,
+        170,
+        157,
+        296
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        148,
+        160,
+        195,
+        178
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

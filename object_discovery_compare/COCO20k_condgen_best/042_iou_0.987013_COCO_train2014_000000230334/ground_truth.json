@@ -1,0 +1,365 @@
+{
+  "objects": [
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        239,
+        109,
+        380,
+        182
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        464,
+        111,
+        610,
+        192
+      ]
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        2,
+        63,
+        170,
+        180
+      ]
+    },
+    {
+      "category": "dining table",
+      "bbox_xyxy": [
+        0,
+        172,
+        640,
+        480
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        153,
+        0,
+        228,
+        174
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        2,
+        1,
+        90,
+        117
+      ]
+    },
+    {
+      "category": "fork",
+      "bbox_xyxy": [
+        596,
+        396,
+        640,
+        480
+      ]
+    },
+    {
+      "category": "fork",
+      "bbox_xyxy": [
+        121,
+        401,
+        170,
+        480
+      ]
+    },
+    {
+      "category": "knife",
+      "bbox_xyxy": [
+        451,
+        389,
+        484,
+        474
+      ]
+    },
+    {
+      "category": "spoon",
+      "bbox_xyxy": [
+        484,
+        420,
+        517,
+        480
+      ]
+    },
+    {
+      "category": "spoon",
+      "bbox_xyxy": [
+        92,
+        239,
+        116,
+        301
+      ]
+    },
+    {
+      "category": "spoon",
+      "bbox_xyxy": [
+        540,
+        230,
+        591,
+        259
+      ]
+    },
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        3,
+        240,
+        210,
+        406
+      ]
+    },
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        0,
+        165,
+        137,
+        249
+      ]
+    },
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        415,
+        189,
+        521,
+        244
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        450,
+        211,
+        475,
+        228
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        472,
+        215,
+        480,
+        224
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        499,
+        210,
+        517,
+        228
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        460,
+        224,
+        490,
+        231
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        503,
+        205,
+        516,
+        215
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        418,
+        189,
+        521,
+        231
+      ]
+    },
+    {
+      "category": "cup",
+      "bbox_xyxy": [
+        526,
+        194,
+        573,
+        249
+      ]
+    },
+    {
+      "category": "cup",
+      "bbox_xyxy": [
+        222,
+        174,
+        261,
+        222
+      ]
+    },
+    {
+      "category": "spoon",
+      "bbox_xyxy": [
+        0,
+        183,
+        27,
+        212
+      ]
+    },
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        238,
+        215,
+        481,
+        365
+      ]
+    },
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        448,
+        207,
+        459,
+        216
+      ]
+    },
+    {
+      "category": "cake",
+      "bbox_xyxy": [
+        245,
+        215,
+        309,
+        265
+      ]
+    },
+    {
+      "category": "knife",
+      "bbox_xyxy": [
+        574,
+        399,
+        627,
+        473
+      ]
+    },
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        0,
+        219,
+        40,
+        311
+      ]
+    },
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        477,
+        204,
+        496,
+        229
+      ]
+    },
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        437,
+        202,
+        446,
+        210
+      ]
+    },
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        428,
+        204,
+        450,
+        225
+      ]
+    },
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        461,
+        194,
+        481,
+        204
+      ]
+    },
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        441,
+        200,
+        470,
+        212
+      ]
+    },
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        422,
+        196,
+        445,
+        206
+      ]
+    },
+    {
+      "category": "cake",
+      "bbox_xyxy": [
+        303,
+        213,
+        363,
+        290
+      ]
+    },
+    {
+      "category": "potted plant",
+      "bbox_xyxy": [
+        319,
+        56,
+        393,
+        180
+      ]
+    },
+    {
+      "category": "cake",
+      "bbox_xyxy": [
+        527,
+        55,
+        593,
+        83
+      ]
+    },
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        483,
+        189,
+        489,
+        205
+      ]
+    },
+    {
+      "category": "hot dog",
+      "bbox_xyxy": [
+        491,
+        213,
+        499,
+        220
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

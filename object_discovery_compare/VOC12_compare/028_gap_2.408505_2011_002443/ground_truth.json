@@ -1,0 +1,148 @@
+{
+  "objects": [
+    {
+      "category": "pottedplant",
+      "bbox_xyxy": [
+        0,
+        72,
+        35,
+        123
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "pottedplant",
+      "bbox_xyxy": [
+        59,
+        26,
+        109,
+        96
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "pottedplant",
+      "bbox_xyxy": [
+        251,
+        96,
+        284,
+        131
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "pottedplant",
+      "bbox_xyxy": [
+        240,
+        47,
+        325,
+        129
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        127,
+        194,
+        212,
+        390
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        245,
+        33,
+        270,
+        56
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        279,
+        34,
+        303,
+        59
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        316,
+        37,
+        339,
+        60
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        312,
+        49,
+        335,
+        96
+      ],
+      "difficult": "1",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        53,
+        8,
+        71,
+        37
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        36,
+        19,
+        67,
+        79
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        130,
+        33,
+        153,
+        81
+      ],
+      "difficult": "1",
+      "truncated": "0"
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        157,
+        34,
+        176,
+        59
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

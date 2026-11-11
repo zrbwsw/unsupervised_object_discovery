@@ -1,0 +1,73 @@
+{
+  "status": "prepared_not_launched",
+  "usage": "Reference only; the evaluator does not read this JSON. CLI arguments and the DINO shell template select the protocol.",
+  "dataset": "COCO20k",
+  "split": "train",
+  "expected_images": 19817,
+  "architecture": "vit_base",
+  "patch_size": 16,
+  "encoder_frozen": true,
+  "feature": "last_block_output_after_final_layernorm",
+  "feature_dimension": 768,
+  "feature_layers": 1,
+  "cls_in_graph": false,
+  "random_masking": false,
+  "input_resolution": "original_image",
+  "resize": null,
+  "crop": null,
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "padding": {
+    "edges": [
+      "right",
+      "bottom"
+    ],
+    "multiple": 16,
+    "value_in_normalized_space": 0
+  },
+  "position_interpolation": "TokenCut/dino/vision_transformer.py bicubic with +0.1 scale offset",
+  "tau": null,
+  "tau_sweep_enabled": true,
+  "graph": "binary",
+  "edge_comparison": ">",
+  "eps": 1e-05,
+  "remove_difficult_or_truncated": false,
+  "iou_threshold": 0.5,
+  "iou_comparison": ">=",
+  "iou_note": "Retain TokenCut source comparison; DINOv3 D.4 prose says exceeds 0.5. Record this difference in all reported results.",
+  "tau_selection": "Report all 20 runs; no automatic best-tau selection.",
+  "tau_values": [
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "methods": [
+    "dino",
+    "ibot",
+    "mae",
+    "condgen"
+  ],
+  "gpus": [
+    6,
+    7
+  ],
+  "experiments_per_gpu": 10,
+  "data_root": "/data0/datasets/dino_object_discovery/coco2014",
+  "tmux_session": "ruobei_uod_coco20k",
+  "queue_script": "scripts/queue_coco20k_tau_gpu67.sh",
+  "remove_iscrowd": true,
+  "fixed_subset_list": "TokenCut/datasets/coco_20k_filenames.txt",
+  "subset_annotation_cache": "TokenCut/datasets/instances_train2014_sel20k.json"
+}

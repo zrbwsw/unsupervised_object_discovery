@@ -1,0 +1,140 @@
+{
+  "objects": [
+    {
+      "category": "tie",
+      "bbox_xyxy": [
+        306,
+        132,
+        375,
+        304
+      ]
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        189,
+        380,
+        244,
+        422
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        404,
+        321,
+        453,
+        499
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        81,
+        351,
+        103,
+        397
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        98,
+        358,
+        122,
+        403
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        116,
+        361,
+        129,
+        398
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        129,
+        379,
+        139,
+        399
+      ]
+    },
+    {
+      "category": "book",
+      "bbox_xyxy": [
+        331,
+        144,
+        420,
+        246
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        2,
+        333,
+        32,
+        394
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        463,
+        365,
+        480,
+        502
+      ]
+    },
+    {
+      "category": "bicycle",
+      "bbox_xyxy": [
+        129,
+        379,
+        142,
+        399
+      ]
+    },
+    {
+      "category": "bicycle",
+      "bbox_xyxy": [
+        149,
+        381,
+        160,
+        402
+      ]
+    },
+    {
+      "category": "bicycle",
+      "bbox_xyxy": [
+        28,
+        364,
+        36,
+        382
+      ]
+    },
+    {
+      "category": "bicycle",
+      "bbox_xyxy": [
+        39,
+        366,
+        58,
+        385
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        95,
+        0,
+        480,
+        638
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

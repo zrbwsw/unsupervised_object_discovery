@@ -1,0 +1,95 @@
+{
+  "objects": [
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        118,
+        97,
+        166,
+        128
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        48,
+        98,
+        112,
+        130
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        160,
+        16,
+        195,
+        49
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        27,
+        6,
+        52,
+        17
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        156,
+        44,
+        191,
+        74
+      ]
+    },
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        0,
+        0,
+        200,
+        133
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        33,
+        66,
+        45,
+        74
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        12,
+        28,
+        45,
+        39
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        69,
+        120,
+        100,
+        128
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        82,
+        50,
+        111,
+        63
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

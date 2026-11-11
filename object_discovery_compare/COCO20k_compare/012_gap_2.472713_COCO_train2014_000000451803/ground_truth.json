@@ -1,0 +1,23 @@
+{
+  "objects": [
+    {
+      "category": "mouse",
+      "bbox_xyxy": [
+        125,
+        143,
+        282,
+        245
+      ]
+    },
+    {
+      "category": "keyboard",
+      "bbox_xyxy": [
+        168,
+        302,
+        426,
+        633
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

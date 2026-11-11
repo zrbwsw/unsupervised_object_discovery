@@ -1,0 +1,12 @@
+Local weights loaded strictly from /data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/dino_vitb16.pth: <All keys matched successfully>; excluded 2 head tensors.
+Running TokenCut on VOC12_trainval (exp: TokenCut-dino-vit_base16_output_tau0.2, images: 2/11540)
+Results directory: /data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/voc12/VOC12_trainval/TokenCut-dino-vit_base16_output_tau0.2
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+ 50%|█████     | 1/2 [00:01<00:01,  1.35s/it]
+100%|██████████| 2/2 [00:02<00:00,  1.17s/it]
+100%|██████████| 2/2 [00:02<00:00,  1.20s/it]
+Time cost: 0:00:02.403000
+Predictions saved at /data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/voc12/VOC12_trainval/TokenCut-dino-vit_base16_output_tau0.2/preds.pkl
+corloc: 100.00 (2/2)
+File saved at /data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/voc12/VOC12_trainval/TokenCut-dino-vit_base16_output_tau0.2/results.txt

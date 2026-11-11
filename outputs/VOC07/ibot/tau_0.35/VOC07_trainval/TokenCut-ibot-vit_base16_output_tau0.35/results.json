@@ -1,0 +1,18 @@
+{
+  "corloc_percent": 40.43105168629016,
+  "successful_images": 2026,
+  "evaluated_images": 5011,
+  "skipped_images": 0,
+  "dataset_images": 5011,
+  "selected_images": 5011,
+  "subset_evaluation": false,
+  "dataset": "VOC07_trainval",
+  "encoder": "ibot",
+  "which_features": "output",
+  "tau": 0.35,
+  "eps": 1e-05,
+  "remove_hards": false,
+  "iou_threshold": 0.5,
+  "iou_comparison": ">=",
+  "elapsed_seconds": 349.4264826774597
+}

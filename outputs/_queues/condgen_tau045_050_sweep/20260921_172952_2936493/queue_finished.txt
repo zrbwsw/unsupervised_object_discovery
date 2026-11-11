@@ -1,0 +1,1 @@
+Supervisor exit codes: GPU4=0 GPU5=0 summary=0

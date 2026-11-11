@@ -1,0 +1,16 @@
+loading annotations into memory...
+Done (t=1.81s)
+creating index...
+index created!
+Local weights loaded strictly from /data0/cuijiequan/zhangruobei/CondGen_DownStream/encoder/dino_vitb16.pth: <All keys matched successfully>; excluded 2 head tensors.
+Running TokenCut on COCO20k_train (exp: TokenCut-dino-vit_base16_output_tau0.2, images: 2/19817)
+Results directory: /data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/coco20k/COCO20k_train/TokenCut-dino-vit_base16_output_tau0.2
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+ 50%|█████     | 1/2 [00:03<00:03,  3.31s/it]
+100%|██████████| 2/2 [00:04<00:00,  2.11s/it]
+100%|██████████| 2/2 [00:04<00:00,  2.29s/it]
+Time cost: 0:00:04.584000
+Predictions saved at /data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/coco20k/COCO20k_train/TokenCut-dino-vit_base16_output_tau0.2/preds.pkl
+corloc: 50.00 (1/2)
+File saved at /data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_smoke/voc12_coco_cpu_smoke_20260921_011820/coco20k/COCO20k_train/TokenCut-dino-vit_base16_output_tau0.2/results.txt

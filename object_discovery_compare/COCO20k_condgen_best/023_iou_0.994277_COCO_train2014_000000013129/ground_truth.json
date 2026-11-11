@@ -1,0 +1,41 @@
+{
+  "objects": [
+    {
+      "category": "wine glass",
+      "bbox_xyxy": [
+        67,
+        1,
+        215,
+        122
+      ]
+    },
+    {
+      "category": "cup",
+      "bbox_xyxy": [
+        70,
+        1,
+        215,
+        119
+      ]
+    },
+    {
+      "category": "dining table",
+      "bbox_xyxy": [
+        1,
+        2,
+        640,
+        480
+      ]
+    },
+    {
+      "category": "fork",
+      "bbox_xyxy": [
+        600,
+        149,
+        640,
+        242
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

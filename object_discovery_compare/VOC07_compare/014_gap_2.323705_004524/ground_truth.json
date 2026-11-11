@@ -1,0 +1,49 @@
+{
+  "objects": [
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        310,
+        272,
+        383,
+        344
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        255,
+        130,
+        309,
+        171
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        460,
+        197,
+        500,
+        243
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        106,
+        0,
+        186,
+        21
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

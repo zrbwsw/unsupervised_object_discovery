@@ -1,0 +1,131 @@
+{
+  "objects": [
+    {
+      "category": "cat",
+      "bbox_xyxy": [
+        1,
+        113,
+        640,
+        353
+      ]
+    },
+    {
+      "category": "book",
+      "bbox_xyxy": [
+        265,
+        128,
+        471,
+        158
+      ]
+    },
+    {
+      "category": "book",
+      "bbox_xyxy": [
+        255,
+        109,
+        355,
+        124
+      ]
+    },
+    {
+      "category": "book",
+      "bbox_xyxy": [
+        269,
+        86,
+        372,
+        111
+      ]
+    },
+    {
+      "category": "book",
+      "bbox_xyxy": [
+        140,
+        160,
+        251,
+        186
+      ]
+    },
+    {
+      "category": "book",
+      "bbox_xyxy": [
+        139,
+        134,
+        263,
+        156
+      ]
+    },
+    {
+      "category": "book",
+      "bbox_xyxy": [
+        264,
+        151,
+        432,
+        176
+      ]
+    },
+    {
+      "category": "book",
+      "bbox_xyxy": [
+        364,
+        96,
+        491,
+        107
+      ]
+    },
+    {
+      "category": "book",
+      "bbox_xyxy": [
+        268,
+        121,
+        362,
+        140
+      ]
+    },
+    {
+      "category": "book",
+      "bbox_xyxy": [
+        281,
+        51,
+        481,
+        72
+      ]
+    },
+    {
+      "category": "book",
+      "bbox_xyxy": [
+        121,
+        96,
+        229,
+        123
+      ]
+    },
+    {
+      "category": "book",
+      "bbox_xyxy": [
+        103,
+        182,
+        246,
+        213
+      ]
+    },
+    {
+      "category": "book",
+      "bbox_xyxy": [
+        281,
+        165,
+        425,
+        190
+      ]
+    },
+    {
+      "category": "bottle",
+      "bbox_xyxy": [
+        533,
+        58,
+        636,
+        266
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

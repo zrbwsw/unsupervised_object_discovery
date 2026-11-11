@@ -1,0 +1,38 @@
+{
+  "objects": [
+    {
+      "category": "aeroplane",
+      "bbox_xyxy": [
+        0,
+        3,
+        493,
+        375
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "aeroplane",
+      "bbox_xyxy": [
+        184,
+        35,
+        245,
+        70
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        0,
+        13,
+        125,
+        375
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

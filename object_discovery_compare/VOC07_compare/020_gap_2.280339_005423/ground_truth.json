@@ -1,0 +1,49 @@
+{
+  "objects": [
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        2,
+        139,
+        131,
+        192
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        205,
+        138,
+        297,
+        181
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        258,
+        125,
+        352,
+        167
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "car",
+      "bbox_xyxy": [
+        60,
+        138,
+        319,
+        325
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

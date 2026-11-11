@@ -1,0 +1,23 @@
+{
+  "objects": [
+    {
+      "category": "horse",
+      "bbox_xyxy": [
+        0,
+        48,
+        428,
+        640
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        1,
+        2,
+        174,
+        416
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

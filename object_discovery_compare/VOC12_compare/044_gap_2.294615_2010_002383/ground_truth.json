@@ -1,0 +1,16 @@
+{
+  "objects": [
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        138,
+        141,
+        271,
+        317
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

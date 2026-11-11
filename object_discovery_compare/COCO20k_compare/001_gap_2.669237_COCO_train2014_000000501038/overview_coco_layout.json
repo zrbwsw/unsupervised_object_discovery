@@ -1,0 +1,40 @@
+{
+  "sample": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/COCO20k_compare/001_gap_2.669237_COCO_train2014_000000501038",
+  "image": "COCO_train2014_000000501038.jpg",
+  "output": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/COCO20k_compare/001_gap_2.669237_COCO_train2014_000000501038/overview_coco_layout.jpg",
+  "layout": {
+    "gt_spans_rows": 2,
+    "columns": [
+      "ground_truth",
+      "condgen",
+      "mae",
+      "ibot",
+      "dino"
+    ],
+    "rows": [
+      "prediction_bbox",
+      "mask_overlay"
+    ]
+  },
+  "metrics": {
+    "dino": 0.0,
+    "ibot": 0.0,
+    "mae": 0.0,
+    "condgen": 0.889745831489563
+  },
+  "parameters": {
+    "sample": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/COCO20k_compare/001_gap_2.669237_COCO_train2014_000000501038",
+    "output": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/object_discovery_compare/COCO20k_compare/001_gap_2.669237_COCO_train2014_000000501038/overview_coco_layout.jpg",
+    "width": 2400,
+    "row_image_height": 430,
+    "gt_width": 450,
+    "method_width": 450,
+    "margin": 32,
+    "gap": 20,
+    "label_height": 58,
+    "font_size": 28,
+    "title_size": 30,
+    "jpeg_quality": 95,
+    "pdf": true
+  }
+}

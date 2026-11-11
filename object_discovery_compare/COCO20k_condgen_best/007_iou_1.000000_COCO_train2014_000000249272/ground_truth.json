@@ -1,0 +1,59 @@
+{
+  "objects": [
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        100,
+        139,
+        284,
+        342
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        166,
+        61,
+        306,
+        196
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        0,
+        42,
+        141,
+        299
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        2,
+        289,
+        207,
+        430
+      ]
+    },
+    {
+      "category": "dining table",
+      "bbox_xyxy": [
+        0,
+        0,
+        640,
+        442
+      ]
+    },
+    {
+      "category": "broccoli",
+      "bbox_xyxy": [
+        108,
+        91,
+        174,
+        167
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

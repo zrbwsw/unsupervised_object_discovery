@@ -1,0 +1,38 @@
+{
+  "objects": [
+    {
+      "category": "bottle",
+      "bbox_xyxy": [
+        266,
+        113,
+        327,
+        260
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "dog",
+      "bbox_xyxy": [
+        10,
+        64,
+        466,
+        319
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "chair",
+      "bbox_xyxy": [
+        0,
+        0,
+        500,
+        375
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

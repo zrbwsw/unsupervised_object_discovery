@@ -1,0 +1,168 @@
+{
+  "started_at_utc": "2026-09-20T17:13:34.440855+00:00",
+  "data_root": "/data0/datasets/dino_object_discovery",
+  "verify_only": false,
+  "archives": [
+    {
+      "path": "/data0/datasets/dino_object_discovery/voc2012/archives/VOCtrainval_11-May-2012.tar",
+      "bytes": 1999639040,
+      "sha256": "e14f763270cf193d0b5f74b169f44157a4b0c6efa708f4dd0ff78ee691763bcb",
+      "destination": "/data0/datasets/dino_object_discovery/voc2012",
+      "created_files": 0,
+      "identical_existing_files": 40178,
+      "directories": 11,
+      "archive_members": 40189
+    },
+    {
+      "path": "/data0/datasets/dino_object_discovery/coco2014/archives/annotations_trainval2014.zip",
+      "bytes": 252872794,
+      "sha256": "031296bbc80c45a1d1f76bf9a90ead27e94e99ec629208449507a4917a3bf009",
+      "destination": "/data0/datasets/dino_object_discovery/coco2014",
+      "created_files": 0,
+      "identical_existing_files": 6,
+      "directories": 0,
+      "archive_members": 6
+    },
+    {
+      "path": "/data0/datasets/dino_object_discovery/coco2014/archives/train2014.zip",
+      "bytes": 13510573713,
+      "sha256": "ede4087e640bddba550e090eae701092534b554b42b05ac33f0300b984b31775",
+      "destination": "/data0/datasets/dino_object_discovery/coco2014/images",
+      "created_files": 0,
+      "identical_existing_files": 82783,
+      "directories": 1,
+      "archive_members": 82784
+    }
+  ],
+  "voc2012": {
+    "directory": "/data0/datasets/dino_object_discovery/voc2012/VOCdevkit/VOC2012",
+    "splits": {
+      "train": {
+        "images": 5717,
+        "list_sha256": "0e19f1a4753564fced5bbf61b56b7117b22cc201c8f4707a336c9b5b5d9f6dad"
+      },
+      "val": {
+        "images": 5823,
+        "list_sha256": "a697c0422085d84ae1c10eab6e6d92e7bcc3a5136b32971a23b9754411f996cb"
+      },
+      "trainval": {
+        "images": 11540,
+        "list_sha256": "d8db5bcfb2ea35dc072f2e74a0f234345065ae340e422d7d0ad0216ac13fbee3"
+      }
+    },
+    "jpeg_count": 17125,
+    "xml_count": 17125,
+    "all_images_decoded": true,
+    "all_xml_parsed": true,
+    "xml_image_dimensions_match": true,
+    "bounding_boxes_in_image_bounds": true,
+    "total_objects": 40138,
+    "trainval_objects": 31561,
+    "trainval_images_with_only_difficult_or_truncated_objects": 3702,
+    "boxes_with_zero_coordinate": 0,
+    "evaluation_split": "trainval",
+    "boxes_with_decimal_coordinates": [
+      {
+        "image_id": "2011_003353",
+        "bbox": [
+          130.0,
+          45.70000076293945,
+          375.0,
+          470.0
+        ],
+        "in_detection_trainval": false
+      },
+      {
+        "image_id": "2011_006777",
+        "bbox": [
+          1.0,
+          281.70000076293945,
+          218.0,
+          500.0
+        ],
+        "in_detection_trainval": false
+      }
+    ],
+    "evaluation_images": 11540,
+    "annotations_modified": false
+  },
+  "coco2014": {
+    "directory": "/data0/datasets/dino_object_discovery/coco2014",
+    "full_train2014_images": 82783,
+    "full_train2014_annotations": 604907,
+    "categories": 80,
+    "selection_file": "/data0/datasets/dino_object_discovery/coco2014/splits/coco_20k_filenames.txt",
+    "selection_sha256": "74637e9b4f93f2ebef9b1f664aff53edd1f41ef08dad97bd22ce8e455052b335",
+    "selection_matches_tokencut_bytes": true,
+    "selected_images": 19817,
+    "selected_annotations": 145654,
+    "crowd_annotations": 1703,
+    "noncrowd_annotations": 143951,
+    "valid_noncrowd_annotations": 143951,
+    "images_with_no_annotations": {
+      "count": 0,
+      "image_ids": []
+    },
+    "images_with_no_noncrowd_annotations": {
+      "count": 0,
+      "image_ids": []
+    },
+    "images_with_no_valid_noncrowd_boxes": {
+      "count": 0,
+      "image_ids": []
+    },
+    "invalid_bboxes": {
+      "count": 0,
+      "annotation_ids": []
+    },
+    "bboxes_outside_image_bounds": {
+      "count": 0,
+      "annotation_ids": []
+    },
+    "noncrowd_boxes_degenerate_after_tokencut_rounding": {
+      "count": 0,
+      "annotation_ids": []
+    },
+    "all_selected_images_decoded": true,
+    "image_annotation_dimensions_match": true,
+    "full_train2014_jpeg_filename_set_matches_annotations": true,
+    "selected_width_range": [
+      59,
+      640
+    ],
+    "selected_height_range": [
+      51,
+      640
+    ],
+    "cache_path": "/data0/datasets/dino_object_discovery/coco2014/annotations/instances_train2014_sel20k.json",
+    "cache_status": "verified_existing",
+    "cache_sha256": "d413f263638964b07103acbaac7ccd24b57842f6ea83aade3cd765a23ed81810",
+    "cache_image_order_matches_selection": true,
+    "cache_annotation_order_matches_upstream_selection": true,
+    "source_instances_sha256": "777ef504abfeba349930485bb32ecd5b6529129a3e010f7852e1437cb049b732",
+    "source_annotations_modified": false
+  },
+  "links": [
+    {
+      "link": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/TokenCut/datasets/VOC2012/VOCdevkit",
+      "target": "/data0/datasets/dino_object_discovery/voc2012/VOCdevkit",
+      "status": "verified_existing"
+    },
+    {
+      "link": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/TokenCut/datasets/COCO/images",
+      "target": "/data0/datasets/dino_object_discovery/coco2014/images",
+      "status": "verified_existing"
+    },
+    {
+      "link": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/TokenCut/datasets/COCO/annotations",
+      "target": "/data0/datasets/dino_object_discovery/coco2014/annotations",
+      "status": "verified_existing"
+    },
+    {
+      "link": "/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/TokenCut/datasets/instances_train2014_sel20k.json",
+      "target": "/data0/datasets/dino_object_discovery/coco2014/annotations/instances_train2014_sel20k.json",
+      "status": "verified_existing"
+    }
+  ],
+  "completed_at_utc": "2026-09-20T17:15:53.673246+00:00"
+}

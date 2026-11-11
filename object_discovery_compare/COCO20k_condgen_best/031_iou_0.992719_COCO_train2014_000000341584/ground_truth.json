@@ -1,0 +1,32 @@
+{
+  "objects": [
+    {
+      "category": "cat",
+      "bbox_xyxy": [
+        3,
+        61,
+        479,
+        504
+      ]
+    },
+    {
+      "category": "keyboard",
+      "bbox_xyxy": [
+        1,
+        449,
+        480,
+        640
+      ]
+    },
+    {
+      "category": "tv",
+      "bbox_xyxy": [
+        1,
+        3,
+        479,
+        127
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

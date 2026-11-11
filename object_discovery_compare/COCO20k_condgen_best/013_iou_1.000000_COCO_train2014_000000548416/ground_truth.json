@@ -1,0 +1,122 @@
+{
+  "objects": [
+    {
+      "category": "spoon",
+      "bbox_xyxy": [
+        71,
+        0,
+        357,
+        189
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        110,
+        169,
+        181,
+        248
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        417,
+        49,
+        478,
+        111
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        429,
+        111,
+        491,
+        173
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        368,
+        2,
+        419,
+        40
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        234,
+        0,
+        356,
+        37
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        0,
+        74,
+        104,
+        172
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        202,
+        165,
+        275,
+        209
+      ]
+    },
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        1,
+        12,
+        500,
+        369
+      ]
+    },
+    {
+      "category": "bowl",
+      "bbox_xyxy": [
+        0,
+        0,
+        500,
+        375
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        96,
+        246,
+        179,
+        302
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        175,
+        197,
+        228,
+        240
+      ]
+    },
+    {
+      "category": "carrot",
+      "bbox_xyxy": [
+        212,
+        226,
+        294,
+        292
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

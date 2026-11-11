@@ -1,0 +1,14 @@
+{
+  "objects": [
+    {
+      "category": "sheep",
+      "bbox_xyxy": [
+        371,
+        242,
+        541,
+        352
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

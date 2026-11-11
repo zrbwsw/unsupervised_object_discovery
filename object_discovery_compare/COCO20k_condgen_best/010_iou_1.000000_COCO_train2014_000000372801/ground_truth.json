@@ -1,0 +1,32 @@
+{
+  "objects": [
+    {
+      "category": "cup",
+      "bbox_xyxy": [
+        0,
+        0,
+        80,
+        98
+      ]
+    },
+    {
+      "category": "pizza",
+      "bbox_xyxy": [
+        6,
+        0,
+        640,
+        475
+      ]
+    },
+    {
+      "category": "dining table",
+      "bbox_xyxy": [
+        0,
+        0,
+        640,
+        480
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

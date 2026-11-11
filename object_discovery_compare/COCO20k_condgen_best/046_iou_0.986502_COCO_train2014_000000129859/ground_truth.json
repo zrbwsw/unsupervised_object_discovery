@@ -1,0 +1,14 @@
+{
+  "objects": [
+    {
+      "category": "bus",
+      "bbox_xyxy": [
+        114,
+        65,
+        590,
+        447
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

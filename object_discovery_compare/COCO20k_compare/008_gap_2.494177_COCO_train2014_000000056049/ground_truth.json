@@ -1,0 +1,41 @@
+{
+  "objects": [
+    {
+      "category": "horse",
+      "bbox_xyxy": [
+        208,
+        341,
+        271,
+        382
+      ]
+    },
+    {
+      "category": "horse",
+      "bbox_xyxy": [
+        388,
+        320,
+        438,
+        357
+      ]
+    },
+    {
+      "category": "horse",
+      "bbox_xyxy": [
+        449,
+        202,
+        486,
+        223
+      ]
+    },
+    {
+      "category": "bench",
+      "bbox_xyxy": [
+        540,
+        232,
+        561,
+        241
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

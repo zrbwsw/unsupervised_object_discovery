@@ -1,0 +1,7 @@
+[2026-09-21T17:29:52+08:00] Sharing GPU 4/5 with other queues; starting CondGen tau=0.45/0.50 workers, each running its own experiments serially.
+CondGen tau=0.45/0.50 sweep: 3 datasets x CondGen x 2 tau values, 3 jobs per GPU.
+Run directory: /data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/condgen_tau045_050_sweep/20260921_172952_2936493
+GPU 4 worker PID=2936646; GPU 5 worker PID=2936647
+Follow logs: tail -f /data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/condgen_tau045_050_sweep/20260921_172952_2936493/gpu4.log /data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/condgen_tau045_050_sweep/20260921_172952_2936493/gpu5.log
+Summary: /data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/condgen_tau045_050_sweep/20260921_172952_2936493/summary.csv; 6/6 completed
+Supervisor exit codes: GPU4=0 GPU5=0 summary=0

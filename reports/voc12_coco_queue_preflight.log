@@ -1,0 +1,6 @@
+VOC12 preflight passed: 11540 images; first=2008_000002.jpg; shape=(3, 375, 500)
+loading annotations into memory...
+Done (t=2.10s)
+creating index...
+index created!
+COCO20k preflight passed: 19817 images; first=COCO_train2014_000000000036.jpg; shape=(3, 640, 481)

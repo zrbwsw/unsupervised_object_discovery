@@ -1,0 +1,181 @@
+{
+  "objects": [
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        430,
+        171,
+        457,
+        229
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        413,
+        171,
+        433,
+        228
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        393,
+        174,
+        415,
+        227
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        368,
+        80,
+        389,
+        105
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        246,
+        82,
+        264,
+        136
+      ],
+      "difficult": "1",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        258,
+        80,
+        274,
+        135
+      ],
+      "difficult": "1",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        180,
+        83,
+        194,
+        135
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        170,
+        86,
+        183,
+        104
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        135,
+        83,
+        154,
+        134
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        121,
+        88,
+        137,
+        137
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        103,
+        85,
+        129,
+        134
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        87,
+        83,
+        107,
+        137
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        33,
+        86,
+        48,
+        104
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        11,
+        75,
+        30,
+        104
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        336,
+        89,
+        348,
+        102
+      ],
+      "difficult": "1",
+      "truncated": "1"
+    },
+    {
+      "category": "boat",
+      "bbox_xyxy": [
+        0,
+        0,
+        500,
+        372
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

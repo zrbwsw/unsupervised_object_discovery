@@ -1,0 +1,14 @@
+{
+  "objects": [
+    {
+      "category": "elephant",
+      "bbox_xyxy": [
+        1,
+        2,
+        640,
+        421
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

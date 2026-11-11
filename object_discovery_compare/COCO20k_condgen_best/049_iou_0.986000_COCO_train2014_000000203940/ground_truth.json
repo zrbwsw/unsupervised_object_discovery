@@ -1,0 +1,23 @@
+{
+  "objects": [
+    {
+      "category": "toothbrush",
+      "bbox_xyxy": [
+        142,
+        285,
+        226,
+        495
+      ]
+    },
+    {
+      "category": "person",
+      "bbox_xyxy": [
+        0,
+        0,
+        333,
+        493
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

@@ -1,0 +1,27 @@
+{
+  "objects": [
+    {
+      "category": "bus",
+      "bbox_xyxy": [
+        155,
+        359,
+        238,
+        460
+      ],
+      "difficult": "0",
+      "truncated": "0"
+    },
+    {
+      "category": "bicycle",
+      "bbox_xyxy": [
+        168,
+        415,
+        219,
+        450
+      ],
+      "difficult": "1",
+      "truncated": "0"
+    }
+  ],
+  "used_for_inference": false
+}

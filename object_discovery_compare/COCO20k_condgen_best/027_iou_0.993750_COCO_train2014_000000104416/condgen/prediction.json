@@ -1,0 +1,21 @@
+{
+  "image": "COCO_train2014_000000104416.jpg",
+  "bbox_xyxy": [
+    0,
+    48,
+    640,
+    224
+  ],
+  "image_shape_chw": [
+    3,
+    282,
+    640
+  ],
+  "patch_grid_hw": [
+    18,
+    40
+  ],
+  "max_iou": 0.9937499761581421,
+  "correct": true,
+  "gt_count": 1
+}

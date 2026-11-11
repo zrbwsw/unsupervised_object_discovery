@@ -1,0 +1,7 @@
+[2026-09-21T15:37:06+08:00] Sharing GPU 6/7 with other queues; starting high-tau workers, each running its own experiments serially.
+High-tau sweep: 3 datasets x 4 methods x 2 tau values, 12 jobs per GPU.
+Run directory: /data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/high_tau_sweep/20260921_153706_2862331
+GPU 6 worker PID=2862456; GPU 7 worker PID=2862457
+Follow logs: tail -f /data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/high_tau_sweep/20260921_153706_2862331/gpu6.log /data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/high_tau_sweep/20260921_153706_2862331/gpu7.log
+Summary: /data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/_queues/high_tau_sweep/20260921_153706_2862331/summary.csv; 24/24 completed
+Supervisor exit codes: GPU6=0 GPU7=0 summary=0

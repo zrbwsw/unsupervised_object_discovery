@@ -1,0 +1,14 @@
+{
+  "objects": [
+    {
+      "category": "zebra",
+      "bbox_xyxy": [
+        1,
+        2,
+        640,
+        478
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

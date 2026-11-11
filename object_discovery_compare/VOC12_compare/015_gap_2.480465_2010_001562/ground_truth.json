@@ -1,0 +1,16 @@
+{
+  "objects": [
+    {
+      "category": "tvmonitor",
+      "bbox_xyxy": [
+        412,
+        119,
+        500,
+        252
+      ],
+      "difficult": "0",
+      "truncated": "1"
+    }
+  ],
+  "used_for_inference": false
+}

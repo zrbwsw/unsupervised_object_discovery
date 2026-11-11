@@ -1,0 +1,122 @@
+{
+  "objects": [
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        200,
+        59,
+        386,
+        236
+      ]
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        198,
+        495,
+        220,
+        512
+      ]
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        275,
+        485,
+        289,
+        498
+      ]
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        314,
+        477,
+        333,
+        502
+      ]
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        134,
+        362,
+        153,
+        371
+      ]
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        414,
+        418,
+        459,
+        457
+      ]
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        36,
+        462,
+        43,
+        477
+      ]
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        214,
+        381,
+        246,
+        400
+      ]
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        471,
+        136,
+        512,
+        150
+      ]
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        224,
+        454,
+        232,
+        469
+      ]
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        196,
+        482,
+        211,
+        500
+      ]
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        365,
+        451,
+        448,
+        509
+      ]
+    },
+    {
+      "category": "bird",
+      "bbox_xyxy": [
+        251,
+        487,
+        280,
+        508
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

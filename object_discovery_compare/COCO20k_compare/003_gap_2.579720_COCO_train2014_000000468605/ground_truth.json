@@ -1,0 +1,14 @@
+{
+  "objects": [
+    {
+      "category": "clock",
+      "bbox_xyxy": [
+        180,
+        321,
+        256,
+        397
+      ]
+    }
+  ],
+  "used_for_inference": false
+}

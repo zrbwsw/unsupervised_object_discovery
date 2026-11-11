@@ -1,0 +1,13 @@
+dataset	method	tau	started_at	finished_at	exit_code	output_dir
+VOC07	dino	0.35	2026-09-21T15:37:06+08:00	2026-09-21T15:44:12+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/dino/tau_0.35
+VOC07	ibot	0.35	2026-09-21T15:44:12+08:00	2026-09-21T15:50:07+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/ibot/tau_0.35
+VOC07	mae	0.35	2026-09-21T15:50:07+08:00	2026-09-21T15:57:02+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/mae/tau_0.35
+VOC07	condgen	0.35	2026-09-21T15:57:02+08:00	2026-09-21T16:03:52+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC07/condgen/tau_0.35
+VOC12	dino	0.35	2026-09-21T16:03:52+08:00	2026-09-21T16:19:59+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/dino/tau_0.35
+VOC12	ibot	0.35	2026-09-21T16:19:59+08:00	2026-09-21T16:34:35+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/ibot/tau_0.35
+VOC12	mae	0.35	2026-09-21T16:34:35+08:00	2026-09-21T16:50:15+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/mae/tau_0.35
+VOC12	condgen	0.35	2026-09-21T16:50:15+08:00	2026-09-21T17:04:52+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/VOC12/condgen/tau_0.35
+COCO20k	dino	0.35	2026-09-21T17:04:52+08:00	2026-09-21T18:14:04+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/dino/tau_0.35
+COCO20k	ibot	0.35	2026-09-21T18:14:05+08:00	2026-09-21T19:25:03+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/ibot/tau_0.35
+COCO20k	mae	0.35	2026-09-21T19:25:03+08:00	2026-09-21T20:36:10+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/mae/tau_0.35
+COCO20k	condgen	0.35	2026-09-21T20:36:11+08:00	2026-09-21T22:00:20+08:00	0	/data0/cuijiequan/zhangruobei/CondGen_DownStream/unsupervised_object_discovery/outputs/COCO20k/condgen/tau_0.35

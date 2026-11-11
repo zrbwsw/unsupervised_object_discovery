@@ -1,0 +1,27 @@
+Source: /data0/cuijiequan/zhangruobei/related paper/2508.DINOv3.pdf
+Extracted with pdftotext -layout; Appendix D.4, PDF page 59.
+
+D.4   Unsupervised Object Discovery
+
+Datasets and Metrics For this task, the objective is to generate a single bounding box per image that
+highlights any object depicted in the scene. We follow the protocol of Siméoni et al. (2021) for unsupervised
+object discovery and evaluate all backbones on the detection benchmarks VOC07 (Everingham et al., 2007),
+VOC12 (Everingham et al., 2012), and COCO20K (Lin et al., 2014; Vo et al., 2020). COCO20K is a subset
+of the COCO2014 trainval dataset (Lin et al., 2014), consisting of 19,817 randomly selected images, as
+proposed in (Vo et al., 2020) and commonly used for this task. For each image, a single bounding box is
+generated. For evaluation, we use the Correct Localization (CorLoc) metric, which computes the percentage
+of correctly localized boxes. A predicted box is considered correct if its intersection over union (IoU) with
+any ground-truth bounding box exceeds 0.5.
+
+Evaluation Protocol To evaluate the quality of the image encoders, we employ the TokenCut strat-
+egy (Wang et al., 2023c). This method organizes image patches into a fully connected graph, where the
+edges represent similarity scores between pairs of patches, computed using backbone features learned by
+the transformer. The salient object patches are identified by applying the Normalized Cut algorithm, which
+solves a graph-cut problem. A bounding box is then fitted to the resulting salient object mask. All images are
+input to the encoders at their full resolution, and we use the patch output features for all image encoder. To
+account for differences in feature distributions among models, we perform a sweep over TokenCut’s unique
+hyperparameter: the similarity threshold used in graph construction. Specifically, we vary the threshold
+between 0 and 0.4 in increments of 0.05.
+
+
+                                                      59

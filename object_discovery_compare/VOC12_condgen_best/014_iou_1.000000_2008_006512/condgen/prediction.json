@@ -1,0 +1,21 @@
+{
+  "image": "2008_006512.jpg",
+  "bbox_xyxy": [
+    0,
+    0,
+    403,
+    303
+  ],
+  "image_shape_chw": [
+    3,
+    303,
+    403
+  ],
+  "patch_grid_hw": [
+    19,
+    26
+  ],
+  "max_iou": 1.0,
+  "correct": true,
+  "gt_count": 1
+}
